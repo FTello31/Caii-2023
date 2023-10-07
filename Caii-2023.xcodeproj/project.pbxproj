@@ -17,6 +17,9 @@
 		EDB8A2F02AD21C89002A0980 /* Caii_2023Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A2EF2AD21C89002A0980 /* Caii_2023Tests.swift */; };
 		EDB8A2FA2AD21C89002A0980 /* Caii_2023UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A2F92AD21C89002A0980 /* Caii_2023UITests.swift */; };
 		EDB8A2FC2AD21C89002A0980 /* Caii_2023UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A2FB2AD21C89002A0980 /* Caii_2023UITestsLaunchTests.swift */; };
+		EDB8A30B2AD21D7E002A0980 /* Franie-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDB8A3092AD21D7E002A0980 /* Franie-Bold.ttf */; };
+		EDB8A30C2AD21D7E002A0980 /* Franie-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDB8A30A2AD21D7E002A0980 /* Franie-Regular.ttf */; };
+		EDB8A30E2AD21F81002A0980 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A30D2AD21F81002A0980 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		EDB8A2F52AD21C89002A0980 /* Caii-2023UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Caii-2023UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB8A2F92AD21C89002A0980 /* Caii_2023UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caii_2023UITests.swift; sourceTree = "<group>"; };
 		EDB8A2FB2AD21C89002A0980 /* Caii_2023UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caii_2023UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EDB8A3092AD21D7E002A0980 /* Franie-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Franie-Bold.ttf"; sourceTree = "<group>"; };
+		EDB8A30A2AD21D7E002A0980 /* Franie-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Franie-Regular.ttf"; sourceTree = "<group>"; };
+		EDB8A30D2AD21F81002A0980 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,11 @@
 		EDB8A2D42AD21C88002A0980 /* Caii-2023 */ = {
 			isa = PBXGroup;
 			children = (
+				EDB8A3082AD21D67002A0980 /* Fonts */,
 				EDB8A2D52AD21C88002A0980 /* AppDelegate.swift */,
 				EDB8A2D72AD21C88002A0980 /* SceneDelegate.swift */,
 				EDB8A2D92AD21C88002A0980 /* ViewController.swift */,
+				EDB8A30D2AD21F81002A0980 /* HomeViewController.swift */,
 				EDB8A2DB2AD21C88002A0980 /* Main.storyboard */,
 				EDB8A2E12AD21C89002A0980 /* Assets.xcassets */,
 				EDB8A2E32AD21C89002A0980 /* LaunchScreen.storyboard */,
@@ -128,6 +136,15 @@
 				EDB8A2FB2AD21C89002A0980 /* Caii_2023UITestsLaunchTests.swift */,
 			);
 			path = "Caii-2023UITests";
+			sourceTree = "<group>";
+		};
+		EDB8A3082AD21D67002A0980 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8A3092AD21D7E002A0980 /* Franie-Bold.ttf */,
+				EDB8A30A2AD21D7E002A0980 /* Franie-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB8A2E52AD21C89002A0980 /* LaunchScreen.storyboard in Resources */,
+				EDB8A30C2AD21D7E002A0980 /* Franie-Regular.ttf in Resources */,
 				EDB8A2E22AD21C89002A0980 /* Assets.xcassets in Resources */,
+				EDB8A30B2AD21D7E002A0980 /* Franie-Bold.ttf in Resources */,
 				EDB8A2DD2AD21C88002A0980 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB8A30E2AD21F81002A0980 /* HomeViewController.swift in Sources */,
 				EDB8A2DA2AD21C88002A0980 /* ViewController.swift in Sources */,
 				EDB8A2D62AD21C88002A0980 /* AppDelegate.swift in Sources */,
 				EDB8A2E02AD21C88002A0980 /* Caii_2023.xcdatamodeld in Sources */,
@@ -449,6 +469,7 @@
 				DEVELOPMENT_TEAM = DCASC2V65A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Caii-2023/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CAII 2023";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -477,6 +498,7 @@
 				DEVELOPMENT_TEAM = DCASC2V65A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Caii-2023/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CAII 2023";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
