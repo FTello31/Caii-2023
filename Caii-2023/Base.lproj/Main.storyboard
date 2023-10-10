@@ -2,11 +2,19 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yi8-GO-xEi">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Franie-Regular.ttf">
+            <string>Franie-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="fia-my-bdG">
@@ -16,26 +24,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df3-zM-1bL">
-                                <rect key="frame" x="172" y="120" width="49" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="27 de noviembre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df3-zM-1bL">
+                                <rect key="frame" x="114" y="127" width="165" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4R-1a-CLP">
-                                <rect key="frame" x="256" y="368" width="24" height="14"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAU-nG-qE5">
+                                <rect key="frame" x="0.0" y="103" width="393" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0V-4c-DZh">
+                                <rect key="frame" x="293" y="641" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
+                                <buttonConfiguration key="configuration" style="filled" image="folder.fill.badge.questionmark.ar" catalog="system" imagePlacement="top" title="" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseBackgroundColor" name="PrimaryCAII"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btn:" destination="XKg-5p-KMI" eventType="touchUpInside" id="gHY-i4-s6y"/>
+                                    <segue destination="V4p-xW-DHd" kind="show" id="YKt-zM-Pw6"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rye-HV-ab2">
+                                <rect key="frame" x="16" y="378" width="361" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pMk-IN-DFt">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="idO-ie-y3g">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kxi-e4-esE">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlm-ig-3Rm">
-                                <rect key="frame" x="104" y="708" width="184" height="48"/>
+                                <rect key="frame" x="104" y="750" width="184" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Cerrar Sesion"/>
@@ -43,23 +78,14 @@
                                     <action selector="onLogoutPressed:" destination="XKg-5p-KMI" eventType="touchUpInside" id="hB0-cs-SCN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0V-4c-DZh">
-                                <rect key="frame" x="48" y="454" width="142" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="folder.badge.plus.fill" catalog="system" imagePlacement="top" title="Presentation" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                    <color key="baseBackgroundColor" red="0.8156862855" green="0.22745099660000001" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="V4p-xW-DHd" kind="show" id="YKt-zM-Pw6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lLS-0F-0gu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bLx-5I-1x2"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Rye-HV-ab2" id="C48-Eg-tFJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdp-oP-JMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,81 +99,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTU-GG-j9p">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTU-GG-j9p">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XIo-vX-jmR">
-                                        <rect key="frame" x="0.0" y="0.0" width="780" height="844"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejb-sG-ffx">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1009.6666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Presentacion_main_image" translatesAutoresizingMaskIntoConstraints="NO" id="jlD-Rr-mst">
-                                                <rect key="frame" x="0.0" y="0.0" width="780" height="350"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Presentacion_main_image" translatesAutoresizingMaskIntoConstraints="NO" id="twF-CR-XUn">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="350"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="350" id="mDH-I0-t61"/>
+                                                    <constraint firstAttribute="height" constant="350" id="jRT-pV-De6"/>
                                                 </constraints>
                                             </imageView>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcb-sA-QwK">
-                                                <rect key="frame" x="0.0" y="350" width="780" height="494"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="Dx3-hN-MEZ">
+                                                <rect key="frame" x="8" y="369.99999999999994" width="377" height="639.66666666666652"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nelson Shack Yalta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPy-Pe-8WG">
-                                                        <rect key="frame" x="30" y="8" width="263" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nelson Shack Yalta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD8-T9-tfz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="188.33333333333334" height="20.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cO-Ho-3zs">
-                                                        <rect key="frame" x="30" y="58" width="253" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eM-G7-Idf">
+                                                        <rect key="frame" x="0.0" y="72.666666666666629" width="333.33333333333331" height="20.666666666666671"/>
                                                         <string key="text">Contralor general de la República 
 del Perú</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ord-M7-zoQ">
-                                                        <rect key="frame" x="30" y="134" width="5172" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t58-Jz-1kD">
+                                                        <rect key="frame" x="0.0" y="145.33333333333337" width="377" height="408"/>
                                                         <mutableString key="text">La Conferencia Anual Internacional por la Integridad-CAII 2023, es un espacio académico global que fomenta el análisis y debate experto sobre integridad y anticorrupción. Con el tema "Frenando la corrupción: Estrategias colaborativas y sanciones", se exploran innovaciones en teorías, estrategias y roles multiactor en la investigación y sanción de la corrupción. Esta novena edición se alinea con nuestra estrategia institucional para reducir la corrupción, gestionar eficazmente recursos públicos y fomentar valores e integridad. Únete a este encuentro especializado que busca impulsar el conocimiento y acceso a buenas prácticas en integridad pública. ¡Bienvenidos a la CAII 2023!</mutableString>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIX-k3-Sly">
+                                                        <rect key="frame" x="0.0" y="605.33333333333326" width="95.333333333333329" height="34.333333333333371"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Ver vídeo"/>
+                                                    </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
+                                            </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="jlD-Rr-mst" secondAttribute="trailing" id="eQH-El-nV1"/>
-                                            <constraint firstItem="jlD-Rr-mst" firstAttribute="leading" secondItem="XIo-vX-jmR" secondAttribute="leading" id="fC9-Ui-iUi"/>
+                                            <constraint firstAttribute="trailing" secondItem="Dx3-hN-MEZ" secondAttribute="trailing" constant="8" id="2Xv-2N-Ws5"/>
+                                            <constraint firstItem="Dx3-hN-MEZ" firstAttribute="top" secondItem="twF-CR-XUn" secondAttribute="bottom" constant="20" id="BKn-mK-LTf"/>
+                                            <constraint firstAttribute="bottom" secondItem="Dx3-hN-MEZ" secondAttribute="bottom" id="EwF-5b-mrM"/>
+                                            <constraint firstAttribute="trailing" secondItem="twF-CR-XUn" secondAttribute="trailing" id="MYA-eZ-Qu3"/>
+                                            <constraint firstItem="twF-CR-XUn" firstAttribute="top" secondItem="ejb-sG-ffx" secondAttribute="top" id="Meg-bX-I65"/>
+                                            <constraint firstItem="Dx3-hN-MEZ" firstAttribute="leading" secondItem="ejb-sG-ffx" secondAttribute="leading" constant="8" id="YDl-5l-X8N"/>
+                                            <constraint firstItem="twF-CR-XUn" firstAttribute="leading" secondItem="ejb-sG-ffx" secondAttribute="leading" id="kKl-J4-LMG"/>
                                         </constraints>
-                                    </stackView>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="XIo-vX-jmR" secondAttribute="bottom" id="18i-BT-ZCf"/>
-                                    <constraint firstItem="XIo-vX-jmR" firstAttribute="trailing" secondItem="mWe-Fq-pqq" secondAttribute="trailing" id="T6k-Zd-sKc"/>
-                                    <constraint firstItem="XIo-vX-jmR" firstAttribute="top" secondItem="KTU-GG-j9p" secondAttribute="top" id="nV5-aN-UPq"/>
-                                    <constraint firstItem="XIo-vX-jmR" firstAttribute="leading" secondItem="KTU-GG-j9p" secondAttribute="leading" id="omi-X5-qyg"/>
-                                    <constraint firstItem="XIo-vX-jmR" firstAttribute="leading" secondItem="gm9-CE-hUH" secondAttribute="leading" id="q2F-7X-z4p"/>
-                                    <constraint firstAttribute="trailing" secondItem="XIo-vX-jmR" secondAttribute="trailing" id="uN3-mK-fnx"/>
+                                    <constraint firstItem="ejb-sG-ffx" firstAttribute="top" secondItem="KTU-GG-j9p" secondAttribute="top" id="Ase-Xy-mec"/>
+                                    <constraint firstAttribute="bottom" secondItem="ejb-sG-ffx" secondAttribute="bottom" id="GmL-3G-UlC"/>
+                                    <constraint firstItem="ejb-sG-ffx" firstAttribute="width" secondItem="KTU-GG-j9p" secondAttribute="width" id="hN8-Aj-ORF"/>
+                                    <constraint firstAttribute="trailing" secondItem="ejb-sG-ffx" secondAttribute="trailing" id="owr-IO-Pxb"/>
+                                    <constraint firstItem="ejb-sG-ffx" firstAttribute="leading" secondItem="KTU-GG-j9p" secondAttribute="leading" id="tVB-MW-Zc5"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="mWe-Fq-pqq"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="gm9-CE-hUH"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E0L-j5-sU7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="KTU-GG-j9p" secondAttribute="bottom" id="0ld-Hk-qHs"/>
-                            <constraint firstItem="KTU-GG-j9p" firstAttribute="leading" secondItem="E0L-j5-sU7" secondAttribute="leading" id="5jZ-Kt-YKC"/>
-                            <constraint firstItem="KTU-GG-j9p" firstAttribute="top" secondItem="E0L-j5-sU7" secondAttribute="top" id="F1D-zb-Ieb"/>
-                            <constraint firstItem="KTU-GG-j9p" firstAttribute="trailing" secondItem="E0L-j5-sU7" secondAttribute="trailing" id="kd1-0e-IYe"/>
-                            <constraint firstItem="KTU-GG-j9p" firstAttribute="top" secondItem="E0L-j5-sU7" secondAttribute="top" id="mdj-yx-bfL"/>
-                            <constraint firstAttribute="bottom" secondItem="KTU-GG-j9p" secondAttribute="bottom" id="n7R-dR-Ko9"/>
-                            <constraint firstItem="KTU-GG-j9p" firstAttribute="trailing" secondItem="E0L-j5-sU7" secondAttribute="trailing" id="tqd-E2-Hi4"/>
-                            <constraint firstItem="KTU-GG-j9p" firstAttribute="leading" secondItem="E0L-j5-sU7" secondAttribute="leading" id="vC2-Ok-RAY"/>
+                            <constraint firstItem="KTU-GG-j9p" firstAttribute="top" secondItem="E0L-j5-sU7" secondAttribute="top" id="3FY-ef-MNd"/>
+                            <constraint firstItem="KTU-GG-j9p" firstAttribute="trailing" secondItem="E0L-j5-sU7" secondAttribute="trailing" id="LmM-CD-88X"/>
+                            <constraint firstItem="KTU-GG-j9p" firstAttribute="leading" secondItem="E0L-j5-sU7" secondAttribute="leading" id="XBa-f3-xSQ"/>
+                            <constraint firstItem="KTU-GG-j9p" firstAttribute="bottom" secondItem="E0L-j5-sU7" secondAttribute="bottom" id="a9l-g0-YdP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Eu9-4U-1cG"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Eu9-4U-1cG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6TZ-up-11J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,8 +187,18 @@ del Perú</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TB8-mB-Lwn">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Primary"/>
+                        <textAttributes key="titleTextAttributes">
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DNR-Hl-Zcj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="XKg-5p-KMI" kind="relationship" relationship="rootViewController" id="jrK-Mz-m2Q"/>
                     </connections>
@@ -174,7 +210,13 @@ del Perú</string>
     </scenes>
     <resources>
         <image name="Presentacion_main_image" width="780" height="536"/>
-        <image name="folder.badge.plus.fill" catalog="system" width="128" height="93"/>
+        <image name="folder.fill.badge.questionmark.ar" catalog="system" width="128" height="93"/>
+        <namedColor name="Primary">
+            <color red="0.8156862855" green="0.22745099660000001" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PrimaryCAII">
+            <color red="0.81599998474121094" green="0.22699999809265137" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

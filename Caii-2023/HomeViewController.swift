@@ -10,20 +10,24 @@ import UIKit
 class HomeViewController: UIViewController {
     let defaults = UserDefaults.standard
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "HOME22"
         // Do any additional setup after loading the view.
+        
     }
     
     
-    @IBAction func btn(_ sender: Any) {
-        
-        print(defaults.string(forKey: "isLoggedIn")!)
-        print(defaults.string(forKey: "version")!)
-        
-        
-    }
+//    @IBAction func btn(_ sender: Any) {
+//        
+//        print(defaults.string(forKey: "isLoggedIn")!)
+//        print(defaults.string(forKey: "version")!)
+//        
+//        
+//    }
     
     @IBAction func onLogoutPressed(_ sender: UIButton) {
         let domain = Bundle.main.bundleIdentifier!
