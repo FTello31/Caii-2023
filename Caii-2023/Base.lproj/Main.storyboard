@@ -7,10 +7,12 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Franie-Bold.ttf">
+            <string>Franie-Bold</string>
+        </array>
         <array key="Franie-Regular.ttf">
             <string>Franie-Regular</string>
         </array>
@@ -24,56 +26,253 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="27 de noviembre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df3-zM-1bL">
-                                <rect key="frame" x="114" y="127" width="165" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAU-nG-qE5">
-                                <rect key="frame" x="0.0" y="103" width="393" height="267"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAU-nG-qE5">
+                                <rect key="frame" x="0.0" y="103" width="392" height="282.33333333333331"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dK8-8l-Wkw">
+                                        <rect key="frame" x="10" y="38.000000000000014" width="372" height="224.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 de noviembre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df3-zM-1bL">
+                                                <rect key="frame" x="65.666666666666671" y="0.0" width="240.66666666666663" height="29"/>
+                                                <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqr-XJ-eCd">
+                                                <rect key="frame" x="2" y="37.000000000000014" width="368" height="187.33333333333337"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="yqe-tW-TiH">
+                                                        <rect key="frame" x="8" y="17" width="357.66666666666669" height="80"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="m0Z-tx-fom">
+                                                                <rect key="frame" x="0.0" y="0.0" width="227.66666666666666" height="80"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ceremonia de inaguración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOI-Uh-Td5">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="227.66666666666666" height="17"/>
+                                                                        <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hora: 8:45 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARv-LN-QUg">
+                                                                        <rect key="frame" x="0.0" y="43" width="107" height="11"/>
+                                                                        <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpc-y2-g9k">
+                                                                        <rect key="frame" x="0.0" y="80" width="222" height="0.0"/>
+                                                                        <string key="text">Lugar: Sala de las naciones
+             2 y 3, 8vo piso.</string>
+                                                                        <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDx-OH-OGP">
+                                                                <rect key="frame" x="262.66666666666669" y="0.0" width="95" height="80"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="80" id="q4m-8d-WqS"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="wDx-OH-OGP" firstAttribute="leading" secondItem="m0Z-tx-fom" secondAttribute="trailing" constant="30" id="36j-rb-ffQ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="wDx-OH-OGP" secondAttribute="trailing" constant="30" id="Oxr-bo-WI5"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="yqe-tW-TiH" firstAttribute="leading" secondItem="Hqr-XJ-eCd" secondAttribute="leading" constant="5" id="4Tz-tu-Ynr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yqe-tW-TiH" secondAttribute="bottom" constant="20" id="7uv-cx-UoL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yqe-tW-TiH" secondAttribute="trailing" constant="5" id="ov7-my-fih"/>
+                                                    <constraint firstItem="yqe-tW-TiH" firstAttribute="top" secondItem="Hqr-XJ-eCd" secondAttribute="top" constant="10" id="tWa-XJ-V1X"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="LightGreyCAII"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dK8-8l-Wkw" secondAttribute="bottom" constant="20" id="Ete-9s-LkL"/>
+                                    <constraint firstItem="dK8-8l-Wkw" firstAttribute="top" secondItem="DAU-nG-qE5" secondAttribute="top" constant="38" id="KCJ-lh-ipR"/>
+                                    <constraint firstAttribute="trailing" secondItem="dK8-8l-Wkw" secondAttribute="trailing" constant="10" id="btj-EY-dZ2"/>
+                                    <constraint firstItem="dK8-8l-Wkw" firstAttribute="leading" secondItem="DAU-nG-qE5" secondAttribute="leading" constant="10" id="xjn-bE-sef"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0V-4c-DZh">
-                                <rect key="frame" x="293" y="641" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lCJ-GG-3ym">
+                                <rect key="frame" x="16" y="437.33333333333331" width="360" height="122.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rCW-De-VCJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="122.66666666666667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0V-4c-DZh">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="gOC-fH-DbN"/>
+                                                    <constraint firstAttribute="height" constant="100" id="mT5-DB-B0T"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="icons8-presentation-60" imagePlacement="top" title="">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                    <color key="baseBackgroundColor" name="PrimaryCAII"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="V4p-xW-DHd" kind="show" id="YKt-zM-Pw6"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presentacion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPe-8P-Mjk">
+                                                <rect key="frame" x="0.0" y="108.00000000000006" width="100" height="14.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fFh-LO-Jan">
+                                        <rect key="frame" x="130" y="0.0" width="100" height="122.66666666666667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpu-WC-Guf">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="FlO-4b-Dn3"/>
+                                                    <constraint firstAttribute="height" constant="100" id="i6M-1x-Pr1"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="icons8-schedule-60" imagePlacement="top" title="">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                                    <color key="baseBackgroundColor" name="GreyCAII"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="tpx-I3-F0x" kind="show" id="rSJ-9c-FCq"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Programa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lG-Sy-VMJ">
+                                                <rect key="frame" x="0.0" y="108.00000000000006" width="100" height="14.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4tw-at-8U9">
+                                        <rect key="frame" x="260" y="0.0" width="100" height="122.66666666666667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ql-9Z-CNJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="CFZ-qR-gVR"/>
+                                                    <constraint firstAttribute="height" constant="100" id="NYQ-La-Wtp"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="icons8-library-60" imagePlacement="top" title="">
+                                                    <color key="baseBackgroundColor" name="YellowCAII"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="q0R-DI-hIr" kind="show" id="GY2-iR-1au"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sede" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pye-tW-tl7">
+                                                <rect key="frame" x="0.0" y="108.00000000000006" width="100" height="14.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BqS-e4-gwO">
+                                <rect key="frame" x="16" y="592" width="360" height="137"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v7L-NO-wGO">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="137"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfS-BB-fCT">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="0Rt-EW-FUs"/>
+                                                    <constraint firstAttribute="height" constant="100" id="RhA-XO-HLa"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="icons8-people-60 (1)" imagePlacement="top" title="">
+                                                    <color key="baseBackgroundColor" name="LightblueCAII"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="AqG-WT-Esl" kind="show" id="YLX-fd-xeo"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ponentes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IH-LB-ZUg">
+                                                <rect key="frame" x="0.0" y="108" width="100" height="29"/>
+                                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2zP-jE-L5C">
+                                        <rect key="frame" x="130" y="0.0" width="100" height="137"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03k-mM-nfe">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="SKy-TG-o3r"/>
+                                                    <constraint firstAttribute="height" constant="100" id="VXk-Mw-bYC"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="icons8-food-60" imagePlacement="top" title="">
+                                                    <color key="baseBackgroundColor" name="BlueCAII"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="FFr-hN-75N" kind="show" id="0SS-f1-i5w"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turismo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAu-lS-5fy">
+                                                <rect key="frame" x="0.0" y="108" width="100" height="29"/>
+                                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jnA-eX-bys">
+                                        <rect key="frame" x="260" y="0.0" width="100" height="137"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rs6-38-u8e">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="0Ft-i7-Hcs"/>
+                                                    <constraint firstAttribute="height" constant="100" id="vr0-wh-Nf5"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="icons8-emergency-60" imagePlacement="top" title="">
+                                                    <color key="baseBackgroundColor" name="PrimaryCAII"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="NI9-eZ-F71" kind="show" id="T1r-gz-Ngc"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfr-fY-26P">
+                                                <rect key="frame" x="0.0" y="108" width="100" height="29"/>
+                                                <string key="text">Contactos de 
+emergencia</string>
+                                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlm-ig-3Rm">
+                                <rect key="frame" x="25" y="762" width="342" height="43"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="folder.fill.badge.questionmark.ar" catalog="system" imagePlacement="top" title="" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                    <color key="baseBackgroundColor" name="PrimaryCAII"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Cerrar Sesion">
+                                    <fontDescription key="titleFontDescription" name="Franie-Regular" family="Franie" pointSize="24"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" name="LightGreyCAII"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="V4p-xW-DHd" kind="show" id="YKt-zM-Pw6"/>
-                                </connections>
-                            </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rye-HV-ab2">
-                                <rect key="frame" x="16" y="378" width="361" height="306"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pMk-IN-DFt">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="idO-ie-y3g">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kxi-e4-esE">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlm-ig-3Rm">
-                                <rect key="frame" x="104" y="750" width="184" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Cerrar Sesion"/>
                                 <connections>
                                     <action selector="onLogoutPressed:" destination="XKg-5p-KMI" eventType="touchUpInside" id="hB0-cs-SCN"/>
                                 </connections>
@@ -81,15 +280,153 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lLS-0F-0gu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lCJ-GG-3ym" firstAttribute="top" secondItem="DAU-nG-qE5" secondAttribute="bottom" constant="52" id="1lm-Ds-8cm"/>
+                            <constraint firstAttribute="trailing" secondItem="DAU-nG-qE5" secondAttribute="trailing" id="2P1-RJ-rzf"/>
+                            <constraint firstItem="lLS-0F-0gu" firstAttribute="trailing" secondItem="lCJ-GG-3ym" secondAttribute="trailing" constant="16" id="3NN-Wc-scA"/>
+                            <constraint firstItem="lLS-0F-0gu" firstAttribute="bottom" secondItem="Tlm-ig-3Rm" secondAttribute="bottom" constant="13" id="66G-1T-CKV"/>
+                            <constraint firstItem="lLS-0F-0gu" firstAttribute="trailing" secondItem="Tlm-ig-3Rm" secondAttribute="trailing" constant="25" id="9Pe-6y-Fqi"/>
+                            <constraint firstItem="Tlm-ig-3Rm" firstAttribute="leading" secondItem="lLS-0F-0gu" secondAttribute="leading" constant="25" id="P5b-ch-eew"/>
+                            <constraint firstItem="lLS-0F-0gu" firstAttribute="trailing" secondItem="BqS-e4-gwO" secondAttribute="trailing" constant="16" id="VC5-Ib-bFR"/>
+                            <constraint firstItem="DAU-nG-qE5" firstAttribute="top" secondItem="lLS-0F-0gu" secondAttribute="top" id="ZbN-DY-exG"/>
+                            <constraint firstItem="lCJ-GG-3ym" firstAttribute="leading" secondItem="lLS-0F-0gu" secondAttribute="leading" constant="16" id="hCr-Xp-2yq"/>
+                            <constraint firstItem="BqS-e4-gwO" firstAttribute="top" secondItem="lCJ-GG-3ym" secondAttribute="bottom" constant="32" id="kFh-gA-pji"/>
+                            <constraint firstItem="BqS-e4-gwO" firstAttribute="leading" secondItem="lLS-0F-0gu" secondAttribute="leading" constant="16" id="mdn-cS-25v"/>
+                            <constraint firstItem="BqS-e4-gwO" firstAttribute="top" secondItem="lCJ-GG-3ym" secondAttribute="bottom" constant="32" id="qkb-VR-a0X"/>
+                            <constraint firstItem="Tlm-ig-3Rm" firstAttribute="top" secondItem="BqS-e4-gwO" secondAttribute="bottom" constant="33" id="rpR-nV-loI"/>
+                            <constraint firstItem="DAU-nG-qE5" firstAttribute="leading" secondItem="lLS-0F-0gu" secondAttribute="leading" id="ynN-9x-ki0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bLx-5I-1x2"/>
-                    <connections>
-                        <outlet property="collectionView" destination="Rye-HV-ab2" id="C48-Eg-tFJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdp-oP-JMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959.5419847328244" y="762.67605633802816"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vXe-lD-Fgk">
+            <objects>
+                <viewController id="q0R-DI-hIr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ez3-Ya-SyB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sede" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj4-U4-fLU">
+                                <rect key="frame" x="148" y="549" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k7t-tW-vf3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ejv-GO-qC1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpS-hu-eMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="436"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MXK-hQ-QrB">
+            <objects>
+                <viewController id="AqG-WT-Esl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KuI-Wd-6d8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ponentes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7s-2n-g49">
+                                <rect key="frame" x="160" y="226" width="72" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1yz-MK-ex5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N5J-ch-VA9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WL-5s-beP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858.7786259541983" y="1191.549295774648"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vdd-DV-MVP">
+            <objects>
+                <viewController id="FFr-hN-75N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nVn-dr-CiN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turismo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9e-i6-utC">
+                                <rect key="frame" x="175" y="337" width="61" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="46t-1x-pUF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SLz-rr-ZnM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCm-Yh-MZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="1901"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rVf-Vp-eMR">
+            <objects>
+                <viewController id="NI9-eZ-F71" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xz5-fe-opa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="emergencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPe-qt-GC4">
+                                <rect key="frame" x="175" y="351" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k5Z-h6-fnh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7n2-aI-MGz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cE5-xn-FPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="2599"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xfL-N9-EZE">
+            <objects>
+                <viewController id="tpx-I3-F0x" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWI-WD-YWo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="programa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boY-cO-vdo">
+                                <rect key="frame" x="94" y="342" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pXJ-1H-5J8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qGK-SC-4wo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elu-nU-Th0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858.7786259541983" y="-256.33802816901408"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rfb-53-Cn7">
@@ -130,7 +467,7 @@ del Perú</string>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t58-Jz-1kD">
                                                         <rect key="frame" x="0.0" y="145.33333333333337" width="377" height="408"/>
-                                                        <mutableString key="text">La Conferencia Anual Internacional por la Integridad-CAII 2023, es un espacio académico global que fomenta el análisis y debate experto sobre integridad y anticorrupción. Con el tema "Frenando la corrupción: Estrategias colaborativas y sanciones", se exploran innovaciones en teorías, estrategias y roles multiactor en la investigación y sanción de la corrupción. Esta novena edición se alinea con nuestra estrategia institucional para reducir la corrupción, gestionar eficazmente recursos públicos y fomentar valores e integridad. Únete a este encuentro especializado que busca impulsar el conocimiento y acceso a buenas prácticas en integridad pública. ¡Bienvenidos a la CAII 2023!</mutableString>
+                                                        <string key="text">La Conferencia Anual Internacional por la Integridad-CAII 2023, es un espacio académico global que fomenta el análisis y debate experto sobre integridad y anticorrupción. Con el tema "Frenando la corrupción: Estrategias colaborativas y sanciones", se exploran innovaciones en teorías, estrategias y roles multiactor en la investigación y sanción de la corrupción. Esta novena edición se alinea con nuestra estrategia institucional para reducir la corrupción, gestionar eficazmente recursos públicos y fomentar valores e integridad. Únete a este encuentro especializado que busca impulsar el conocimiento y acceso a buenas prácticas en integridad pública. ¡Bienvenidos a la CAII 2023!</string>
                                                         <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -177,7 +514,7 @@ del Perú</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6TZ-up-11J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838.9312977099237" y="762.67605633802816"/>
+            <point key="canvasLocation" x="1859" y="-930"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ojJ-63-XqE">
@@ -210,13 +547,36 @@ del Perú</string>
     </scenes>
     <resources>
         <image name="Presentacion_main_image" width="780" height="536"/>
-        <image name="folder.fill.badge.questionmark.ar" catalog="system" width="128" height="93"/>
+        <image name="icons8-emergency-60" width="60" height="60"/>
+        <image name="icons8-food-60" width="60" height="60"/>
+        <image name="icons8-library-60" width="60" height="60"/>
+        <image name="icons8-people-60 (1)" width="60" height="60"/>
+        <image name="icons8-presentation-60" width="60" height="60"/>
+        <image name="icons8-schedule-60" width="60" height="60"/>
+        <namedColor name="BlueCAII">
+            <color red="0.075000002980232239" green="0.20399999618530273" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="GreyCAII">
+            <color red="0.28999999165534973" green="0.28999999165534973" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="LightGreyCAII">
+            <color red="0.85098040100000005" green="0.85098040100000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="LightblueCAII">
+            <color red="0.27799999713897705" green="0.59200000762939453" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="Primary">
             <color red="0.8156862855" green="0.22745099660000001" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="PrimaryCAII">
             <color red="0.81599998474121094" green="0.22699999809265137" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <namedColor name="YellowCAII">
+            <color red="0.90600001811981201" green="0.63099998235702515" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

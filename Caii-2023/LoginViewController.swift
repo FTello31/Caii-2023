@@ -30,8 +30,8 @@ class LoginViewController: UIViewController {
             saveAuthenticatedUser(inputDNI.text! , "offline")
             goToMainStoryboard();
         } else{
-            let alert = UIAlertController(title: "Hey", message: "This is  one Alert", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Working!!", style: UIAlertAction.Style.default, handler: nil))
+            let alert = UIAlertController(title: "Hey", message: "DNI input esta vacio", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
         
