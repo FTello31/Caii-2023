@@ -60,6 +60,9 @@ adipiscing elit. Integer a venenatis sapien...</string>
                                         <color key="backgroundColor" name="PrimaryCAII"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToDetailAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uea-55-m7N"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>

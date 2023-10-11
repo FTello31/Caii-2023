@@ -14,6 +14,8 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var goToDetailButton: UIButton!
     
+    var delegate: PonentesViewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         print("a")
@@ -24,5 +26,13 @@ class TableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
+    
+    
+//    @IBAction func goToDetailAction(_ sender: Any) {
+//        print(sender)
+//        delegate?.goToPonenteDetail(object: sender)
+//
+//    }
+//    
     
 }
