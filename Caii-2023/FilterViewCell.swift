@@ -14,12 +14,12 @@ class FilterViewCell: UICollectionViewCell {
     @IBOutlet weak var viewFilter: UIView!
     
     override func awakeFromNib() {
-        viewFilter.addPurpleBorderAndCorner()
+        viewFilter.addBlackBorderAndCorner()
     }
 }
 
 extension UIView {
-    func addPurpleBorderAndCorner() {
+    func addBlackBorderAndCorner() {
         layer.cornerRadius = 8
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1.5

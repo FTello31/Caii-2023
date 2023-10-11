@@ -12,15 +12,59 @@ class PonentesViewController: UIViewController {
     
     var filters = ["Conferencia","Panel","Foro","Coloquio"]
         
-    @IBOutlet weak var collectionViewFilter: UICollectionView!
+    //    var ponentes: [PonentesData] = []
+    var ponentes: [String] = []
+
     
-    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
+    @IBOutlet weak var collectionViewFilter: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
+    
+//    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+
+        loadPonentes()
     }
     
     
+    func loadPonentes(){
+//        ponentes = []
+        ponentes =  ["Conferencia","Conferencia","Conferencia","Panel","Foro"]
+
+        print(ponentes)
+        
+        DispatchQueue.main.async {
+               self.tableView.reloadData()
+//            let indexPath = IndexPath(row: self.ponentes.count - 1, section: 0)
+//            self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+        }
+//        ponentes = [
+//            {id:1,name:"gerardo",category:"Conferencia"},
+//
+//            {"id":1,"name":"gerardo","categoria":"Conferencia"},
+//            {"id":1,"name":"gerardo","Category":"Conferencia"},
+//        ]
+    }
+    
+    func filterPonentes( category: String){
+        ponentes =  ["Conferencia","Conferencia","Conferencia","Panel","Foro"]
+
+        print(ponentes)
+
+        ponentes = ponentes.filter{ ponente in
+          return ponente == category
+        }
+
+        print(ponentes)
+
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
     
 }
 
@@ -53,7 +97,7 @@ extension PonentesViewController: UICollectionViewDelegate,UICollectionViewDataS
         cell.labelFilterName.textColor = .white
         cell.viewFilter.backgroundColor = .black
         
-        
+        filterPonentes(category: cell.labelFilterName.text ?? "aaa")
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -62,6 +106,28 @@ extension PonentesViewController: UICollectionViewDelegate,UICollectionViewDataS
         cell.labelFilterName.textColor = .black
         cell.viewFilter.backgroundColor = .white
 
+    }
+    
+}
+
+
+
+extension PonentesViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let ponente = ponentes[indexPath.row]
+        print(ponente)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
+        cell.nameLabel.text = ponente
+        cell.descriptionLabel.text = "descriocion escion \(ponente)"
+        
+        //cell.imageViewPhoto =
+      
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ponentes.count
     }
     
 }

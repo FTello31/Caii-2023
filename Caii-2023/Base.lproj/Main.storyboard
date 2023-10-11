@@ -553,23 +553,32 @@ del Perú</string>
                                     <outlet property="delegate" destination="Dij-B1-ec3" id="XlK-wY-3bn"/>
                                 </connections>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aDi-4I-zwt">
+                                <rect key="frame" x="0.0" y="183" width="393" height="635"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MZl-yN-5wR"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="aDi-4I-zwt" firstAttribute="leading" secondItem="MZl-yN-5wR" secondAttribute="leading" id="4HE-YP-bDr"/>
                             <constraint firstItem="ael-0Q-PK5" firstAttribute="leading" secondItem="MZl-yN-5wR" secondAttribute="leading" id="9AZ-gg-Usg"/>
+                            <constraint firstItem="aDi-4I-zwt" firstAttribute="top" secondItem="ael-0Q-PK5" secondAttribute="bottom" id="Cpv-uQ-i4x"/>
+                            <constraint firstItem="aDi-4I-zwt" firstAttribute="trailing" secondItem="MZl-yN-5wR" secondAttribute="trailing" id="UMy-mI-nKv"/>
                             <constraint firstItem="MZl-yN-5wR" firstAttribute="trailing" secondItem="ael-0Q-PK5" secondAttribute="trailing" id="X7d-b6-VqV"/>
                             <constraint firstItem="ael-0Q-PK5" firstAttribute="top" secondItem="MZl-yN-5wR" secondAttribute="top" id="cok-1y-Lwp"/>
+                            <constraint firstItem="aDi-4I-zwt" firstAttribute="bottom" secondItem="MZl-yN-5wR" secondAttribute="bottom" id="hjM-Za-YuC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="G2E-r1-as1"/>
                     <connections>
                         <outlet property="collectionViewFilter" destination="ael-0Q-PK5" id="Br8-il-Jhb"/>
+                        <outlet property="tableView" destination="aDi-4I-zwt" id="IXQ-oc-2NX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsI-B1-SlH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1859" y="1156"/>
+            <point key="canvasLocation" x="1858.7786259541983" y="1154.9295774647887"/>
         </scene>
     </scenes>
     <resources>

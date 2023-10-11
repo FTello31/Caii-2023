@@ -17,3 +17,9 @@ struct Presentation: Codable {
     let job: String
     let text: String
 }
+
+struct PonentesData: Codable {
+    let name: String
+    let id: Int
+    let category: String
+}
