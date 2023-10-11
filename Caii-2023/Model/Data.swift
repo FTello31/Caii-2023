@@ -23,3 +23,9 @@ struct PonentesData: Codable {
     let id: Int
     let category: String
 }
+
+struct EmergencyPhones: Codable {
+    let name: String
+    let number: Int
+    let category: String
+}

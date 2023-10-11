@@ -12,9 +12,9 @@ class PonentesViewController: UIViewController {
     
     var filters = ["Conferencia","Panel","Foro","Coloquio"]
     
-        var ponentes: [PonentesData] = []
-//    var ponentes: [String] = []
-
+    var ponentes: [PonentesData] = []
+    //    var ponentes: [String] = []
+    
     
     @IBOutlet weak var collectionViewFilter: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
@@ -22,75 +22,68 @@ class PonentesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        title = "Ponentes"
+        //        title = "Ponentes"
         loadPonentes()
         configureTableView()
+        setFirstFilterSelected()
     }
     
-   func configureTableView(){
+    func loadPonentes(){
+        ponentes =  fetchData()
+    }
+    
+    func configureTableView(){
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
     }
     
     
-    func fetchData() -> [PonentesData] {
-            let video1 = PonentesData(name: "No Storyboards", id: 1, category: "Conferencia")
-            let video2 = PonentesData(name: "5 Soft Skills For Developers", id: 2, category: "Conferencia")
-            let video3 = PonentesData(name: "What's New in Xcode 11", id: 3, category: "Conferencia")
-            let video4 = PonentesData(name: "Patreon Revamp", id: 4, category: "Panel")
-            let video5 = PonentesData(name: "How I Got a Raise. $60k - $100k", id: 5, category: "Panel")
-            let video6 = PonentesData(name: "Shake Gesture", id: 6, category: "Panel")
-            let video7 = PonentesData(name: "2019 State of Salaries", id: 7, category: "Foro")
-            let video8 = PonentesData(name: "How to Build Your App Wirelessly", id: 8, category: "Foro")
-            let video9 = PonentesData(name: "Swift News 70", id: 9, category: "Foro")
-            let video10 = PonentesData(name: "Video 10", id: 10, category: "Foro")
-            
-            return [video1, video2, video3, video4, video5, video6, video7, video8, video9, video10]
-        }
-    
-    func loadPonentes(){
-        ponentes =  fetchData()
+    func setFirstFilterSelected(){
+        let indexPath = self.collectionViewFilter.indexPathsForSelectedItems?.last ?? IndexPath(item: 0, section: 0)
+        collectionViewFilter.selectItem(at: indexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition.left)
+        filterPonentes(category: filters[0])
     }
+    
     
     func filterPonentes( category: String){
-        ponentes = fetchData()
-
-        print(ponentes)
-
-        ponentes = ponentes.filter{ ponente in
+        loadPonentes()
+        
+        ponentes = ponentes.filter { ponente in
             return ponente.category == category
         }
-
-        print(ponentes)
         
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+        self.tableView.reloadData()
+        
     }
     
-    // this is the method that gets called by the cell through the delegate
-//    func goToPonenteDetail(object: Any) {
-//           let destination = PonenteDetailViewController()
-////           destination.object = object
-//           navigationController?.pushViewController(destination, animated: true)
-//
-//       }
-//    
+    func fetchData() -> [PonentesData] {
+        let video1 = PonentesData(name: "No Storyboards", id: 1, category: "Conferencia")
+        let video2 = PonentesData(name: "5 Soft Skills For Developers", id: 2, category: "Conferencia")
+        let video3 = PonentesData(name: "What's New in Xcode 11", id: 3, category: "Conferencia")
+        let video4 = PonentesData(name: "Patreon Revamp", id: 4, category: "Panel")
+        let video5 = PonentesData(name: "How I Got a Raise. $60k - $100k", id: 5, category: "Panel")
+        let video6 = PonentesData(name: "Shake Gesture", id: 6, category: "Panel")
+        let video7 = PonentesData(name: "2019 State of Salaries", id: 7, category: "Foro")
+        let video8 = PonentesData(name: "How to Build Your App Wirelessly", id: 8, category: "Foro")
+        let video9 = PonentesData(name: "Swift News 70", id: 9, category: "Foro")
+        let video10 = PonentesData(name: "Video 10", id: 10, category: "Foro")
+        
+        return [video1, video2, video3, video4, video5, video6, video7, video8, video9, video10]
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    // Get the new view controller using segue.destination.
-    // Pass the selected object to the new view controller.
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
         if segue.destination is PonenteDetailViewController {
             let vc = segue.destination as? PonenteDetailViewController
             let detailToSend = sender as? PonentesData
-            print("***")
-            print("***")
+//            print("***")
             vc?.detail = detailToSend
             vc?.title = "title from prepare "
             
-    }
+        }
         
     }
 }
@@ -103,8 +96,8 @@ extension PonentesViewController: UICollectionViewDelegate,UICollectionViewDataS
         return filters.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCell", for: indexPath) as? FilterViewCell
-//            else { return UICollectionViewCell() }
+        //        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCell", for: indexPath) as? FilterViewCell
+        //            else { return UICollectionViewCell() }
         let cell = collectionView.dequeueReusableCell(ofType: FilterViewCell.self, for: indexPath)
         cell.labelFilterName.text = filters[indexPath.item]
         if cell.isSelected {
@@ -124,7 +117,7 @@ extension PonentesViewController: UICollectionViewDelegate,UICollectionViewDataS
         cell.labelFilterName.textColor = .white
         cell.viewFilter.backgroundColor = .black
         
-        filterPonentes(category: cell.labelFilterName.text ?? "aaa")
+        filterPonentes(category: cell.labelFilterName.text!)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -132,7 +125,7 @@ extension PonentesViewController: UICollectionViewDelegate,UICollectionViewDataS
         cell.isSelected = false
         cell.labelFilterName.textColor = .black
         cell.viewFilter.backgroundColor = .white
-
+        
     }
     
 }
@@ -145,10 +138,10 @@ extension PonentesViewController: UITableViewDataSource, UITableViewDelegate {
         print(ponente)
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
         cell.nameLabel.text = ponente.name
-        cell.descriptionLabel.text = "descriocion escion \(ponente.name)"
+        cell.descriptionLabel.text = "descripcion escion \(ponente.name)"
         
         //cell.imageViewPhoto =
-      
+        
         return cell
     }
     
@@ -157,17 +150,14 @@ extension PonentesViewController: UITableViewDataSource, UITableViewDelegate {
         return ponentes.count
     }
     
-   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        print("didSelectRowAtdidSelectRowAtdidSelectRowAt")
-
-        let cell = tableView.cellForRow(at: indexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let cell = tableView.cellForRow(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
-                                             
-       performSegue(withIdentifier: "ponenteDetailSegue", sender: ponentes[indexPath.row])
+        
+        performSegue(withIdentifier: "ponenteDetailSegue", sender: ponentes[indexPath.row])
     }
     
     
-   
+    
     
 }

@@ -17,10 +17,17 @@ class PonenteDetailViewController: UIViewController {
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
 
+    @IBOutlet weak var viewRedContainer: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "DETAIL11111"
         // Do any additional setup after loading the view.
+        setup()
+    }
+    
+
+    func setup(){
         if let detailUnwrapped = detail {
                 print(detailUnwrapped)
             ponenteNameLabel.text = detailUnwrapped.name
@@ -28,8 +35,6 @@ class PonenteDetailViewController: UIViewController {
             descriptionLabel.text = detailUnwrapped.category
             }
     }
-    
-
     /*
     // MARK: - Navigation
 
