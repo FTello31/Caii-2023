@@ -7,6 +7,13 @@
 
 import Foundation
 
+protocol ListItem {
+    var name: String { get }
+    var id: Int { get }
+    var description: String { get }
+    // Otras propiedades comunes si es necesario
+}
+
 struct Data: Codable {
 //    let name: String
     let presentation: Presentation
@@ -28,4 +35,18 @@ struct EmergencyPhones: Codable {
     let name: String
     let number: Int
     let category: String
+}
+
+struct TourismPlaces: Codable,ListItem {
+    let name: String
+    let id: Int
+    let description: String
+}
+
+struct Restaurants: Codable,ListItem {
+    let name: String
+    let id: Int
+    let description: String
+    let location: String
+    let website: String
 }

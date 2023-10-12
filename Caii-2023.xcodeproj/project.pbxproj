@@ -12,6 +12,8 @@
 		ED1A6CAB2AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA92AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift */; };
 		ED1A6CAC2AD73BAD00008622 /* EmergencyPhonesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1A6CAA2AD73BAD00008622 /* EmergencyPhonesTableViewCell.xib */; };
 		ED1A6CAF2AD7427200008622 /* TourismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CAE2AD7427200008622 /* TourismViewController.swift */; };
+		ED1A6CB72AD75AEC00008622 /* TourismPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CB62AD75AEC00008622 /* TourismPlacesViewController.swift */; };
+		ED1A6CB92AD75B3A00008622 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CB82AD75B3A00008622 /* RestaurantsViewController.swift */; };
 		ED692E852AD495AE00CD928D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED692E842AD495AE00CD928D /* Colors.xcassets */; };
 		ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C512AD6458A0078ABDB /* PonentesViewController.swift */; };
 		ED779C582AD645A90078ABDB /* FilterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C562AD645A80078ABDB /* FilterViewCell.swift */; };
@@ -20,7 +22,6 @@
 		ED779C5D2AD6562E0078ABDB /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED779C5B2AD6562E0078ABDB /* TableViewCell.xib */; };
 		EDB8A2D62AD21C88002A0980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A2D52AD21C88002A0980 /* AppDelegate.swift */; };
 		EDB8A2D82AD21C88002A0980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A2D72AD21C88002A0980 /* SceneDelegate.swift */; };
-		EDB8A2DA2AD21C88002A0980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A2D92AD21C88002A0980 /* ViewController.swift */; };
 		EDB8A2DD2AD21C88002A0980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB8A2DB2AD21C88002A0980 /* Main.storyboard */; };
 		EDB8A2E02AD21C88002A0980 /* Caii_2023.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A2DE2AD21C88002A0980 /* Caii_2023.xcdatamodeld */; };
 		EDB8A2E22AD21C89002A0980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB8A2E12AD21C89002A0980 /* Assets.xcassets */; };
@@ -61,6 +62,8 @@
 		ED1A6CA92AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyPhonesTableViewCell.swift; sourceTree = "<group>"; };
 		ED1A6CAA2AD73BAD00008622 /* EmergencyPhonesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmergencyPhonesTableViewCell.xib; sourceTree = "<group>"; };
 		ED1A6CAE2AD7427200008622 /* TourismViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismViewController.swift; sourceTree = "<group>"; };
+		ED1A6CB62AD75AEC00008622 /* TourismPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismPlacesViewController.swift; sourceTree = "<group>"; };
+		ED1A6CB82AD75B3A00008622 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
 		ED692E842AD495AE00CD928D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		ED779C512AD6458A0078ABDB /* PonentesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonentesViewController.swift; sourceTree = "<group>"; };
 		ED779C562AD645A80078ABDB /* FilterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewCell.swift; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		EDB8A2D22AD21C88002A0980 /* Caii-2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caii-2023.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB8A2D52AD21C88002A0980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDB8A2D72AD21C88002A0980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EDB8A2D92AD21C88002A0980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDB8A2DC2AD21C88002A0980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDB8A2DF2AD21C88002A0980 /* Caii_2023.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Caii_2023.xcdatamodel; sourceTree = "<group>"; };
 		EDB8A2E12AD21C89002A0980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +128,58 @@
 			path = EmergencyPhones;
 			sourceTree = "<group>";
 		};
+		ED1A6CB02AD7544400008622 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				ED779C562AD645A80078ABDB /* FilterViewCell.swift */,
+				ED779C5A2AD6562E0078ABDB /* TableViewCell.swift */,
+				ED779C5B2AD6562E0078ABDB /* TableViewCell.xib */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		ED1A6CB12AD754D500008622 /* Ponentes */ = {
+			isa = PBXGroup;
+			children = (
+				ED779C512AD6458A0078ABDB /* PonentesViewController.swift */,
+				ED1A6CA52AD6DE3600008622 /* PonenteDetailViewController.swift */,
+			);
+			path = Ponentes;
+			sourceTree = "<group>";
+		};
+		ED1A6CB22AD755EC00008622 /* Tourism */ = {
+			isa = PBXGroup;
+			children = (
+				ED1A6CAE2AD7427200008622 /* TourismViewController.swift */,
+				ED1A6CB62AD75AEC00008622 /* TourismPlacesViewController.swift */,
+				ED1A6CB82AD75B3A00008622 /* RestaurantsViewController.swift */,
+			);
+			path = Tourism;
+			sourceTree = "<group>";
+		};
+		ED1A6CB32AD755FD00008622 /* Sede */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sede;
+			sourceTree = "<group>";
+		};
+		ED1A6CB42AD7562900008622 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		ED1A6CB52AD7568800008622 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EDB8A3132AD22556002A0980 /* LoginViewController.swift */,
+				EDB8A3112AD224FD002A0980 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		ED692E832AD494D800CD928D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,21 +217,18 @@
 				EDB8A3082AD21D67002A0980 /* Fonts */,
 				EDB8A2D52AD21C88002A0980 /* AppDelegate.swift */,
 				EDB8A2D72AD21C88002A0980 /* SceneDelegate.swift */,
-				ED1A6CAD2AD7408400008622 /* EmergencyPhones */,
-				EDB8A2D92AD21C88002A0980 /* ViewController.swift */,
+				ED1A6CB52AD7568800008622 /* Login */,
 				EDB8A30D2AD21F81002A0980 /* HomeViewController.swift */,
-				ED779C572AD645A90078ABDB /* Extension.swift */,
-				ED779C562AD645A80078ABDB /* FilterViewCell.swift */,
-				ED779C5A2AD6562E0078ABDB /* TableViewCell.swift */,
-				ED779C5B2AD6562E0078ABDB /* TableViewCell.xib */,
-				ED779C512AD6458A0078ABDB /* PonentesViewController.swift */,
-				ED1A6CA52AD6DE3600008622 /* PonenteDetailViewController.swift */,
-				EDB8A3132AD22556002A0980 /* LoginViewController.swift */,
 				EDB8A2DB2AD21C88002A0980 /* Main.storyboard */,
-				ED1A6CAE2AD7427200008622 /* TourismViewController.swift */,
-				EDB8A3112AD224FD002A0980 /* Login.storyboard */,
-				ED692E832AD494D800CD928D /* Resources */,
+				ED1A6CB12AD754D500008622 /* Ponentes */,
+				ED1A6CB42AD7562900008622 /* Schedule */,
+				ED1A6CB32AD755FD00008622 /* Sede */,
+				ED1A6CB22AD755EC00008622 /* Tourism */,
+				ED1A6CAD2AD7408400008622 /* EmergencyPhones */,
+				ED1A6CB02AD7544400008622 /* Reusable */,
+				ED779C572AD645A90078ABDB /* Extension.swift */,
 				EDB8A2E32AD21C89002A0980 /* LaunchScreen.storyboard */,
+				ED692E832AD494D800CD928D /* Resources */,
 				EDB8A2E62AD21C89002A0980 /* Info.plist */,
 				EDB8A2DE2AD21C88002A0980 /* Caii_2023.xcdatamodeld */,
 			);
@@ -359,14 +410,15 @@
 			files = (
 				EDD5A1D12AD284C6008BA59F /* DataModel.swift in Sources */,
 				ED1A6CA82AD7331E00008622 /* EmergencyPhonesViewController.swift in Sources */,
+				ED1A6CB72AD75AEC00008622 /* TourismPlacesViewController.swift in Sources */,
 				EDB8A3142AD22556002A0980 /* LoginViewController.swift in Sources */,
 				EDB8A30E2AD21F81002A0980 /* HomeViewController.swift in Sources */,
 				ED1A6CA62AD6DE3600008622 /* PonenteDetailViewController.swift in Sources */,
 				ED779C592AD645A90078ABDB /* Extension.swift in Sources */,
 				ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */,
-				EDB8A2DA2AD21C88002A0980 /* ViewController.swift in Sources */,
 				ED1A6CAF2AD7427200008622 /* TourismViewController.swift in Sources */,
 				EDB8A2D62AD21C88002A0980 /* AppDelegate.swift in Sources */,
+				ED1A6CB92AD75B3A00008622 /* RestaurantsViewController.swift in Sources */,
 				ED1A6CAB2AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift in Sources */,
 				EDB8A2E02AD21C88002A0980 /* Caii_2023.xcdatamodeld in Sources */,
 				EDB8A2D82AD21C88002A0980 /* SceneDelegate.swift in Sources */,

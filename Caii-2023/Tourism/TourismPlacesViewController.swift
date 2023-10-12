@@ -1,5 +1,5 @@
 //
-//  TurismViewController.swift
+//  TourismPlacesViewController.swift
 //  Caii-2023
 //
 //  Created by Fernando Tello on 11/10/23.
@@ -7,7 +7,9 @@
 
 import UIKit
 
-class TourismViewController: UIViewController {
+class TourismPlacesViewController: UIViewController {
+
+    var detail: TourismPlaces?
 
     override func viewDidLoad() {
         super.viewDidLoad()
