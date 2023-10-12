@@ -11,12 +11,24 @@ class RestaurantsViewController: UIViewController {
 
     var detail: Restaurants?
 
+    @IBOutlet weak var restaurantNameLabel: UILabel!
+    @IBOutlet weak var restaurantDescriptionLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setup()
         // Do any additional setup after loading the view.
     }
     
+    func setup(){
+        if let detailUnwrapped = detail {
+                print(detailUnwrapped)
+            restaurantNameLabel.text = detailUnwrapped.name
+//            timeLabel.text = String (detailUnwrapped.id)
+            restaurantDescriptionLabel.text = detailUnwrapped.description
+            }
+    }
 
     /*
     // MARK: - Navigation

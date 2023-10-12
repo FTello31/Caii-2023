@@ -97,7 +97,7 @@ class TourismViewController: UIViewController {
             let detailToSend = sender as? TourismPlaces
 //            print("***")
             vc?.detail = detailToSend
-            vc?.title = "title from preparetoyris, "
+            vc?.title = "title from prepare toyris, "
             
         }
         if segue.destination is RestaurantsViewController {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0CAA0D2AD88D0A00AC4159 /* SedeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA0C2AD88D0A00AC4159 /* SedeMainViewController.swift */; };
+		ED0CAA0F2AD8924D00AC4159 /* WhereIsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */; };
+		ED0CAA112AD89CE700AC4159 /* HowToGetThereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */; };
 		ED1A6CA62AD6DE3600008622 /* PonenteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA52AD6DE3600008622 /* PonenteDetailViewController.swift */; };
 		ED1A6CA82AD7331E00008622 /* EmergencyPhonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA72AD7331E00008622 /* EmergencyPhonesViewController.swift */; };
 		ED1A6CAB2AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA92AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift */; };
@@ -57,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED0CAA0C2AD88D0A00AC4159 /* SedeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SedeMainViewController.swift; sourceTree = "<group>"; };
+		ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsViewController.swift; sourceTree = "<group>"; };
+		ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToGetThereViewController.swift; sourceTree = "<group>"; };
 		ED1A6CA52AD6DE3600008622 /* PonenteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonenteDetailViewController.swift; sourceTree = "<group>"; };
 		ED1A6CA72AD7331E00008622 /* EmergencyPhonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyPhonesViewController.swift; sourceTree = "<group>"; };
 		ED1A6CA92AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyPhonesTableViewCell.swift; sourceTree = "<group>"; };
@@ -160,6 +166,8 @@
 		ED1A6CB32AD755FD00008622 /* Sede */ = {
 			isa = PBXGroup;
 			children = (
+				ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */,
+				ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */,
 			);
 			path = Sede;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 				ED1A6CB52AD7568800008622 /* Login */,
 				EDB8A30D2AD21F81002A0980 /* HomeViewController.swift */,
 				EDB8A2DB2AD21C88002A0980 /* Main.storyboard */,
+				ED0CAA0C2AD88D0A00AC4159 /* SedeMainViewController.swift */,
 				ED1A6CB12AD754D500008622 /* Ponentes */,
 				ED1A6CB42AD7562900008622 /* Schedule */,
 				ED1A6CB32AD755FD00008622 /* Sede */,
@@ -408,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0CAA112AD89CE700AC4159 /* HowToGetThereViewController.swift in Sources */,
 				EDD5A1D12AD284C6008BA59F /* DataModel.swift in Sources */,
 				ED1A6CA82AD7331E00008622 /* EmergencyPhonesViewController.swift in Sources */,
 				ED1A6CB72AD75AEC00008622 /* TourismPlacesViewController.swift in Sources */,
@@ -416,7 +426,9 @@
 				ED1A6CA62AD6DE3600008622 /* PonenteDetailViewController.swift in Sources */,
 				ED779C592AD645A90078ABDB /* Extension.swift in Sources */,
 				ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */,
+				ED0CAA0F2AD8924D00AC4159 /* WhereIsViewController.swift in Sources */,
 				ED1A6CAF2AD7427200008622 /* TourismViewController.swift in Sources */,
+				ED0CAA0D2AD88D0A00AC4159 /* SedeMainViewController.swift in Sources */,
 				EDB8A2D62AD21C88002A0980 /* AppDelegate.swift in Sources */,
 				ED1A6CB92AD75B3A00008622 /* RestaurantsViewController.swift in Sources */,
 				ED1A6CAB2AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift in Sources */,

@@ -11,13 +11,25 @@ class TourismPlacesViewController: UIViewController {
 
     var detail: TourismPlaces?
 
+    @IBOutlet weak var tourismName: UILabel!
+    @IBOutlet weak var tourismDescription: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setup()
         // Do any additional setup after loading the view.
     }
     
-
+    
+    func setup(){
+        if let detailUnwrapped = detail {
+                print(detailUnwrapped)
+            tourismName.text = detailUnwrapped.name
+//            timeLabel.text = String (detailUnwrapped.id)
+            tourismDescription.text = detailUnwrapped.description
+            }
+    }
     /*
     // MARK: - Navigation
 
