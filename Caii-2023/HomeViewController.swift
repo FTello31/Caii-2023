@@ -13,13 +13,15 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        title = ""
-        // Do any additional setup after loading the view.
-        
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setNavbar()
+        // Do any additional setup after loading the view.
+    }
     
     @IBAction func onLogoutPressed(_ sender: UIButton) {
         let domain = Bundle.main.bundleIdentifier!
@@ -29,7 +31,7 @@ class HomeViewController: UIViewController {
         
         // Pop to the root view controller (LoginViewController)
         //self.navigationController?.popToRootViewController(animated: true)
-
+        
         goToLoginStoryboard()
     }
     

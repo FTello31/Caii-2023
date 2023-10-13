@@ -22,6 +22,7 @@ class TourismViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNavbar()
         loadLists()
         configureTableView()
         setFirstFilterSelected()

@@ -411,7 +411,7 @@ emergencia</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Dm-s2-c2w">
-                                <rect key="frame" x="0.0" y="59" width="393" height="576"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="524"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOr-4d-COP">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1195"/>
@@ -738,7 +738,7 @@ lobortis. </string>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tEG-6W-p5P">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="676"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rh8-vH-sdt">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="caii_icono_primary" translatesAutoresizingMaskIntoConstraints="NO" id="Rh8-vH-sdt">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="262"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="350" id="B7H-I2-LVi"/>
@@ -1072,20 +1072,22 @@ del Perú</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yi8-GO-xEi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TB8-mB-Lwn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="TB8-mB-Lwn">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="Primary"/>
+                        <color key="backgroundColor" name="PrimaryCAII"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="0.0"/>
+                            <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="16"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DNR-Hl-Zcj">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="GreyCAII"/>
                     </toolbar>
                     <connections>
                         <segue destination="XKg-5p-KMI" kind="relationship" relationship="rootViewController" id="jrK-Mz-m2Q"/>
@@ -1509,9 +1511,6 @@ lobortis. </string>
         </namedColor>
         <namedColor name="LightblueCAII">
             <color red="0.27799999713897705" green="0.59200000762939453" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Primary">
-            <color red="0.8156862855" green="0.22745099660000001" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="PrimaryCAII">
             <color red="0.81599998474121094" green="0.22699999809265137" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

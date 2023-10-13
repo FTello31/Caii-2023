@@ -170,6 +170,7 @@
 		ED1A6CB32AD755FD00008622 /* Sede */ = {
 			isa = PBXGroup;
 			children = (
+				ED0CAA0C2AD88D0A00AC4159 /* SedeMainViewController.swift */,
 				ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */,
 				ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */,
 				EDC7D71F2AD9A6C800997971 /* GalleryViewController.swift */,
@@ -234,7 +235,6 @@
 				ED1A6CB52AD7568800008622 /* Login */,
 				EDB8A30D2AD21F81002A0980 /* HomeViewController.swift */,
 				EDB8A2DB2AD21C88002A0980 /* Main.storyboard */,
-				ED0CAA0C2AD88D0A00AC4159 /* SedeMainViewController.swift */,
 				ED1A6CB12AD754D500008622 /* Ponentes */,
 				ED1A6CB42AD7562900008622 /* Schedule */,
 				ED1A6CB32AD755FD00008622 /* Sede */,

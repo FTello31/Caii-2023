@@ -17,6 +17,8 @@ class RestaurantsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNavbar()
+
         setup()
         // Do any additional setup after loading the view.
     }

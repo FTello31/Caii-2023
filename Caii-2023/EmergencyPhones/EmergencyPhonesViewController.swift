@@ -19,9 +19,11 @@ class EmergencyPhonesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNavbar()
+        
         loadEmergencyPhones()
         configureTableView()
-//        setFirstFilterSelected()
+        setFirstFilterSelected()
         // Do any additional setup after loading the view.
     }
     
@@ -135,12 +137,12 @@ extension EmergencyPhonesViewController: UITableViewDataSource, UITableViewDeleg
     }
     
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-////        let cell = tableView.cellForRow(at: indexPath)
-//        tableView.deselectRow(at: indexPath, animated: true)
-//        
-//        performSegue(withIdentifier: "ponenteDetailSegue", sender: ponentes[indexPath.row])
-//    }
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    ////        let cell = tableView.cellForRow(at: indexPath)
+    //        tableView.deselectRow(at: indexPath, animated: true)
+    //
+    //        performSegue(withIdentifier: "ponenteDetailSegue", sender: ponentes[indexPath.row])
+    //    }
     
     
 }

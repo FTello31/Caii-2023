@@ -21,7 +21,7 @@ class PonenteDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "DETAIL11111"
+        self.setNavbar()
         // Do any additional setup after loading the view.
         setup()
     }

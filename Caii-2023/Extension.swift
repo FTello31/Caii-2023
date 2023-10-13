@@ -32,3 +32,21 @@ extension NSObject {
     }
     
 }
+
+
+extension UIViewController {
+    
+    func setNavbar(){
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "PrimaryCAII")
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
+        
+        navigationItem.titleView = UIImageView(image: UIImage(named: "CAII_logo_title"))
+        navigationItem.titleView?.contentMode = UIView.ContentMode.scaleAspectFill
+        navigationItem.titleView?.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        
+        navigationItem.backButtonTitle = " "
+    }
+}

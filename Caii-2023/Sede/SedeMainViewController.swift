@@ -13,7 +13,6 @@ class SedeMainViewController: UIViewController {
 
     
     @IBOutlet weak var collectionViewFilter: UICollectionView!
-    
     @IBOutlet weak var containerView: UIView!
     
     private lazy var whereIsViewController: WhereIsViewController = {
@@ -45,6 +44,7 @@ class SedeMainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNavbar()
         setFirstFilterSelected()
 
         // Do any additional setup after loading the view.
