@@ -37,6 +37,11 @@ class SedeMainViewController: UIViewController {
     }()
     
     
+    private lazy var galleryViewController: GalleryViewController = {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        var viewController = storyboard.instantiateViewController(withIdentifier: "GalleryViewController") as! GalleryViewController
+        return viewController
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +75,11 @@ class SedeMainViewController: UIViewController {
 //            add(asChildViewController: whereIsViewController)
         } else if(category == filters[1]) {
             containerView.addSubview(howToGetThereViewController.view)
+//
+//            remove(asChildViewController: whereIsViewController)
+//            add(asChildViewController: howToGetThereViewController)
+        } else if(category == filters[2]) {
+            containerView.addSubview(galleryViewController.view)
 //
 //            remove(asChildViewController: whereIsViewController)
 //            add(asChildViewController: howToGetThereViewController)

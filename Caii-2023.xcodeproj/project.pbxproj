@@ -38,6 +38,8 @@
 		EDB8A3122AD224FD002A0980 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB8A3112AD224FD002A0980 /* Login.storyboard */; };
 		EDB8A3142AD22556002A0980 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A3132AD22556002A0980 /* LoginViewController.swift */; };
 		EDB982562AD5B9570061D298 /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB982552AD5B9570061D298 /* icons.xcassets */; };
+		EDC7D7202AD9A6C800997971 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7D71F2AD9A6C800997971 /* GalleryViewController.swift */; };
+		EDC7D7232AD9AE4F00997971 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */; };
 		EDD5A1D12AD284C6008BA59F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D02AD284C6008BA59F /* DataModel.swift */; };
 		EDD5A1D32AD28532008BA59F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D22AD28532008BA59F /* Data.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +97,8 @@
 		EDB8A3112AD224FD002A0980 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EDB8A3132AD22556002A0980 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EDB982552AD5B9570061D298 /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
+		EDC7D71F2AD9A6C800997971 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EDD5A1D02AD284C6008BA59F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		EDD5A1D22AD28532008BA59F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +172,8 @@
 			children = (
 				ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */,
 				ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */,
+				EDC7D71F2AD9A6C800997971 /* GalleryViewController.swift */,
+				EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */,
 			);
 			path = Sede;
 			sourceTree = "<group>";
@@ -432,9 +438,11 @@
 				EDB8A2D62AD21C88002A0980 /* AppDelegate.swift in Sources */,
 				ED1A6CB92AD75B3A00008622 /* RestaurantsViewController.swift in Sources */,
 				ED1A6CAB2AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift in Sources */,
+				EDC7D7202AD9A6C800997971 /* GalleryViewController.swift in Sources */,
 				EDB8A2E02AD21C88002A0980 /* Caii_2023.xcdatamodeld in Sources */,
 				EDB8A2D82AD21C88002A0980 /* SceneDelegate.swift in Sources */,
 				ED779C5C2AD6562E0078ABDB /* TableViewCell.swift in Sources */,
+				EDC7D7232AD9AE4F00997971 /* GalleryCollectionViewCell.swift in Sources */,
 				EDD5A1D32AD28532008BA59F /* Data.swift in Sources */,
 				ED779C582AD645A90078ABDB /* FilterViewCell.swift in Sources */,
 			);

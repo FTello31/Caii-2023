@@ -414,7 +414,7 @@ emergencia</string>
                                 <rect key="frame" x="0.0" y="59" width="393" height="576"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOr-4d-COP">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="619"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1195"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAII logo  blanco" translatesAutoresizingMaskIntoConstraints="NO" id="63t-jf-oUz">
                                                 <rect key="frame" x="25" y="0.0" width="343" height="200"/>
@@ -423,10 +423,10 @@ emergencia</string>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5D1-To-3UK">
-                                                <rect key="frame" x="25" y="220" width="343" height="399"/>
+                                                <rect key="frame" x="25" y="220" width="343" height="975"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-Eo-ISU">
-                                                        <rect key="frame" x="20" y="20" width="303" height="359"/>
+                                                        <rect key="frame" x="20" y="20" width="303" height="935"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lima Centro de Convenciones LCC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFe-rI-UIn">
                                                                 <rect key="frame" x="0.0" y="0.0" width="275.66666666666669" height="57.666666666666664"/>
@@ -443,8 +443,8 @@ San Borja 15021</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV2-ec-vB7">
-                                                                <rect key="frame" x="0.0" y="200.33333333333331" width="303" height="158.66666666666669"/>
-                                                                <string key="text">Diseñado para responder a cuatro objetivos estratégicos: ser un motor cultural y económico del país, representar un lugar de encuentro en el corazón de la capital enraizado en la cultura colectiva peruana, convertirse en un hito arquitectónico singular, flexible y tecnológicamente avanzado, y finalmente, ser el detonante de la transformación urbana del Centro Cultural de la Nación y de su entorno próximo.</string>
+                                                                <rect key="frame" x="0.0" y="200.33333333333331" width="303" height="734.66666666666674"/>
+                                                                <mutableString key="text">Diseñado para responder a cuatro objetivos estratégicos: ser un motor cultural y económico del país, representar un lugar de encuentro en el corazón de la capital enraizado en la cultura colectiva peruana, convertirse en un hito arquitectónico singular, flexible y tecnológicamente avanzado, y finalmente, ser el detonante de la transformación urbana del Centro Cultural de la Nación y de su entorno próximo.Diseñado para responder a cuatro objetivos estratégicos: ser un motor cultural y económico del país, representar un lugar de encuentro en el corazón de la capital enraizado en la cultura colectiva peruana, convertirse en un hito arquitectónico singular, flexible y tecnológicamente avanzado, y finalmente, ser el detonante de la transformación urbana del Centro Cultural de la Nación y de su entorno próximo.Diseñado para responder a cuatro objetivos estratégicos: ser un motor cultural y económico del país, representar un lugar de encuentro en el corazón de la capital enraizado en la cultura colectiva peruana, convertirse en un hito arquitectónico singular, flexible y tecnológicamente avanzado, y finalmente, ser el detonante de la transformación urbana del Centro Cultural de la Nación y de su entorno próximo.Diseñado para responder a cuatro objetivos estratégicos: ser un motor cultural y económico del país, representar un lugar de encuentro en el corazón de la capital enraizado en la cultura colectiva peruana, convertirse en un hito arquitectónico singular, flexible y tecnológicamente avanzado, y finalmente, ser el detonante de la transformación urbana del Centro Cultural de la Nación y de su entorno próximo.Diseñado para responder a cuatro objetivos estratégicos: ser un motor cultural y económico del país, representar un lugar de encuentro en el corazón de la capital enraizado en la cultura colectiva peruana, convertirse en un hito arquitectónico singular, flexible y tecnológicamente avanzado, y finalmente, ser el detonante de la transformación urbana del Centro Cultural de la Nación y de su entorno próximo.</mutableString>
                                                                 <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1187,7 +1187,7 @@ del Perú</string>
                     <connections>
                         <outlet property="collectionViewFilter" destination="ael-0Q-PK5" id="Br8-il-Jhb"/>
                         <outlet property="tableView" destination="aDi-4I-zwt" id="IXQ-oc-2NX"/>
-                        <segue destination="dKg-ML-4gO" kind="show" identifier="I" id="vcD-ft-TbU"/>
+                        <segue destination="dKg-ML-4gO" kind="show" identifier="ponenteDetailSegue" id="vcD-ft-TbU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsI-B1-SlH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1341,12 +1341,149 @@ lobortis. </string>
                     <view key="view" contentMode="scaleToFill" id="tV7-Aa-TbN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2b6-Lq-Acv">
+                                <rect key="frame" x="0.0" y="79" width="393" height="739"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBL-OO-Bi4">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="408.66666666666669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjX-rb-JF7">
+                                                <rect key="frame" x="25" y="0.0" width="343" height="408.66666666666669"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="FSU-eX-W7k">
+                                                        <rect key="frame" x="20" y="20" width="303" height="368.66666666666669"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Av. de la Arqueología 206 - San Borja 15021" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTu-85-3Qa">
+                                                                <rect key="frame" x="0.0" y="0.0" width="267.66666666666669" height="33.666666666666664"/>
+                                                                <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maps_image" translatesAutoresizingMaskIntoConstraints="NO" id="DuQ-Fm-5p7">
+                                                                <rect key="frame" x="0.0" y="85.666666666666657" width="303" height="199.99999999999997"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="200" id="gn4-mf-Y2r"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ch1-vZ-qrc">
+                                                                <rect key="frame" x="0.0" y="337.66666666666669" width="146.66666666666666" height="31"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Abrir en mapas">
+                                                                    <fontDescription key="titleFontDescription" name="Franie-Regular" family="Franie" pointSize="14"/>
+                                                                    <color key="baseBackgroundColor" name="PrimaryCAII"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="openMaps:" destination="lmr-dc-3F2" eventType="touchUpInside" id="Riv-xh-Z70"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="FSU-eX-W7k" secondAttribute="trailing" constant="20" id="7ph-Dq-Lgl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="FSU-eX-W7k" secondAttribute="bottom" constant="20" id="OR1-5p-jTn"/>
+                                                    <constraint firstItem="FSU-eX-W7k" firstAttribute="leading" secondItem="WjX-rb-JF7" secondAttribute="leading" constant="20" id="bbS-E2-VtT"/>
+                                                    <constraint firstItem="FSU-eX-W7k" firstAttribute="top" secondItem="WjX-rb-JF7" secondAttribute="top" constant="20" id="eYt-p0-mIA"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="LightGreyCAII"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="WjX-rb-JF7" secondAttribute="bottom" id="0Fn-wp-tlC"/>
+                                            <constraint firstAttribute="trailing" secondItem="WjX-rb-JF7" secondAttribute="trailing" constant="25" id="47Z-FB-wE4"/>
+                                            <constraint firstItem="WjX-rb-JF7" firstAttribute="top" secondItem="HBL-OO-Bi4" secondAttribute="top" id="Ozi-qy-yIF"/>
+                                            <constraint firstItem="WjX-rb-JF7" firstAttribute="leading" secondItem="HBL-OO-Bi4" secondAttribute="leading" constant="25" id="pgF-E6-eSv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HBL-OO-Bi4" firstAttribute="top" secondItem="2b6-Lq-Acv" secondAttribute="top" id="7cM-wk-7Dh"/>
+                                    <constraint firstAttribute="bottom" secondItem="HBL-OO-Bi4" secondAttribute="bottom" id="F2L-M7-uRr"/>
+                                    <constraint firstItem="HBL-OO-Bi4" firstAttribute="leading" secondItem="2b6-Lq-Acv" secondAttribute="leading" id="R3r-n0-qoD"/>
+                                    <constraint firstItem="HBL-OO-Bi4" firstAttribute="width" secondItem="2b6-Lq-Acv" secondAttribute="width" id="cXD-zo-NA6"/>
+                                    <constraint firstAttribute="trailing" secondItem="HBL-OO-Bi4" secondAttribute="trailing" id="jnM-X4-WRU"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vrm-Al-G9i"/>
+                        <color key="backgroundColor" name="LightGreyCAII"/>
+                        <constraints>
+                            <constraint firstItem="2b6-Lq-Acv" firstAttribute="leading" secondItem="Vrm-Al-G9i" secondAttribute="leading" id="XkL-1d-KfJ"/>
+                            <constraint firstItem="2b6-Lq-Acv" firstAttribute="top" secondItem="Vrm-Al-G9i" secondAttribute="top" constant="20" id="bEO-oB-NUq"/>
+                            <constraint firstItem="2b6-Lq-Acv" firstAttribute="trailing" secondItem="Vrm-Al-G9i" secondAttribute="trailing" id="tJg-md-nnE"/>
+                            <constraint firstItem="Vrm-Al-G9i" firstAttribute="bottom" secondItem="2b6-Lq-Acv" secondAttribute="bottom" id="wbh-J6-OtG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1n-W4-PmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3601" y="446"/>
+            <point key="canvasLocation" x="3625" y="437"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="yhr-bD-TvH">
+            <objects>
+                <viewController storyboardIdentifier="GalleryViewController" id="A84-PW-1M3" customClass="GalleryViewController" customModule="Caii_2023" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bua-1O-ftu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aAE-KA-ual">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" name="LightGreyCAII"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t9i-VL-MPv">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCollectionViewCell" id="kfs-Bj-YrI" customClass="GalleryCollectionViewCell" customModule="Caii_2023" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="172"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="I7T-6r-bIW">
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="172"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WaJ-5v-re7">
+                                                    <rect key="frame" x="20" y="22" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="0s0-ud-pcZ"/>
+                                                        <constraint firstAttribute="width" constant="150" id="12e-Ef-Gvi"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WaJ-5v-re7" firstAttribute="top" secondItem="I7T-6r-bIW" secondAttribute="top" constant="22" id="Nyd-pr-2t3"/>
+                                                <constraint firstAttribute="bottom" secondItem="WaJ-5v-re7" secondAttribute="bottom" id="SP3-la-o6e"/>
+                                                <constraint firstAttribute="trailing" secondItem="WaJ-5v-re7" secondAttribute="trailing" constant="20" symbolic="YES" id="Upe-9v-HgN"/>
+                                                <constraint firstItem="WaJ-5v-re7" firstAttribute="leading" secondItem="I7T-6r-bIW" secondAttribute="leading" constant="20" symbolic="YES" id="dHl-nU-esC"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="WaJ-5v-re7" id="j14-i2-6oz"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xpP-6s-Gcg"/>
+                        <color key="backgroundColor" name="LightGreyCAII"/>
+                        <constraints>
+                            <constraint firstItem="aAE-KA-ual" firstAttribute="leading" secondItem="xpP-6s-Gcg" secondAttribute="leading" id="L0l-cL-IBd"/>
+                            <constraint firstItem="aAE-KA-ual" firstAttribute="top" secondItem="xpP-6s-Gcg" secondAttribute="top" id="WY2-FE-BHD"/>
+                            <constraint firstItem="aAE-KA-ual" firstAttribute="trailing" secondItem="xpP-6s-Gcg" secondAttribute="trailing" id="Wkx-cH-hnV"/>
+                            <constraint firstItem="aAE-KA-ual" firstAttribute="bottom" secondItem="xpP-6s-Gcg" secondAttribute="bottom" id="p3s-et-Anb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionGallery" destination="aAE-KA-ual" id="swN-U0-XMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Taw-da-rl2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4426.7175572519081" y="436.61971830985919"/>
         </scene>
     </scenes>
     <resources>
@@ -1360,6 +1497,7 @@ lobortis. </string>
         <image name="icons8-people-60 (1)" width="60" height="60"/>
         <image name="icons8-presentation-60" width="60" height="60"/>
         <image name="icons8-schedule-60" width="60" height="60"/>
+        <image name="maps_image" width="1878" height="1202"/>
         <namedColor name="BlueCAII">
             <color red="0.075000002980232239" green="0.20399999618530273" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
@@ -1386,9 +1524,6 @@ lobortis. </string>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

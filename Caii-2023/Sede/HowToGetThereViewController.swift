@@ -16,6 +16,10 @@ class HowToGetThereViewController: UIViewController {
     }
     
 
+    @IBAction func openMaps(_ sender: Any) {
+        
+        print("gholas******")
+    }
     /*
     // MARK: - Navigation
 
