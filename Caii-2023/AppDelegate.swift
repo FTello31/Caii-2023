@@ -7,6 +7,8 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 //        UINavigationBar.appearance().backButtonTitle = " "
 //        UIApplication.shared.statusBarView?.backgroundColor = UIColor(named: "PrimaryCAII")
+        IQKeyboardManager.shared.enable = true
 
         return true
     }

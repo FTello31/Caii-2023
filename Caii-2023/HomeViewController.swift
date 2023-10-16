@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent
     }
@@ -20,7 +19,20 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavbar()
+        
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func showPopUp(_ sender: UIButton) {
+        let avc : ReusablePopUpViewController = ReusablePopUpViewController()
+        avc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        avc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        avc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        //print("Freaking tab bar below ---")
+        //print(self.navigationController?.tabBarController?.tabBar.isHidden)
+        //self.navigationController?.tabBarController?.tabBar.isHidden = true
+        present(avc, animated: true)
     }
     
     @IBAction func onLogoutPressed(_ sender: UIButton) {

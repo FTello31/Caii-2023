@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18299A08E23D86E9A21B9EBC /* Pods_Caii_2023Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D954E259C2DEC2FBAC73006 /* Pods_Caii_2023Tests.framework */; };
+		47D04A30ED27012DF701AA3A /* Pods_Caii_2023.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABCD06117F13648C7636DA0 /* Pods_Caii_2023.framework */; };
+		886F46A26CABF5AD5575BD85 /* Pods_Caii_2023_Caii_2023UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D32CE7814EDC57E7B5499F /* Pods_Caii_2023_Caii_2023UITests.framework */; };
 		ED0CAA0D2AD88D0A00AC4159 /* SedeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA0C2AD88D0A00AC4159 /* SedeMainViewController.swift */; };
 		ED0CAA0F2AD8924D00AC4159 /* WhereIsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */; };
 		ED0CAA112AD89CE700AC4159 /* HowToGetThereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */; };
@@ -17,6 +20,9 @@
 		ED1A6CAF2AD7427200008622 /* TourismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CAE2AD7427200008622 /* TourismViewController.swift */; };
 		ED1A6CB72AD75AEC00008622 /* TourismPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CB62AD75AEC00008622 /* TourismPlacesViewController.swift */; };
 		ED1A6CB92AD75B3A00008622 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CB82AD75B3A00008622 /* RestaurantsViewController.swift */; };
+		ED2E09D12ADC3D93002C1A14 /* ReusablePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E09CF2ADC3D93002C1A14 /* ReusablePopUpViewController.swift */; };
+		ED2E09D22ADC3D93002C1A14 /* ReusablePopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */; };
+		ED5190C42ADCC9830057284D /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5190C32ADCC9830057284D /* PresentationViewController.swift */; };
 		ED692E852AD495AE00CD928D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED692E842AD495AE00CD928D /* Colors.xcassets */; };
 		ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C512AD6458A0078ABDB /* PonentesViewController.swift */; };
 		ED779C582AD645A90078ABDB /* FilterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C562AD645A80078ABDB /* FilterViewCell.swift */; };
@@ -42,6 +48,8 @@
 		EDC7D7232AD9AE4F00997971 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */; };
 		EDD5A1D12AD284C6008BA59F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D02AD284C6008BA59F /* DataModel.swift */; };
 		EDD5A1D32AD28532008BA59F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D22AD28532008BA59F /* Data.swift */; };
+		EDEB9E2F2ADB51DF00A7ABAB /* logo_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDEB9E2E2ADB51DF00A7ABAB /* logo_gif.gif */; };
+		EDFE922C2ADAFEB9009175F5 /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12F708AD5AAAD6015791747F /* Pods-Caii-2023Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caii-2023Tests.release.xcconfig"; path = "Target Support Files/Pods-Caii-2023Tests/Pods-Caii-2023Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2706E2ADBF7B6A68B3C806E7 /* Pods-Caii-2023-Caii-2023UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caii-2023-Caii-2023UITests.release.xcconfig"; path = "Target Support Files/Pods-Caii-2023-Caii-2023UITests/Pods-Caii-2023-Caii-2023UITests.release.xcconfig"; sourceTree = "<group>"; };
+		30366A4562C41C2B714856E6 /* Pods-Caii-2023.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caii-2023.release.xcconfig"; path = "Target Support Files/Pods-Caii-2023/Pods-Caii-2023.release.xcconfig"; sourceTree = "<group>"; };
+		3D954E259C2DEC2FBAC73006 /* Pods_Caii_2023Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caii_2023Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABCD06117F13648C7636DA0 /* Pods_Caii_2023.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caii_2023.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6673C3591F3F39152952447B /* Pods-Caii-2023-Caii-2023UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caii-2023-Caii-2023UITests.debug.xcconfig"; path = "Target Support Files/Pods-Caii-2023-Caii-2023UITests/Pods-Caii-2023-Caii-2023UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F1F908E4BF58FF2BF8CC903 /* Pods-Caii-2023Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caii-2023Tests.debug.xcconfig"; path = "Target Support Files/Pods-Caii-2023Tests/Pods-Caii-2023Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		96D32CE7814EDC57E7B5499F /* Pods_Caii_2023_Caii_2023UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caii_2023_Caii_2023UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92FE99F1CFE5B7DE9B96B9D /* Pods-Caii-2023.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caii-2023.debug.xcconfig"; path = "Target Support Files/Pods-Caii-2023/Pods-Caii-2023.debug.xcconfig"; sourceTree = "<group>"; };
 		ED0CAA0C2AD88D0A00AC4159 /* SedeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SedeMainViewController.swift; sourceTree = "<group>"; };
 		ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsViewController.swift; sourceTree = "<group>"; };
 		ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToGetThereViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +89,9 @@
 		ED1A6CAE2AD7427200008622 /* TourismViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismViewController.swift; sourceTree = "<group>"; };
 		ED1A6CB62AD75AEC00008622 /* TourismPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismPlacesViewController.swift; sourceTree = "<group>"; };
 		ED1A6CB82AD75B3A00008622 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		ED2E09CF2ADC3D93002C1A14 /* ReusablePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePopUpViewController.swift; sourceTree = "<group>"; };
+		ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusablePopUpViewController.xib; sourceTree = "<group>"; };
+		ED5190C32ADCC9830057284D /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		ED692E842AD495AE00CD928D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		ED779C512AD6458A0078ABDB /* PonentesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonentesViewController.swift; sourceTree = "<group>"; };
 		ED779C562AD645A80078ABDB /* FilterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewCell.swift; sourceTree = "<group>"; };
@@ -101,6 +121,8 @@
 		EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EDD5A1D02AD284C6008BA59F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		EDD5A1D22AD28532008BA59F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		EDEB9E2E2ADB51DF00A7ABAB /* logo_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo_gif.gif; sourceTree = "<group>"; };
+		EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D04A30ED27012DF701AA3A /* Pods_Caii_2023.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18299A08E23D86E9A21B9EBC /* Pods_Caii_2023Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,12 +146,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886F46A26CABF5AD5575BD85 /* Pods_Caii_2023_Caii_2023UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D559213128457D38897EF4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D92FE99F1CFE5B7DE9B96B9D /* Pods-Caii-2023.debug.xcconfig */,
+				30366A4562C41C2B714856E6 /* Pods-Caii-2023.release.xcconfig */,
+				6673C3591F3F39152952447B /* Pods-Caii-2023-Caii-2023UITests.debug.xcconfig */,
+				2706E2ADBF7B6A68B3C806E7 /* Pods-Caii-2023-Caii-2023UITests.release.xcconfig */,
+				6F1F908E4BF58FF2BF8CC903 /* Pods-Caii-2023Tests.debug.xcconfig */,
+				12F708AD5AAAD6015791747F /* Pods-Caii-2023Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ED1A6CAD2AD7408400008622 /* EmergencyPhones */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +182,8 @@
 				ED779C562AD645A80078ABDB /* FilterViewCell.swift */,
 				ED779C5A2AD6562E0078ABDB /* TableViewCell.swift */,
 				ED779C5B2AD6562E0078ABDB /* TableViewCell.xib */,
+				ED2E09CF2ADC3D93002C1A14 /* ReusablePopUpViewController.swift */,
+				ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -189,10 +229,19 @@
 		ED1A6CB52AD7568800008622 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */,
 				EDB8A3132AD22556002A0980 /* LoginViewController.swift */,
 				EDB8A3112AD224FD002A0980 /* Login.storyboard */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		ED5190C22ADCC96F0057284D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				ED5190C32ADCC9830057284D /* PresentationViewController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		ED692E832AD494D800CD928D /* Resources */ = {
@@ -201,6 +250,7 @@
 				EDB8A2E12AD21C89002A0980 /* Assets.xcassets */,
 				ED692E842AD495AE00CD928D /* Colors.xcassets */,
 				EDB982552AD5B9570061D298 /* icons.xcassets */,
+				EDEB9E2E2ADB51DF00A7ABAB /* logo_gif.gif */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -212,6 +262,8 @@
 				EDB8A2EE2AD21C89002A0980 /* Caii-2023Tests */,
 				EDB8A2F82AD21C89002A0980 /* Caii-2023UITests */,
 				EDB8A2D32AD21C88002A0980 /* Products */,
+				3D559213128457D38897EF4D /* Pods */,
+				EFCB9A26E405081820A7A2B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,9 +287,10 @@
 				ED1A6CB52AD7568800008622 /* Login */,
 				EDB8A30D2AD21F81002A0980 /* HomeViewController.swift */,
 				EDB8A2DB2AD21C88002A0980 /* Main.storyboard */,
-				ED1A6CB12AD754D500008622 /* Ponentes */,
+				ED5190C22ADCC96F0057284D /* Presentation */,
 				ED1A6CB42AD7562900008622 /* Schedule */,
 				ED1A6CB32AD755FD00008622 /* Sede */,
+				ED1A6CB12AD754D500008622 /* Ponentes */,
 				ED1A6CB22AD755EC00008622 /* Tourism */,
 				ED1A6CAD2AD7408400008622 /* EmergencyPhones */,
 				ED1A6CB02AD7544400008622 /* Reusable */,
@@ -285,6 +338,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EFCB9A26E405081820A7A2B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ABCD06117F13648C7636DA0 /* Pods_Caii_2023.framework */,
+				96D32CE7814EDC57E7B5499F /* Pods_Caii_2023_Caii_2023UITests.framework */,
+				3D954E259C2DEC2FBAC73006 /* Pods_Caii_2023Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,9 +355,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDB8A2FF2AD21C89002A0980 /* Build configuration list for PBXNativeTarget "Caii-2023" */;
 			buildPhases = (
+				72ADA588026C55ED8F0F47F8 /* [CP] Check Pods Manifest.lock */,
 				EDB8A2CE2AD21C88002A0980 /* Sources */,
 				EDB8A2CF2AD21C88002A0980 /* Frameworks */,
 				EDB8A2D02AD21C88002A0980 /* Resources */,
+				302A866016B98FF54EBA33E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +374,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDB8A3022AD21C89002A0980 /* Build configuration list for PBXNativeTarget "Caii-2023Tests" */;
 			buildPhases = (
+				BFAC6A313D165358283341C5 /* [CP] Check Pods Manifest.lock */,
 				EDB8A2E72AD21C89002A0980 /* Sources */,
 				EDB8A2E82AD21C89002A0980 /* Frameworks */,
 				EDB8A2E92AD21C89002A0980 /* Resources */,
@@ -327,9 +393,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDB8A3052AD21C89002A0980 /* Build configuration list for PBXNativeTarget "Caii-2023UITests" */;
 			buildPhases = (
+				C322D947077D384FD647E316 /* [CP] Check Pods Manifest.lock */,
 				EDB8A2F12AD21C89002A0980 /* Sources */,
 				EDB8A2F22AD21C89002A0980 /* Frameworks */,
 				EDB8A2F32AD21C89002A0980 /* Resources */,
+				C740B25420DA0A97FBC16CDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,6 +463,8 @@
 				EDB8A2E22AD21C89002A0980 /* Assets.xcassets in Resources */,
 				ED779C5D2AD6562E0078ABDB /* TableViewCell.xib in Resources */,
 				EDB8A30B2AD21D7E002A0980 /* Franie-Bold.ttf in Resources */,
+				ED2E09D22ADC3D93002C1A14 /* ReusablePopUpViewController.xib in Resources */,
+				EDEB9E2F2ADB51DF00A7ABAB /* logo_gif.gif in Resources */,
 				EDB8A2DD2AD21C88002A0980 /* Main.storyboard in Resources */,
 				EDB982562AD5B9570061D298 /* icons.xcassets in Resources */,
 				ED1A6CAC2AD73BAD00008622 /* EmergencyPhonesTableViewCell.xib in Resources */,
@@ -418,16 +488,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		302A866016B98FF54EBA33E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caii-2023/Pods-Caii-2023-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caii-2023/Pods-Caii-2023-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caii-2023/Pods-Caii-2023-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72ADA588026C55ED8F0F47F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Caii-2023-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFAC6A313D165358283341C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Caii-2023Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C322D947077D384FD647E316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Caii-2023-Caii-2023UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C740B25420DA0A97FBC16CDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caii-2023-Caii-2023UITests/Pods-Caii-2023-Caii-2023UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Caii-2023-Caii-2023UITests/Pods-Caii-2023-Caii-2023UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Caii-2023-Caii-2023UITests/Pods-Caii-2023-Caii-2023UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDB8A2CE2AD21C88002A0980 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFE922C2ADAFEB9009175F5 /* LogoAnimationView.swift in Sources */,
 				ED0CAA112AD89CE700AC4159 /* HowToGetThereViewController.swift in Sources */,
 				EDD5A1D12AD284C6008BA59F /* DataModel.swift in Sources */,
 				ED1A6CA82AD7331E00008622 /* EmergencyPhonesViewController.swift in Sources */,
 				ED1A6CB72AD75AEC00008622 /* TourismPlacesViewController.swift in Sources */,
+				ED5190C42ADCC9830057284D /* PresentationViewController.swift in Sources */,
 				EDB8A3142AD22556002A0980 /* LoginViewController.swift in Sources */,
+				ED2E09D12ADC3D93002C1A14 /* ReusablePopUpViewController.swift in Sources */,
 				EDB8A30E2AD21F81002A0980 /* HomeViewController.swift in Sources */,
 				ED1A6CA62AD6DE3600008622 /* PonenteDetailViewController.swift in Sources */,
 				ED779C592AD645A90078ABDB /* Extension.swift in Sources */,
@@ -621,12 +797,14 @@
 		};
 		EDB8A3002AD21C89002A0980 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D92FE99F1CFE5B7DE9B96B9D /* Pods-Caii-2023.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DCASC2V65A;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Caii-2023/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CAII 2023";
@@ -651,12 +829,14 @@
 		};
 		EDB8A3012AD21C89002A0980 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30366A4562C41C2B714856E6 /* Pods-Caii-2023.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DCASC2V65A;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Caii-2023/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CAII 2023";
@@ -681,6 +861,7 @@
 		};
 		EDB8A3032AD21C89002A0980 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F1F908E4BF58FF2BF8CC903 /* Pods-Caii-2023Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -701,6 +882,7 @@
 		};
 		EDB8A3042AD21C89002A0980 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F708AD5AAAD6015791747F /* Pods-Caii-2023Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -721,6 +903,7 @@
 		};
 		EDB8A3062AD21C89002A0980 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6673C3591F3F39152952447B /* Pods-Caii-2023-Caii-2023UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -739,6 +922,7 @@
 		};
 		EDB8A3072AD21C89002A0980 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2706E2ADBF7B6A68B3C806E7 /* Pods-Caii-2023-Caii-2023UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

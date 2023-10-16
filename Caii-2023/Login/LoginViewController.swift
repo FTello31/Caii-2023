@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import SwiftyGif
+
 
 class LoginViewController: UIViewController {
     
+    let logoAnimationView = LogoAnimationView()
+
     let defaults = UserDefaults.standard
     
     @IBOutlet weak var inputDNI: UITextField!
@@ -16,8 +20,19 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(logoAnimationView)
+        logoAnimationView.pinEdgesToSuperView()
+        logoAnimationView.logoGifImageView.delegate = self
+        
         // Do any additional setup after loading the view.
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logoAnimationView.logoGifImageView.startAnimatingGif()
+    }
+    
     
     
     @IBAction func onLoginPressed(_ sender: UIButton) {
@@ -63,4 +78,11 @@ class LoginViewController: UIViewController {
      }
      */
     
+}
+
+
+extension LoginViewController: SwiftyGifDelegate {
+    func gifDidStop(sender: UIImageView) {
+        logoAnimationView.isHidden = true
+    }
 }

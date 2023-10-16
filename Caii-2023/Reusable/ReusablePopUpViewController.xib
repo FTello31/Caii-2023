@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReusablePopUpViewController" customModule="Caii_2023" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-Vm-csi">
+                    <rect key="frame" x="60" y="311.33333333333331" width="273" height="229.66666666666669"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKN-VY-pi5">
+                            <rect key="frame" x="218" y="8" width="47" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Nw7-ff-TSB"/>
+                                <constraint firstAttribute="width" constant="47" id="WEN-fc-XBV"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
+                                <backgroundConfiguration key="background"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="0RH-BR-8ck">
+                            <rect key="frame" x="10" y="64.999999999999986" width="253" height="144.66666666666663"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Sandra!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq0-EB-6aN">
+                                    <rect key="frame" x="82" y="0.0" width="89.333333333333314" height="28"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenida a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asw-3b-xV0">
+                                    <rect key="frame" x="7.6666666666666714" y="70" width="238" height="74.666666666666686"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="PrimaryCAII"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="0RH-BR-8ck" secondAttribute="bottom" constant="20" id="23B-Lx-L7D"/>
+                        <constraint firstAttribute="trailing" secondItem="0RH-BR-8ck" secondAttribute="trailing" constant="10" id="B7y-s2-XTd"/>
+                        <constraint firstItem="pKN-VY-pi5" firstAttribute="top" secondItem="Dfu-Vm-csi" secondAttribute="top" constant="8" id="HKf-UY-0S4"/>
+                        <constraint firstItem="0RH-BR-8ck" firstAttribute="top" secondItem="pKN-VY-pi5" secondAttribute="bottom" constant="22" id="dtv-sd-B2w"/>
+                        <constraint firstAttribute="trailing" secondItem="pKN-VY-pi5" secondAttribute="trailing" constant="8" id="uHn-sT-tl5"/>
+                        <constraint firstItem="0RH-BR-8ck" firstAttribute="leading" secondItem="Dfu-Vm-csi" secondAttribute="leading" constant="10" id="xfA-61-MHH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dfu-Vm-csi" secondAttribute="trailing" constant="60" id="6wl-Zc-r1t"/>
+                <constraint firstItem="Dfu-Vm-csi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="ZGX-7H-rl7"/>
+                <constraint firstItem="Dfu-Vm-csi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fe4-Qm-uKY"/>
+                <constraint firstItem="Dfu-Vm-csi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xGu-sn-2mI"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="PrimaryCAII">
+            <color red="0.81599998474121094" green="0.22699999809265137" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

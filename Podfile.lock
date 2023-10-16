@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.8.0)
+  - IQKeyboardManagerSwift (6.5.15)
+  - SwiftyGif (5.4.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - SwiftyGif
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  IQKeyboardManagerSwift: 79fab21f451441935788dc5d80ded21c32685904
+  SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
+
+PODFILE CHECKSUM: fb9f0f15dadc6a39f342fddd419b5bca51512bca
+
+COCOAPODS: 1.13.0
