@@ -61,3 +61,15 @@ struct Schedule: Codable {
     let day: String
     let linkVideo: String
 }
+
+
+
+
+struct HomeButton: Codable {
+    let id: Int
+    let name: String
+    let color: String
+    let image: String
+    let viewControllerName: String
+}
+

@@ -69,27 +69,27 @@ class SedeMainViewController: UIViewController {
     
     private func updateView(category: String){
         if category == filters[0] {
-            containerView.addSubview(whereIsViewController.view)
-
+//            containerView.addSubview(whereIsViewController.view)
+            add(asChildViewController: whereIsViewController)
 //            remove(asChildViewController: howToGetThereViewController)
-//            add(asChildViewController: whereIsViewController)
+//            remove(asChildViewController: galleryViewController)
         } else if(category == filters[1]) {
-            containerView.addSubview(howToGetThereViewController.view)
-//
+//            containerView.addSubview(howToGetThereViewController.view)
+          add(asChildViewController: howToGetThereViewController)
 //            remove(asChildViewController: whereIsViewController)
-//            add(asChildViewController: howToGetThereViewController)
+//            remove(asChildViewController: galleryViewController)
         } else if(category == filters[2]) {
-            containerView.addSubview(galleryViewController.view)
-//
+//            containerView.addSubview(galleryViewController.view)
+            add(asChildViewController: galleryViewController)
 //            remove(asChildViewController: whereIsViewController)
-//            add(asChildViewController: howToGetThereViewController)
+//            remove(asChildViewController: howToGetThereViewController)
         }
     }
     
     
     private func add(asChildViewController viewController: UIViewController) {
             // Add Child View as Subview
-        view.addSubview(viewController.view)
+        containerView.addSubview(viewController.view)
 
         // Configure Child View
         viewController.view.frame = view.bounds

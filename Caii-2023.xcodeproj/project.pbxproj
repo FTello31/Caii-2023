@@ -13,6 +13,7 @@
 		ED0CAA0D2AD88D0A00AC4159 /* SedeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA0C2AD88D0A00AC4159 /* SedeMainViewController.swift */; };
 		ED0CAA0F2AD8924D00AC4159 /* WhereIsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */; };
 		ED0CAA112AD89CE700AC4159 /* HowToGetThereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */; };
+		ED1526432ADDDF3700F5C522 /* HomeButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1526422ADDDF3700F5C522 /* HomeButtonCollectionViewCell.swift */; };
 		ED1A6CA62AD6DE3600008622 /* PonenteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA52AD6DE3600008622 /* PonenteDetailViewController.swift */; };
 		ED1A6CA82AD7331E00008622 /* EmergencyPhonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA72AD7331E00008622 /* EmergencyPhonesViewController.swift */; };
 		ED1A6CAB2AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA92AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift */; };
@@ -83,6 +84,7 @@
 		ED0CAA0C2AD88D0A00AC4159 /* SedeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SedeMainViewController.swift; sourceTree = "<group>"; };
 		ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsViewController.swift; sourceTree = "<group>"; };
 		ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToGetThereViewController.swift; sourceTree = "<group>"; };
+		ED1526422ADDDF3700F5C522 /* HomeButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED1A6CA52AD6DE3600008622 /* PonenteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonenteDetailViewController.swift; sourceTree = "<group>"; };
 		ED1A6CA72AD7331E00008622 /* EmergencyPhonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyPhonesViewController.swift; sourceTree = "<group>"; };
 		ED1A6CA92AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyPhonesTableViewCell.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				ED779C5B2AD6562E0078ABDB /* TableViewCell.xib */,
 				ED2E09CF2ADC3D93002C1A14 /* ReusablePopUpViewController.swift */,
 				ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */,
+				ED1526422ADDDF3700F5C522 /* HomeButtonCollectionViewCell.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				EDD5A1D12AD284C6008BA59F /* DataModel.swift in Sources */,
 				ED1A6CA82AD7331E00008622 /* EmergencyPhonesViewController.swift in Sources */,
 				ED1A6CB72AD75AEC00008622 /* TourismPlacesViewController.swift in Sources */,
+				ED1526432ADDDF3700F5C522 /* HomeButtonCollectionViewCell.swift in Sources */,
 				ED5190C42ADCC9830057284D /* PresentationViewController.swift in Sources */,
 				EDB8A3142AD22556002A0980 /* LoginViewController.swift in Sources */,
 				ED2E09D12ADC3D93002C1A14 /* ReusablePopUpViewController.swift in Sources */,

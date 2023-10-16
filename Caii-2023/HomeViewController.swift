@@ -10,7 +10,9 @@ import UIKit
 class HomeViewController: UIViewController {
     let defaults = UserDefaults.standard
     
-//    @IBOutlet weak var collectionView: UICollectionView!
+    var homeButtons: [HomeButton] = []
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent
@@ -19,8 +21,31 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavbar()
-        
         // Do any additional setup after loading the view.
+        setupCollectionView()
+        fetchData()
+    }
+    
+    func setupCollectionView(){
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+    
+    
+    func fetchData() {
+        let button1 = HomeButton(id: 1, name: "Presentación", color: "PrimaryCAII", image: "icons8-presentation-60", viewControllerName: "PresentationViewController")
+           let button2 = HomeButton(id: 2, name: "Mi Programa", color: "GreyCAII", image: "icons8-schedule-60", viewControllerName: "ScheduleViewController")
+           let button3 = HomeButton(id: 3, name: "Sede", color: "YellowCAII", image: "icons8-library-60", viewControllerName: "SedeMainViewController")
+           let button4 = HomeButton(id: 4, name: "Ponentes", color: "LightblueCAII", image: "icons8-people-60", viewControllerName: "PonentesViewController")
+           let button5 = HomeButton(id: 5, name: "Turismo", color: "BlueCAII", image: "icons8-food-60", viewControllerName: "TourismViewController")
+           let button6 = HomeButton(id: 6, name: "Contactos de emergencia", color: "PrimaryCAII", image: "icons8-emergency-60", viewControllerName: "EmergencyPhonesViewController")
+           let button7 = HomeButton(id: 7, name: "CAII en vivo", color: "BlueCAII", image: "icons8-live-video-on-60", viewControllerName: "CAIIViewController")
+
+        if(defaults.string(forKey: "version")!.elementsEqual("offline")){
+            homeButtons = [button1, button2, button3, button4, button5, button6]
+        }else if(defaults.string(forKey: "version")!.elementsEqual("online")){
+            homeButtons = [button1, button2, button7, button4, button3, button6]
+        }
     }
     
     
@@ -47,6 +72,9 @@ class HomeViewController: UIViewController {
         goToLoginStoryboard()
     }
     
+    
+    
+    
     func goToLoginStoryboard() -> Void {
         let storyboard = UIStoryboard(name: "Login", bundle: .main)
         
@@ -66,4 +94,44 @@ class HomeViewController: UIViewController {
      }
      */
     
+}
+
+extension HomeViewController:
+    UICollectionViewDelegate,UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return homeButtons.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCell", for: indexPath) as? FilterViewCell
+        //            else { return UICollectionViewCell() }
+        let cell = collectionView.dequeueReusableCell(ofType: HomeButtonCollectionViewCell.self, for: indexPath)
+        
+        cell.backgroundIcon.backgroundColor = UIColor(named: homeButtons[indexPath.item].color)
+        cell.icon.image = UIImage(named: homeButtons[indexPath.item].image)
+//        cell.homeBtn.setImage(UIImage(named: homeButtons[indexPath.item].image), for: .normal)
+        cell.nameLabel.text = homeButtons[indexPath.item].name
+        
+        cell.tag = indexPath.row
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! HomeButtonCollectionViewCell
+//        cell.isSelected = true
+        print("Cell \(indexPath.row + 1) clicked")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: homeButtons[indexPath.item].viewControllerName) as UIViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+//        guard let cell = collectionView.cellForItem(at: indexPath) as? FilterViewCell else { return }
+//        cell.isSelected = false
+//        cell.labelFilterName.textColor = .black
+//        cell.viewFilter.backgroundColor = .white
+//        
+//    }
+//    
 }

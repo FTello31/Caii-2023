@@ -20,10 +20,6 @@ class PresentationViewController: UIViewController {
     
 
     @IBAction func onClickWatchVideo(_ sender: UIButton) {
-        
-        print("video")
-        
-
         let youtubeId = "8JEv7jqA5uk"
         if let youtubeURL = URL(string: "youtube://\(youtubeId)"),
                 UIApplication.shared.canOpenURL(youtubeURL) {
@@ -33,7 +29,6 @@ class PresentationViewController: UIViewController {
                 // redirect through safari
                 UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
             }
-        
     }
     
         
