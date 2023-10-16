@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     let defaults = UserDefaults.standard
     
-    @IBOutlet weak var collectionView: UICollectionView!
+//    @IBOutlet weak var collectionView: UICollectionView!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent

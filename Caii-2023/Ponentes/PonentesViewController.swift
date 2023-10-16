@@ -50,7 +50,7 @@ class PonentesViewController: UIViewController {
     
     func setFirstFilterSelected(){
         let indexPath = self.collectionViewFilter.indexPathsForSelectedItems?.last ?? IndexPath(item: 0, section: 0)
-        collectionViewFilter.selectItem(at: indexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition.left)
+        collectionViewFilter.selectItem(at: indexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition.centeredHorizontally)
         filterPonentes(category: filters[0])
     }
     

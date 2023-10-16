@@ -34,6 +34,7 @@
        <array>
            <string>comgooglemaps</string>
            <string>comgooglemaps-x-callback</string>
+           <string>youtube</string>
        </array>
 </dict>
 </plist>

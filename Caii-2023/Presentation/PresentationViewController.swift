@@ -10,6 +10,7 @@ import UIKit
 class PresentationViewController: UIViewController {
 
     @IBOutlet weak var whiteView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavbar()
@@ -22,7 +23,21 @@ class PresentationViewController: UIViewController {
         
         print("video")
         
+
+        let youtubeId = "8JEv7jqA5uk"
+        if let youtubeURL = URL(string: "youtube://\(youtubeId)"),
+                UIApplication.shared.canOpenURL(youtubeURL) {
+                // redirect to app
+                UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+            } else if let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") {
+                // redirect through safari
+                UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+            }
+        
     }
+    
+        
+        
     /*
     // MARK: - Navigation
 
