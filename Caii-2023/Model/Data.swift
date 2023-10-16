@@ -44,9 +44,20 @@ struct TourismPlaces: Codable,ListItem {
 }
 
 struct Restaurants: Codable,ListItem {
-    let name: String
     let id: Int
+    let name: String
     let description: String
     let location: String
     let website: String
+}
+
+
+
+struct Schedule: Codable {
+    let id: Int
+    let name: String
+    let description: String
+    let descriptionShort: String
+    let day: String
+    let linkVideo: String
 }

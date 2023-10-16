@@ -72,9 +72,9 @@ class TourismViewController: UIViewController {
     func fetchRestaurants() -> [Restaurants] {
         // Crea y devuelve una lista de restaurantes
         // Puedes llenar estos datos según tus necesidades
-        let restaurant1 = Restaurants(name: "Restaurant 1", id: 1, description: "Description 1", location: "Location 1", website: "Website 1")
-        let restaurant2 = Restaurants(name: "Restaurant 2", id: 2, description: "Description 2", location: "Location 2", website: "Website 2")
-        let restaurant3 = Restaurants(name: "Restaurant 3", id: 3, description: "Description 3", location: "Location 3", website: "Website 3")
+        let restaurant1 = Restaurants(id: 1, name: "Restaurant 1", description: "Description 1", location: "Location 1", website: "Website 1")
+        let restaurant2 = Restaurants(id: 2, name: "Restaurant 2", description: "Description 2", location: "Location 2", website: "Website 2")
+        let restaurant3 = Restaurants(id: 3, name: "Restaurant 3", description: "Description 3", location: "Location 3", website: "Website 3")
         
         return [restaurant1, restaurant2, restaurant3]
     }

@@ -23,6 +23,7 @@
 		ED2E09D12ADC3D93002C1A14 /* ReusablePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E09CF2ADC3D93002C1A14 /* ReusablePopUpViewController.swift */; };
 		ED2E09D22ADC3D93002C1A14 /* ReusablePopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */; };
 		ED5190C42ADCC9830057284D /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5190C32ADCC9830057284D /* PresentationViewController.swift */; };
+		ED5190C62ADCCEDB0057284D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */; };
 		ED692E852AD495AE00CD928D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED692E842AD495AE00CD928D /* Colors.xcassets */; };
 		ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C512AD6458A0078ABDB /* PonentesViewController.swift */; };
 		ED779C582AD645A90078ABDB /* FilterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C562AD645A80078ABDB /* FilterViewCell.swift */; };
@@ -92,6 +93,7 @@
 		ED2E09CF2ADC3D93002C1A14 /* ReusablePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePopUpViewController.swift; sourceTree = "<group>"; };
 		ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusablePopUpViewController.xib; sourceTree = "<group>"; };
 		ED5190C32ADCC9830057284D /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
+		ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		ED692E842AD495AE00CD928D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		ED779C512AD6458A0078ABDB /* PonentesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonentesViewController.swift; sourceTree = "<group>"; };
 		ED779C562AD645A80078ABDB /* FilterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewCell.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 		ED1A6CB42AD7562900008622 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				ED779C592AD645A90078ABDB /* Extension.swift in Sources */,
 				ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */,
 				ED0CAA0F2AD8924D00AC4159 /* WhereIsViewController.swift in Sources */,
+				ED5190C62ADCCEDB0057284D /* ScheduleViewController.swift in Sources */,
 				ED1A6CAF2AD7427200008622 /* TourismViewController.swift in Sources */,
 				ED0CAA0D2AD88D0A00AC4159 /* SedeMainViewController.swift in Sources */,
 				EDB8A2D62AD21C88002A0980 /* AppDelegate.swift in Sources */,

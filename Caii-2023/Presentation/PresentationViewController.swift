@@ -9,10 +9,12 @@ import UIKit
 
 class PresentationViewController: UIViewController {
 
+    @IBOutlet weak var whiteView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setNavbar()
         // Do any additional setup after loading the view.
+        whiteView.layer.cornerRadius = 16
     }
     
 
