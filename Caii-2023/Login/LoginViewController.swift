@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(logoAnimationView)
+        
         logoAnimationView.pinEdgesToSuperView()
         logoAnimationView.logoGifImageView.delegate = self
         

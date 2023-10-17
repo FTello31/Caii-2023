@@ -9,6 +9,7 @@ import UIKit
 
 class PresentationViewController: UIViewController {
 
+    @IBOutlet weak var watchVideoBtn: UIButton!
     @IBOutlet weak var whiteView: UIView!
     
     override func viewDidLoad() {
@@ -16,6 +17,8 @@ class PresentationViewController: UIViewController {
         self.setNavbar()
         // Do any additional setup after loading the view.
         whiteView.layer.cornerRadius = 16
+        watchVideoBtn.layer.cornerRadius = 30
+        watchVideoBtn.layer.masksToBounds = true
     }
     
 

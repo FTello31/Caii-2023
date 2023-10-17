@@ -9,9 +9,16 @@ import UIKit
 
 class HowToGetThereViewController: UIViewController {
     
+    @IBOutlet weak var openInMapsBtn: UIButton!
+    
+    @IBOutlet weak var whiteView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        whiteView.layer.cornerRadius = 16
+        openInMapsBtn.layer.cornerRadius = 30
+        openInMapsBtn.layer.masksToBounds = true
+
         // Do any additional setup after loading the view.
     }
     

@@ -14,6 +14,10 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var whiteView: UIView!
+    @IBOutlet weak var logoutBtn: UIButton!
+    
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent
     }
@@ -22,7 +26,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.setNavbar()
         // Do any additional setup after loading the view.
+        whiteView.layer.cornerRadius = 15
+        logoutBtn.layer.cornerRadius = 30
+        logoutBtn.layer.masksToBounds = true
         setupCollectionView()
+
         fetchData()
     }
     
@@ -97,19 +105,29 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController:
-    UICollectionViewDelegate,UICollectionViewDataSource {
+    UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+            print("adweifjweoijioe")
+            let columns = 3
+            let width = Int(UIScreen.main.bounds.width)
+            let side = width / columns
+            let rem = width % columns
+            let addOne = indexPath.row % columns < rem
+            let ceilWidth = addOne ? side + 1 : side
+            return CGSize(width: ceilWidth, height: side)
+        
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return homeButtons.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCell", for: indexPath) as? FilterViewCell
-        //            else { return UICollectionViewCell() }
         let cell = collectionView.dequeueReusableCell(ofType: HomeButtonCollectionViewCell.self, for: indexPath)
         
         cell.backgroundIcon.backgroundColor = UIColor(named: homeButtons[indexPath.item].color)
         cell.icon.image = UIImage(named: homeButtons[indexPath.item].image)
-//        cell.homeBtn.setImage(UIImage(named: homeButtons[indexPath.item].image), for: .normal)
         cell.nameLabel.text = homeButtons[indexPath.item].name
         
         cell.tag = indexPath.row
@@ -118,20 +136,27 @@ extension HomeViewController:
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let cell = collectionView.cellForItem(at: indexPath) as! HomeButtonCollectionViewCell
+//        let cell = collectionView.cellForItem(at: indexPath) as! HomeButtonCollectionViewCell
 //        cell.isSelected = true
-        print("Cell \(indexPath.row + 1) clicked")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: homeButtons[indexPath.item].viewControllerName) as UIViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        if(homeButtons[indexPath.item].viewControllerName.elementsEqual("CAIIViewController")) {
+            let youtubeId = "8JEv7jqA5uk"
+            if let youtubeURL = URL(string: "youtube://\(youtubeId)"),
+                    UIApplication.shared.canOpenURL(youtubeURL) {
+                    // redirect to app
+                    UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+                } else if let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") {
+                    // redirect through safari
+                    UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+                }
+            
+        }else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: homeButtons[indexPath.item].viewControllerName) as UIViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+      
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-//        guard let cell = collectionView.cellForItem(at: indexPath) as? FilterViewCell else { return }
-//        cell.isSelected = false
-//        cell.labelFilterName.textColor = .black
-//        cell.viewFilter.backgroundColor = .white
-//        
-//    }
-//    
+       
 }

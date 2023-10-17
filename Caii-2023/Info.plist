@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleLightContent</string>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>comgooglemaps</string>
+		<string>comgooglemaps-x-callback</string>
+		<string>youtube</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Franie-Bold</string>
@@ -30,11 +32,7 @@
 			</array>
 		</dict>
 	</dict>
-    <key>LSApplicationQueriesSchemes</key>
-       <array>
-           <string>comgooglemaps</string>
-           <string>comgooglemaps-x-callback</string>
-           <string>youtube</string>
-       </array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

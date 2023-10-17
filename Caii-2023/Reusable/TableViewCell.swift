@@ -9,18 +9,33 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var goToDetailView: UIView!
     @IBOutlet weak var imageViewPhoto: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var goToDetailButton: UIButton!
     
+    @IBOutlet weak var containerView: UIView!
     var delegate: PonentesViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         print("a")
         // Initialization code
+//        contentViewGrey.backgroundColor = .lightGreyCAII
+//        containerView.backgroundColor = .white
+        goToDetailView.layer.cornerRadius = min(goToDetailView.frame.size.height, goToDetailView.frame.size.width) / 2.0
+        goToDetailView.clipsToBounds = true
     }
+    
+    
+    
+//    spacing to tableviewCell
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//
+//        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 30))
+//    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

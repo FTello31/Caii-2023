@@ -38,7 +38,7 @@ class ScheduleViewController: UIViewController {
     func configureTableView(){
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+        tableView.register(UINib(nibName: "ScheduleTableViewCell", bundle: nil), forCellReuseIdentifier: "ScheduleTableViewCell")
     }
     
     func setFirstFilterSelected(){
@@ -138,9 +138,9 @@ extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let schedule = schedules[indexPath.row]
         print(schedule)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
-        cell.nameLabel.text = schedule.name
-        cell.descriptionLabel.text = "descripcion escion \(schedule.descriptionShort)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleTableViewCell", for: indexPath) as! ScheduleTableViewCell
+        cell.eventNameLabel.text = schedule.name
+        cell.eventDescriptionLabel.text = "descripcion escion \(schedule.descriptionShort)"
         
         //cell.imageViewPhoto =
         
@@ -156,7 +156,7 @@ extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
 //        let cell = tableView.cellForRow(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
         
-        performSegue(withIdentifier: "ponenteDetailSegue", sender: schedules[indexPath.row])
+        performSegue(withIdentifier: "performSegueToScheduleDetail", sender: schedules[indexPath.row])
     }
     
     

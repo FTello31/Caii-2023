@@ -14,6 +14,10 @@
 		ED0CAA0F2AD8924D00AC4159 /* WhereIsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */; };
 		ED0CAA112AD89CE700AC4159 /* HowToGetThereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */; };
 		ED1526432ADDDF3700F5C522 /* HomeButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1526422ADDDF3700F5C522 /* HomeButtonCollectionViewCell.swift */; };
+		ED18B4992ADEE4060084EBD7 /* Animación_CAII_sin_fondo.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED18B4982ADEE4060084EBD7 /* Animación_CAII_sin_fondo.gif */; };
+		ED18B49C2ADEFAAA0084EBD7 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18B49A2ADEFAAA0084EBD7 /* ScheduleTableViewCell.swift */; };
+		ED18B49D2ADEFAAA0084EBD7 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED18B49B2ADEFAAA0084EBD7 /* ScheduleTableViewCell.xib */; };
+		ED18B49F2ADF2BFB0084EBD7 /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18B49E2ADF2BFB0084EBD7 /* ScheduleDetailViewController.swift */; };
 		ED1A6CA62AD6DE3600008622 /* PonenteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA52AD6DE3600008622 /* PonenteDetailViewController.swift */; };
 		ED1A6CA82AD7331E00008622 /* EmergencyPhonesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA72AD7331E00008622 /* EmergencyPhonesViewController.swift */; };
 		ED1A6CAB2AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CA92AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift */; };
@@ -50,7 +54,6 @@
 		EDC7D7232AD9AE4F00997971 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */; };
 		EDD5A1D12AD284C6008BA59F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D02AD284C6008BA59F /* DataModel.swift */; };
 		EDD5A1D32AD28532008BA59F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D22AD28532008BA59F /* Data.swift */; };
-		EDEB9E2F2ADB51DF00A7ABAB /* logo_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDEB9E2E2ADB51DF00A7ABAB /* logo_gif.gif */; };
 		EDFE922C2ADAFEB9009175F5 /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +88,10 @@
 		ED0CAA0E2AD8924D00AC4159 /* WhereIsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsViewController.swift; sourceTree = "<group>"; };
 		ED0CAA102AD89CE700AC4159 /* HowToGetThereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToGetThereViewController.swift; sourceTree = "<group>"; };
 		ED1526422ADDDF3700F5C522 /* HomeButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED18B4982ADEE4060084EBD7 /* Animación_CAII_sin_fondo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Animación_CAII_sin_fondo.gif"; sourceTree = "<group>"; };
+		ED18B49A2ADEFAAA0084EBD7 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		ED18B49B2ADEFAAA0084EBD7 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		ED18B49E2ADF2BFB0084EBD7 /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
 		ED1A6CA52AD6DE3600008622 /* PonenteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonenteDetailViewController.swift; sourceTree = "<group>"; };
 		ED1A6CA72AD7331E00008622 /* EmergencyPhonesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyPhonesViewController.swift; sourceTree = "<group>"; };
 		ED1A6CA92AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyPhonesTableViewCell.swift; sourceTree = "<group>"; };
@@ -125,7 +132,6 @@
 		EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EDD5A1D02AD284C6008BA59F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		EDD5A1D22AD28532008BA59F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		EDEB9E2E2ADB51DF00A7ABAB /* logo_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo_gif.gif; sourceTree = "<group>"; };
 		EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +234,9 @@
 			isa = PBXGroup;
 			children = (
 				ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */,
+				ED18B49A2ADEFAAA0084EBD7 /* ScheduleTableViewCell.swift */,
+				ED18B49E2ADF2BFB0084EBD7 /* ScheduleDetailViewController.swift */,
+				ED18B49B2ADEFAAA0084EBD7 /* ScheduleTableViewCell.xib */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -256,7 +265,7 @@
 				EDB8A2E12AD21C89002A0980 /* Assets.xcassets */,
 				ED692E842AD495AE00CD928D /* Colors.xcassets */,
 				EDB982552AD5B9570061D298 /* icons.xcassets */,
-				EDEB9E2E2ADB51DF00A7ABAB /* logo_gif.gif */,
+				ED18B4982ADEE4060084EBD7 /* Animación_CAII_sin_fondo.gif */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -470,11 +479,12 @@
 				ED779C5D2AD6562E0078ABDB /* TableViewCell.xib in Resources */,
 				EDB8A30B2AD21D7E002A0980 /* Franie-Bold.ttf in Resources */,
 				ED2E09D22ADC3D93002C1A14 /* ReusablePopUpViewController.xib in Resources */,
-				EDEB9E2F2ADB51DF00A7ABAB /* logo_gif.gif in Resources */,
 				EDB8A2DD2AD21C88002A0980 /* Main.storyboard in Resources */,
 				EDB982562AD5B9570061D298 /* icons.xcassets in Resources */,
+				ED18B49D2ADEFAAA0084EBD7 /* ScheduleTableViewCell.xib in Resources */,
 				ED1A6CAC2AD73BAD00008622 /* EmergencyPhonesTableViewCell.xib in Resources */,
 				ED692E852AD495AE00CD928D /* Colors.xcassets in Resources */,
+				ED18B4992ADEE4060084EBD7 /* Animación_CAII_sin_fondo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,9 +631,11 @@
 				ED0CAA0D2AD88D0A00AC4159 /* SedeMainViewController.swift in Sources */,
 				EDB8A2D62AD21C88002A0980 /* AppDelegate.swift in Sources */,
 				ED1A6CB92AD75B3A00008622 /* RestaurantsViewController.swift in Sources */,
+				ED18B49F2ADF2BFB0084EBD7 /* ScheduleDetailViewController.swift in Sources */,
 				ED1A6CAB2AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift in Sources */,
 				EDC7D7202AD9A6C800997971 /* GalleryViewController.swift in Sources */,
 				EDB8A2E02AD21C88002A0980 /* Caii_2023.xcdatamodeld in Sources */,
+				ED18B49C2ADEFAAA0084EBD7 /* ScheduleTableViewCell.swift in Sources */,
 				EDB8A2D82AD21C88002A0980 /* SceneDelegate.swift in Sources */,
 				ED779C5C2AD6562E0078ABDB /* TableViewCell.swift in Sources */,
 				EDC7D7232AD9AE4F00997971 /* GalleryCollectionViewCell.swift in Sources */,
@@ -736,7 +748,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -793,7 +805,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -819,8 +831,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -851,8 +864,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
