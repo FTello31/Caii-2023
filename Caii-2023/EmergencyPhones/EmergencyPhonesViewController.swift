@@ -84,7 +84,6 @@ extension EmergencyPhonesViewController: UICollectionViewDelegate, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(filters.count)
         return filters.count
     }
     
@@ -128,14 +127,25 @@ extension EmergencyPhonesViewController: UITableViewDataSource, UITableViewDeleg
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let emergencyPhone = emergencyPhones[indexPath.row]
-        print(emergencyPhone)
+//        print(emergencyPhone)
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmergencyReusableCell", for: indexPath) as! EmergencyPhonesTableViewCell
         cell.nameLabel.text = emergencyPhone.name
-        //cell.imageViewPhoto =
-        
+        //https://stackoverflow.com/questions/39947076/uitableviewcell-buttons-with-action
+        //using closures
+        cell.buttonPressed = {
+                  //Code
+            self.callNumber(phoneNumber: String(emergencyPhone.number))
+                   }
         return cell
     }
     
+    private func callNumber(phoneNumber: String) {
+        guard let url = URL(string: "tel://\(phoneNumber)"),
+            UIApplication.shared.canOpenURL(url) else {
+            return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
     
     //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     ////        let cell = tableView.cellForRow(at: indexPath)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pd7-mA-ZSF">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -20,50 +20,70 @@
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="Pd7-mA-ZSF" customClass="LoginViewController" customModule="Caii_2023" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mtj-0x-OIg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ukt-al-HMS">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="360"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukt-al-HMS">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="445.33333333333331"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CAII logo  blanco" translatesAutoresizingMaskIntoConstraints="NO" id="8J8-ZE-wIQ">
-                                        <rect key="frame" x="51" y="140" width="291" height="169"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAII logo  blanco" translatesAutoresizingMaskIntoConstraints="NO" id="8J8-ZE-wIQ">
+                                        <rect key="frame" x="-910.66666666666663" y="162.66666666666666" width="2251.3333333333335" height="179.99999999999997"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="PnO-z4-Q3o"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.8156862855" green="0.22745099660000001" blue="0.2352941036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="8J8-ZE-wIQ" firstAttribute="centerY" secondItem="Ukt-al-HMS" secondAttribute="centerY" constant="30" id="Ovb-lv-gGj"/>
+                                    <constraint firstItem="8J8-ZE-wIQ" firstAttribute="centerX" secondItem="Ukt-al-HMS" secondAttribute="centerX" id="k1p-f9-dHf"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Si estás inscrito, accede aquí:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Uj-Wx-RKd">
-                                <rect key="frame" x="51" y="392" width="290" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si estás inscrito, accede aquí:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Uj-Wx-RKd">
+                                <rect key="frame" x="50" y="477.33333333333331" width="330" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6PZ-Ke-9dY">
-                                <rect key="frame" x="64" y="455" width="241" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Peruano"/>
-                                    <segment title="Extranjero"/>
-                                </segments>
-                                <color key="selectedSegmentTintColor" name="PrimaryCAII"/>
-                            </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresar DNI" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-1R-aej">
-                                <rect key="frame" x="64" y="544" width="228" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="14"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dug-ls-CIr">
+                                <rect key="frame" x="50" y="523" width="330" height="65"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6PZ-Ke-9dY">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="66"/>
+                                        <segments>
+                                            <segment title="Peruano"/>
+                                            <segment title="Extranjero"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" name="PrimaryCAII"/>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="4ks-4t-yMg"/>
+                                    <constraint firstAttribute="trailing" secondItem="6PZ-Ke-9dY" secondAttribute="trailing" id="RYO-C1-sTZ"/>
+                                    <constraint firstItem="6PZ-Ke-9dY" firstAttribute="top" secondItem="dug-ls-CIr" secondAttribute="top" id="c6a-So-N6Z"/>
+                                    <constraint firstItem="6PZ-Ke-9dY" firstAttribute="leading" secondItem="dug-ls-CIr" secondAttribute="leading" id="gZs-CZ-Oqk"/>
+                                    <constraint firstAttribute="bottom" secondItem="6PZ-Ke-9dY" secondAttribute="bottom" id="nmV-Ko-4iN"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresar DNI" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-1R-aej">
+                                <rect key="frame" x="70" y="618" width="290" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="A0a-L7-NDa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmA-Xz-NT3">
-                                <rect key="frame" x="109" y="697" width="139" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmA-Xz-NT3">
+                                <rect key="frame" x="50" y="748" width="330" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="hlC-ZA-bqO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Ingresa"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ingresa">
-                                    <fontDescription key="titleFontDescription" name="Franie-Regular" family="Franie" pointSize="22"/>
+                                    <fontDescription key="titleFontDescription" name="Franie-Bold" family="Franie" pointSize="32"/>
                                     <color key="baseBackgroundColor" name="PrimaryCAII"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -73,9 +93,30 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xdX-ba-7tS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ukt-al-HMS" firstAttribute="leading" secondItem="xdX-ba-7tS" secondAttribute="leading" id="1CS-bZ-Za7"/>
+                            <constraint firstItem="dug-ls-CIr" firstAttribute="leading" secondItem="xdX-ba-7tS" secondAttribute="leading" constant="50" id="Hh0-1X-s3B"/>
+                            <constraint firstItem="xdX-ba-7tS" firstAttribute="trailing" secondItem="mmA-Xz-NT3" secondAttribute="trailing" constant="50" id="HvU-Bc-pB2"/>
+                            <constraint firstItem="Oxm-1R-aej" firstAttribute="top" secondItem="dug-ls-CIr" secondAttribute="bottom" constant="30" id="TWj-DU-4eU"/>
+                            <constraint firstItem="Ukt-al-HMS" firstAttribute="top" secondItem="mtj-0x-OIg" secondAttribute="top" id="V2k-hU-ghh"/>
+                            <constraint firstItem="mmA-Xz-NT3" firstAttribute="top" secondItem="Oxm-1R-aej" secondAttribute="bottom" constant="70" id="VBi-JO-i8v"/>
+                            <constraint firstItem="5Uj-Wx-RKd" firstAttribute="leading" secondItem="xdX-ba-7tS" secondAttribute="leading" constant="50" id="Ydf-YF-q0E"/>
+                            <constraint firstItem="xdX-ba-7tS" firstAttribute="bottom" secondItem="mmA-Xz-NT3" secondAttribute="bottom" constant="90" id="bVk-u6-zAs"/>
+                            <constraint firstItem="xdX-ba-7tS" firstAttribute="trailing" secondItem="Ukt-al-HMS" secondAttribute="trailing" id="ftt-ID-k9Z"/>
+                            <constraint firstItem="mmA-Xz-NT3" firstAttribute="leading" secondItem="xdX-ba-7tS" secondAttribute="leading" constant="50" id="geh-Aj-bnn"/>
+                            <constraint firstItem="xdX-ba-7tS" firstAttribute="trailing" secondItem="Oxm-1R-aej" secondAttribute="trailing" constant="70" id="icd-j8-yod"/>
+                            <constraint firstItem="dug-ls-CIr" firstAttribute="top" secondItem="5Uj-Wx-RKd" secondAttribute="bottom" constant="25" id="qSf-za-584"/>
+                            <constraint firstItem="5Uj-Wx-RKd" firstAttribute="top" secondItem="Ukt-al-HMS" secondAttribute="bottom" constant="32" id="sni-f8-wH6"/>
+                            <constraint firstItem="Oxm-1R-aej" firstAttribute="leading" secondItem="xdX-ba-7tS" secondAttribute="leading" constant="70" id="t1N-E1-9dW"/>
+                            <constraint firstItem="xdX-ba-7tS" firstAttribute="trailing" secondItem="dug-ls-CIr" secondAttribute="trailing" constant="50" id="uu2-AI-AEM"/>
+                            <constraint firstItem="xdX-ba-7tS" firstAttribute="trailing" secondItem="5Uj-Wx-RKd" secondAttribute="trailing" constant="50" id="x6v-cU-eqR"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="inputDNI" destination="Oxm-1R-aej" id="tmK-ym-547"/>
+                        <outlet property="loginBtn" destination="mmA-Xz-NT3" id="RW6-bP-bQA"/>
+                        <outlet property="segmentedControlContainerView" destination="dug-ls-CIr" id="mXX-8Y-WhC"/>
+                        <outlet property="segmentedControlDni" destination="6PZ-Ke-9dY" id="pip-4Y-ow4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKO-CI-VN9" sceneMemberID="firstResponder"/>

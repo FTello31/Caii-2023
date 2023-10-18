@@ -67,20 +67,20 @@ class PonentesViewController: UIViewController {
     }
     
     func fetchData() -> [PonentesData] {
-        let video1 = PonentesData(name: "No Storyboards", id: 1, category: "Conferencia")
-        let video2 = PonentesData(name: "5 Soft Skills For Developers", id: 2, category: "Conferencia")
-        let video3 = PonentesData(name: "What's New in Xcode 11", id: 3, category: "Conferencia")
-        let video4 = PonentesData(name: "Patreon Revamp", id: 4, category: "Panel")
-        let video5 = PonentesData(name: "How I Got a Raise. $60k - $100k", id: 5, category: "Panel")
-        let video6 = PonentesData(name: "Shake Gesture", id: 6, category: "Panel")
-        let video7 = PonentesData(name: "2019 State of Salaries", id: 7, category: "Foro")
-        let video8 = PonentesData(name: "How to Build Your App Wirelessly", id: 8, category: "Foro")
-        let video9 = PonentesData(name: "Swift News 70", id: 9, category: "Foro")
-        let video10 = PonentesData(name: "Video 10", id: 10, category: "Foro")
-        
-        return [video1, video2, video3, video4, video5, video6, video7, video8, video9, video10]
+        let data1 = PonentesData(name: "John Doe", id: 1, category: "Conferencia", description: "A comprehensive talk on iOS development, covering the latest trends, best practices, and real-world examples.", eventName: "iOS Development", timeLabel: "9:00 AM", dateLabel: "2023-10-18", placeLabel: "Room A")
+        let data2 = PonentesData(name: "Jane Smith", id: 2, category: "Conferencia", description: "An insightful discussion on design principles, including user interface design, user experience, and usability testing.", eventName: "Design Principles", timeLabel: "10:30 AM", dateLabel: "2023-10-18", placeLabel: "Room B")
+        let data3 = PonentesData(name: "Bob Johnson", id: 3, category: "Conferencia", description: "Discover valuable tips for Swift programming, including performance optimization, code structure, and error handling.", eventName: "Swift Tips", timeLabel: "11:45 AM", dateLabel: "2023-10-18", placeLabel: "Room C")
+        let data4 = PonentesData(name: "Alice Brown", id: 4, category: "Panel", description: "Join our expert panel for a detailed discussion on app monetization strategies, ad revenue, and subscription models.", eventName: "App Monetization", timeLabel: "2:00 PM", dateLabel: "2023-10-18", placeLabel: "Auditorium")
+        let data5 = PonentesData(name: "Chris Wilson", id: 5, category: "Panel", description: "Explore key aspects of career development for developers, including job growth, negotiation, and skill enhancement.", eventName: "Career Development", timeLabel: "3:30 PM", dateLabel: "2023-10-18", placeLabel: "Auditorium")
+        let data6 = PonentesData(name: "Eva Lee", id: 6, category: "Panel", description: "Learn strategies to improve user experience design, including usability testing, wireframing, and prototyping.", eventName: "User Experience", timeLabel: "4:45 PM", dateLabel: "2023-10-18", placeLabel: "Auditorium")
+        let data7 = PonentesData(name: "David Clark", id: 7, category: "Foro", description: "Participate in a dynamic forum discussing the latest industry trends, emerging technologies, and future opportunities.", eventName: "Industry Trends", timeLabel: "10:00 AM", dateLabel: "2023-10-19", placeLabel: "Conference Hall")
+        let data8 = PonentesData(name: "Laura Martinez", id: 8, category: "Foro", description: "Discover success stories of startups, their challenges, and their path to growth and profitability.", eventName: "Startup Success", timeLabel: "11:30 AM", dateLabel: "2023-10-19", placeLabel: "Conference Hall")
+        let data9 = PonentesData(name: "Michael Anderson", id: 9, category: "Foro", description: "Engage in discussions about various aspects of Swift development, including best practices, libraries, and frameworks.", eventName: "Swift Development", timeLabel: "1:15 PM", dateLabel: "2023-10-19", placeLabel: "Conference Hall")
+        let data10 = PonentesData(name: "Sarah Wilson", id: 10, category: "Foro", description: "Explore the impact of new technologies on industries, their applications, and potential disruptions they may bring.", eventName: "New Technologies", timeLabel: "3:00 PM", dateLabel: "2023-10-19", placeLabel: "Conference Hall")
+
+        return [data1, data2, data3, data4, data5, data6, data7, data8, data9, data10]
     }
-    
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
@@ -147,10 +147,10 @@ extension PonentesViewController: UITableViewDataSource, UITableViewDelegate {
         print(ponente)
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
         cell.nameLabel.text = ponente.name
-        cell.descriptionLabel.text = "descripcion escion \(ponente.name)"
-        
-        //cell.imageViewPhoto =
-        
+        cell.descriptionLabel.text = ponente.description
+//        cell.imageViewPhoto = ponente.imagen
+//        cell.imageViewPhoto.image = UIImage(named: "")
+
         return cell
     }
     

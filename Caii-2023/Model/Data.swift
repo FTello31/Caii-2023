@@ -29,6 +29,11 @@ struct PonentesData: Codable {
     let name: String
     let id: Int
     let category: String
+    let description: String
+    let eventName: String
+    let timeLabel: String
+    let dateLabel: String
+    let placeLabel: String
 }
 
 struct EmergencyPhones: Codable {

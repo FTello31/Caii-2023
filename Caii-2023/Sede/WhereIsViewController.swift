@@ -9,10 +9,15 @@ import UIKit
 
 class WhereIsViewController: UIViewController {
 
+    @IBOutlet weak var whiteView: UIView!
+    @IBOutlet weak var imageSedeView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        whiteView.layer.cornerRadius = 16
+        imageSedeView.layer.cornerRadius = 16
     }
     
 

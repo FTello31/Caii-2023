@@ -15,7 +15,11 @@ class LoginViewController: UIViewController {
 
     let defaults = UserDefaults.standard
     
+    
+    @IBOutlet weak var segmentedControlContainerView: UIView!
+    @IBOutlet weak var segmentedControlDni: UISegmentedControl!
     @IBOutlet weak var inputDNI: UITextField!
+    @IBOutlet weak var loginBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -26,19 +30,54 @@ class LoginViewController: UIViewController {
         logoAnimationView.logoGifImageView.delegate = self
         
         // Do any additional setup after loading the view.
+        setupStyles()
+        
+        
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         logoAnimationView.logoGifImageView.startAnimatingGif()
+        
+//        segmentedControlDni.layer.cornerRadius = 30;
+//        segmentedControlDni.layer.borderColor = UIColor.blue.cgColor;
+//        segmentedControlDni.layer.borderWidth = 3.0;
+//        segmentedControlDni.layer.masksToBounds = true;
+    }
+    
+    func setupStyles(){
+        loginBtn.layer.cornerRadius = 30
+        loginBtn.layer.masksToBounds = true
+        
+        inputDNI.layer.cornerRadius = 30
+        inputDNI.layer.borderWidth = 2.0
+        inputDNI.layer.borderColor = UIColor.lightGray.cgColor
+        inputDNI.layer.masksToBounds = true
+        
+        segmentedControlContainerView.layer.cornerRadius = 38.0 // Adjust the value as needed
+        segmentedControlContainerView.layer.masksToBounds = true
+        
+        stylizeSegmentedControlFonts()
+    }
+    
+    
+    func stylizeSegmentedControlFonts(){
+        
+        let customFont = UIFont(name: "Franie-Bold", size: 18)
+        let fontAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: customFont,            NSAttributedString.Key.foregroundColor: UIColor.greyCAII
+        ]
+        segmentedControlDni.setTitleTextAttributes(fontAttributes, for: .normal)
+        
+        let fontAttributesDisabled: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: customFont,            NSAttributedString.Key.foregroundColor: UIColor.white
+        ]
+        segmentedControlDni.setTitleTextAttributes(fontAttributesDisabled, for: .selected)
+        
     }
     
     
     
     @IBAction func onLoginPressed(_ sender: UIButton) {
-        
-        
         if(inputDNI.text == "1"){
             saveAuthenticatedUser(inputDNI.text! , "online")
             goToMainStoryboard();

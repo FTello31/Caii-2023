@@ -11,6 +11,7 @@ class TourismPlacesViewController: UIViewController {
 
     var detail: TourismPlaces?
 
+    @IBOutlet weak var whiteView: UIView!
     @IBOutlet weak var tourismName: UILabel!
     @IBOutlet weak var tourismDescription: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -20,6 +21,7 @@ class TourismPlacesViewController: UIViewController {
         self.setNavbar()
         setup()
         // Do any additional setup after loading the view.
+        whiteView.layer.cornerRadius = 16
     }
     
     

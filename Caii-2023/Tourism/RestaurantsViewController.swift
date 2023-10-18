@@ -11,9 +11,17 @@ class RestaurantsViewController: UIViewController {
 
     var detail: Restaurants?
 
+    @IBOutlet weak var aboutWhiteViewContainer: UIView!
+    @IBOutlet weak var infoWhiteViewContainer: UIView!
+    @IBOutlet weak var locationWhiteViewContainer: UIView!
+    @IBOutlet weak var redView: UIView!
     @IBOutlet weak var restaurantNameLabel: UILabel!
     @IBOutlet weak var restaurantDescriptionLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var restaurantImageView: UIImageView!
+    
+    @IBOutlet weak var locationInfoLabel: UILabel!
+    @IBOutlet weak var informationLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +29,10 @@ class RestaurantsViewController: UIViewController {
 
         setup()
         // Do any additional setup after loading the view.
+        redView.layer.cornerRadius = 16
+        locationWhiteViewContainer.layer.cornerRadius = 16
+        infoWhiteViewContainer.layer.cornerRadius = 16
+        aboutWhiteViewContainer.layer.cornerRadius = 16
     }
     
     func setup(){
@@ -29,6 +41,8 @@ class RestaurantsViewController: UIViewController {
             restaurantNameLabel.text = detailUnwrapped.name
 //            timeLabel.text = String (detailUnwrapped.id)
             restaurantDescriptionLabel.text = detailUnwrapped.description
+            locationInfoLabel.text = detailUnwrapped.location
+            informationLabel.text = detailUnwrapped.website
             }
     }
 

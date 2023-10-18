@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A430D739-D436-455C-BED1-47E022A25096"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F60366B-5898-4782-A6BE-B79F13C1290B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caii-2023/EmergencyPhones/EmergencyPhonesTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F12BDD11-C877-46FF-9978-2F07CDDCD025"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caii-2023/Schedule/ScheduleDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "ScheduleDetailViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06374104-ADFA-4405-ADDD-3865740119BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Caii-2023/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "06374104-ADFA-4405-ADDD-3865740119BF - 3226b780c667d6f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caii_2023.HomeViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Caii-2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernando/Local%20Documents/contraloria%20proyecto/Caii-2023/Caii-2023/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "06374104-ADFA-4405-ADDD-3865740119BF - 60cc5e65b74066e4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caii_2023.HomeViewController.mainEventTimeLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Caii-2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernando/Local%20Documents/contraloria%20proyecto/Caii-2023/Caii-2023/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "06374104-ADFA-4405-ADDD-3865740119BF - 16eec896d8eacaf0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caii_2023.HomeViewController.mainEventTimeLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Caii-2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernando/Local%20Documents/contraloria%20proyecto/Caii-2023/Caii-2023/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "06374104-ADFA-4405-ADDD-3865740119BF - 51dcf5f5b376cc7c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caii_2023.HomeViewController.mainEventTimeLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Caii-2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernando/Local%20Documents/contraloria%20proyecto/Caii-2023/Caii-2023/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "06374104-ADFA-4405-ADDD-3865740119BF - 20108da124550d74"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caii_2023.HomeViewController.mainEventTimeLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Caii-2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernando/Local%20Documents/contraloria%20proyecto/Caii-2023/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "06374104-ADFA-4405-ADDD-3865740119BF - 46a2fb0add6d32e1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caii_2023.HomeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Caii_2023.HomeViewController"
+                  moduleName = "Caii-2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernando/Local%20Documents/contraloria%20proyecto/Caii-2023/Caii-2023/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "636">
+               </Location>
+               <Location
+                  uuid = "06374104-ADFA-4405-ADDD-3865740119BF - 5876da26d9dbf5da"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Caii_2023.HomeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Caii_2023.HomeViewController&gt;"
+                  moduleName = "Caii-2023"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernando/Local%20Documents/contraloria%20proyecto/Caii-2023/Caii-2023/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "612">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

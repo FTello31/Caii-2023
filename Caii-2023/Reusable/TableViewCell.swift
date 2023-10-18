@@ -10,7 +10,7 @@ import UIKit
 class TableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var goToDetailView: UIView!
+    @IBOutlet weak var goToDetailBtn: UIButton!
     @IBOutlet weak var imageViewPhoto: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -23,9 +23,12 @@ class TableViewCell: UITableViewCell {
         print("a")
         // Initialization code
 //        contentViewGrey.backgroundColor = .lightGreyCAII
-//        containerView.backgroundColor = .white
-        goToDetailView.layer.cornerRadius = min(goToDetailView.frame.size.height, goToDetailView.frame.size.width) / 2.0
-        goToDetailView.clipsToBounds = true
+        containerView.layer.cornerRadius = 16
+        goToDetailBtn.layer.cornerRadius = min(goToDetailBtn.frame.size.height, goToDetailBtn.frame.size.width) / 2.0
+        goToDetailBtn.layer.masksToBounds = true
+//        goToDetailBtn.clipsToBounds = true
+        
+        imageViewPhoto.layer.cornerRadius = min(imageViewPhoto.frame.size.height, imageViewPhoto.frame.size.width) / 2.0
     }
     
     

@@ -16,14 +16,18 @@ class PonenteDetailViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-
-    @IBOutlet weak var viewRedContainer: UIStackView!
+    @IBOutlet weak var eventNameLabel: UILabel!
+    
+    @IBOutlet weak var viewRedContainer: UIView!
+    @IBOutlet weak var whiteContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavbar()
         // Do any additional setup after loading the view.
         setup()
+        whiteContainer.layer.cornerRadius = 16
+        
     }
     
 
@@ -31,8 +35,11 @@ class PonenteDetailViewController: UIViewController {
         if let detailUnwrapped = detail {
                 print(detailUnwrapped)
             ponenteNameLabel.text = detailUnwrapped.name
-            timeLabel.text = String (detailUnwrapped.id)
-            descriptionLabel.text = detailUnwrapped.category
+            eventNameLabel.text = detailUnwrapped.eventName
+            timeLabel.text = "Hora: \(detailUnwrapped.timeLabel)"
+            dateLabel.text = "Fecha: \(detailUnwrapped.dateLabel)"
+            placeLabel.text = "Lugar: \(detailUnwrapped.placeLabel)"
+            descriptionLabel.text = detailUnwrapped.description
             }
     }
     /*

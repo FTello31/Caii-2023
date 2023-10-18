@@ -9,14 +9,22 @@ import UIKit
 
 class HomeViewController: UIViewController {
     let defaults = UserDefaults.standard
-    
+    let customFont = UIFont(name: "Franie", size: 14)
+
     var homeButtons: [HomeButton] = []
+    
+    @IBOutlet weak var todayLabel: UILabel!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var whiteView: UIView!
     @IBOutlet weak var logoutBtn: UIButton!
     
+    @IBOutlet weak var mainEventNameLabel: UILabel!
+    
+    @IBOutlet weak var mainEventPlaceLabel: UILabel!
+    
+    @IBOutlet weak var mainEventTimeLabel: UILabel!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent
@@ -29,9 +37,27 @@ class HomeViewController: UIViewController {
         whiteView.layer.cornerRadius = 15
         logoutBtn.layer.cornerRadius = 30
         logoutBtn.layer.masksToBounds = true
+        
+        mainEventTimeLabel.font = customFont
+        mainEventPlaceLabel.font = customFont
+
+        formatTodayDateLabel()
+        
         setupCollectionView()
 
         fetchData()
+    }
+    
+    func formatTodayDateLabel(){
+        let date = Date()
+
+        let formatter = DateFormatter()
+        formatter.locale = .current
+        formatter.dateFormat = "dd MMMM"
+        todayLabel.text = formatter.string(from: date)
+        print(formatter.string(from: date))
+        
+        
     }
     
     func setupCollectionView(){
@@ -107,18 +133,17 @@ class HomeViewController: UIViewController {
 extension HomeViewController:
     UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-            print("adweifjweoijioe")
-            let columns = 3
-            let width = Int(UIScreen.main.bounds.width)
-            let side = width / columns
-            let rem = width % columns
-            let addOne = indexPath.row % columns < rem
-            let ceilWidth = addOne ? side + 1 : side
-            return CGSize(width: ceilWidth, height: side)
-        
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        
+//            let columns = 3
+//            let width = Int(UIScreen.main.bounds.width)
+//            let side = width / columns
+//            let rem = width % columns
+//            let addOne = indexPath.row % columns < rem
+//            let ceilWidth = addOne ? side + 1 : side
+//            return CGSize(width: ceilWidth, height: side)
+//        
+//    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return homeButtons.count
@@ -140,7 +165,7 @@ extension HomeViewController:
 //        cell.isSelected = true
         
         if(homeButtons[indexPath.item].viewControllerName.elementsEqual("CAIIViewController")) {
-            let youtubeId = "8JEv7jqA5uk"
+            let youtubeId = "daI3lBeZgqM"
             if let youtubeURL = URL(string: "youtube://\(youtubeId)"),
                     UIApplication.shared.canOpenURL(youtubeURL) {
                     // redirect to app

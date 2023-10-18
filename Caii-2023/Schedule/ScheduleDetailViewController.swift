@@ -8,14 +8,67 @@
 import UIKit
 
 class ScheduleDetailViewController: UIViewController {
-
+    
+    var detail: PonentesData?
+    @IBOutlet weak var titleNameLabel: UILabel!
+    
+    @IBOutlet weak var descriptionShortLabel: UILabel!
+    
+    @IBOutlet weak var watchOnlineBtn: UIButton!
+    
+    @IBOutlet weak var descriptionLongLabel: UILabel!
+    
+    @IBOutlet weak var firstWhiteView: UIView!
+    
+    @IBOutlet weak var secondWhiteView: UIView!
+    
+    
+    @IBOutlet weak var viewWrapper: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupViewStyles()
+        setupTexts()
     }
     
+    func setupViewStyles(){
+        firstWhiteView.layer.cornerRadius = 16
+        secondWhiteView.layer.cornerRadius = 16
+        viewWrapper.layer.cornerRadius = 16
+        
+        watchOnlineBtn.layer.cornerRadius = 20
+        watchOnlineBtn.layer.masksToBounds = true
 
+        watchOnlineBtn.titleLabel?.textAlignment = .center
+
+    }
+    
+    func setupTexts(){
+        if let detailUnwrapped = detail {
+                print(detailUnwrapped)
+            titleNameLabel.text = detailUnwrapped.name
+            descriptionShortLabel.text = String (detailUnwrapped.id)
+            descriptionLongLabel.text = detailUnwrapped.category
+            }
+    }
+    
+    
+    @IBAction func onClickWatchOnline(_ sender: UIButton) {
+        
+        print("*****",sender)
+        
+        let youtubeId = "daI3lBeZgqM"
+        if let youtubeURL = URL(string: "youtube://\(youtubeId)"),
+                UIApplication.shared.canOpenURL(youtubeURL) {
+                // redirect to app
+                UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+            } else if let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") {
+                // redirect through safari
+                UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+            }
+    }
     /*
     // MARK: - Navigation
 

@@ -133,7 +133,6 @@ extension ScheduleViewController: UICollectionViewDelegate,UICollectionViewDataS
 }
 
 
-
 extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let schedule = schedules[indexPath.row]

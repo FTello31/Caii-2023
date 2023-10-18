@@ -27,14 +27,14 @@ class GalleryViewController: UIViewController {
 
     
     func fetchData() -> [UIImage] {
-        let video1 = UIImage(named: "Presentacion_main_image")
-        let video2 = UIImage(named: "Presentacion_main_image")
-        let video3 = UIImage(named: "Presentacion_main_image")
-        let video4 = UIImage(named: "Presentacion_main_image")
-        let video5 = UIImage(named: "Presentacion_main_image")
-        let video6 = UIImage(named: "Presentacion_main_image")
-        let video7 = UIImage(named: "Presentacion_main_image")
-        let video8 = UIImage(named: "Presentacion_main_image")
+        let video1 = UIImage(named: "sede_main")
+        let video2 = UIImage(named: "sede_main")
+        let video3 = UIImage(named: "sede_main")
+        let video4 = UIImage(named: "sede_main")
+        let video5 = UIImage(named: "sede_main")
+        let video6 = UIImage(named: "sede_main")
+        let video7 = UIImage(named: "sede_main")
+        let video8 = UIImage(named: "sede_main")
         let video9 = UIImage(named: "Presentacion_main_image")
         let video10 = UIImage(named: "Presentacion_main_image")
 
