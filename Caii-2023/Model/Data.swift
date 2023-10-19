@@ -58,13 +58,14 @@ struct Restaurants: Codable,ListItem {
 
 
 
-struct Schedule: Codable {
+struct ScheduleData: Codable {
     let id: Int
     let name: String
     let description: String
     let descriptionShort: String
     let day: String
     let linkVideo: String
+    let eventTime: String
 }
 
 

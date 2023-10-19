@@ -9,6 +9,7 @@ import UIKit
 
 class ScheduleTableViewCell: UITableViewCell {
 
+
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var greyView: UIView!
     @IBOutlet weak var whiteView: UIView!
@@ -24,7 +25,7 @@ class ScheduleTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         whiteView.layer.cornerRadius = 16

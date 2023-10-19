@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UIApplication.shared.statusBarView?.backgroundColor = UIColor(named: "PrimaryCAII")
         IQKeyboardManager.shared.enable = true
 
-//        sleep(2)
+//        sleep(3)
         return true
     }
 

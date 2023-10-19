@@ -234,8 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */,
-				ED18B49A2ADEFAAA0084EBD7 /* ScheduleTableViewCell.swift */,
 				ED18B49E2ADF2BFB0084EBD7 /* ScheduleDetailViewController.swift */,
+				ED18B49A2ADEFAAA0084EBD7 /* ScheduleTableViewCell.swift */,
 				ED18B49B2ADEFAAA0084EBD7 /* ScheduleTableViewCell.xib */,
 			);
 			path = Schedule;

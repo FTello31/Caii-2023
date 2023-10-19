@@ -545,7 +545,7 @@ San Borja 15021</string>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgd-8P-BKb">
                                                                 <rect key="frame" x="16" y="25" width="361" height="187.33333333333334"/>
-                                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur 
+                                                                <string key="text">Lorem ipsum dolor sit amet, consectetur 
 adipiscing elit. Integer a venenatis sapien. 
 Nulla facilisi. Proin a lobortis urna, a imperdiet
  odio. Integer ligula purus, gravida sit amet 
@@ -556,7 +556,7 @@ tincidunt eu metus. Nunc elementum ornare
 mattis. Integer vetincidunt eu metus. Nunc elementum ornare 
 mattis. Integer vehicula eleifend dolor et 
 convallis. Maecenas tempus et diam sed
-lobortis. </mutableString>
+lobortis. </string>
                                                                 <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -1005,7 +1005,7 @@ mattis. </string>
                     <connections>
                         <outlet property="collectionViewFilter" destination="lGM-7j-9fT" id="Nir-If-YWy"/>
                         <outlet property="tableView" destination="rD4-kR-Dhd" id="uzL-u3-z7s"/>
-                        <segue destination="BNN-jb-GGl" kind="show" identifier="performSegueToScheduleDetail" id="ZWi-3S-D2W"/>
+                        <segue destination="BNN-jb-GGl" kind="show" identifier="scheduleDetailSegue" id="ZWi-3S-D2W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elu-nU-Th0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1021,10 +1021,10 @@ mattis. </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjB-af-umS">
-                                <rect key="frame" x="16" y="220" width="361" height="322"/>
+                                <rect key="frame" x="16" y="218.66666666666666" width="361" height="323.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6p-2A-QBf">
-                                        <rect key="frame" x="18" y="18" width="325" height="286"/>
+                                        <rect key="frame" x="18" y="18" width="325" height="287.33333333333331"/>
                                         <string key="text">Lorem ipsum dolor sit amet, consectetur 
 adipiscing elit. Integer a venenatis sapien. 
 Nulla facilisi. Proin a lobortis urna, a imperdiet
@@ -1048,19 +1048,19 @@ mattis. </string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCU-zq-cah">
-                                <rect key="frame" x="16" y="50" width="361" height="120"/>
+                                <rect key="frame" x="16" y="50.000000000000007" width="361" height="118.66666666666669"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xp-mF-gl7">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="120"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="118.66666666666667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpN-bA-wZf">
-                                                <rect key="frame" x="18" y="10" width="78.666666666666671" height="20"/>
+                                                <rect key="frame" x="18" y="10.000000000000002" width="78.666666666666671" height="18.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFt-Ue-rcA">
-                                                <rect key="frame" x="18" y="40" width="217" height="61"/>
+                                                <rect key="frame" x="18" y="38.666666666666671" width="217" height="61"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="217" id="CVJ-Wc-zln"/>
                                                     <constraint firstAttribute="height" constant="61" id="jOn-Ig-jaa"/>

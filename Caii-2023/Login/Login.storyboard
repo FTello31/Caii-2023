@@ -15,6 +15,32 @@
         </array>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="s6K-w4-wfq">
+            <objects>
+                <viewController id="eBG-7h-bF0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cL7-ci-BKo">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image" translatesAutoresizingMaskIntoConstraints="NO" id="Sjy-mx-vOa">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L46-e6-8dW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sjy-mx-vOa" firstAttribute="leading" secondItem="L46-e6-8dW" secondAttribute="leading" id="8Fl-pW-Lvk"/>
+                            <constraint firstItem="Sjy-mx-vOa" firstAttribute="top" secondItem="cL7-ci-BKo" secondAttribute="top" id="8TF-a9-Ghy"/>
+                            <constraint firstItem="L46-e6-8dW" firstAttribute="trailing" secondItem="Sjy-mx-vOa" secondAttribute="trailing" id="rYs-VJ-L6E"/>
+                            <constraint firstAttribute="bottom" secondItem="Sjy-mx-vOa" secondAttribute="bottom" id="yBQ-sv-9q6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVm-0y-Hv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-454.88372093023253" y="34.763948497854081"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="aBP-ky-PhS">
             <objects>
@@ -126,6 +152,7 @@
     </scenes>
     <resources>
         <image name="CAII logo  blanco" width="2251" height="1042"/>
+        <image name="background_image" width="1085" height="1930"/>
         <namedColor name="PrimaryCAII">
             <color red="0.81599998474121094" green="0.22699999809265137" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

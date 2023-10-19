@@ -9,7 +9,7 @@ import UIKit
 
 class ScheduleDetailViewController: UIViewController {
     
-    var detail: PonentesData?
+    var detail: ScheduleData?
     @IBOutlet weak var titleNameLabel: UILabel!
     
     @IBOutlet weak var descriptionShortLabel: UILabel!
@@ -27,11 +27,24 @@ class ScheduleDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         setupViewStyles()
-        setupTexts()
+        setupData()
+        
     }
+    
+    
+    
+    func setupData(){
+        if let detailUnwrapped = detail {
+            print(detailUnwrapped)
+            titleNameLabel.text = detailUnwrapped.name
+            descriptionShortLabel.text = detailUnwrapped.descriptionShort
+            descriptionLongLabel.text = detailUnwrapped.description
+        }
+    }
+    
     
     func setupViewStyles(){
         firstWhiteView.layer.cornerRadius = 16
@@ -40,18 +53,9 @@ class ScheduleDetailViewController: UIViewController {
         
         watchOnlineBtn.layer.cornerRadius = 20
         watchOnlineBtn.layer.masksToBounds = true
-
+        
         watchOnlineBtn.titleLabel?.textAlignment = .center
-
-    }
-    
-    func setupTexts(){
-        if let detailUnwrapped = detail {
-                print(detailUnwrapped)
-            titleNameLabel.text = detailUnwrapped.name
-            descriptionShortLabel.text = String (detailUnwrapped.id)
-            descriptionLongLabel.text = detailUnwrapped.category
-            }
+        
     }
     
     
@@ -61,22 +65,22 @@ class ScheduleDetailViewController: UIViewController {
         
         let youtubeId = "daI3lBeZgqM"
         if let youtubeURL = URL(string: "youtube://\(youtubeId)"),
-                UIApplication.shared.canOpenURL(youtubeURL) {
-                // redirect to app
-                UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
-            } else if let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") {
-                // redirect through safari
-                UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
-            }
+           UIApplication.shared.canOpenURL(youtubeURL) {
+            // redirect to app
+            UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+        } else if let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") {
+            // redirect through safari
+            UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+        }
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

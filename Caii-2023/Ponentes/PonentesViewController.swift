@@ -88,10 +88,7 @@ class PonentesViewController: UIViewController {
         if segue.destination is PonenteDetailViewController {
             let vc = segue.destination as? PonenteDetailViewController
             let detailToSend = sender as? PonentesData
-//            print("***")
             vc?.detail = detailToSend
-            vc?.title = "title from prepare "
-            
         }
         
     }
