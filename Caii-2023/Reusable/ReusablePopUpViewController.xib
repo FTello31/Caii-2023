@@ -9,9 +9,17 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Franie-Bold.ttf">
+            <string>Franie-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReusablePopUpViewController" customModule="Caii_2023" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundRedView" destination="Dfu-Vm-csi" id="WB3-EN-6g5"/>
+                <outlet property="descriptionLabel" destination="asw-3b-xV0" id="rOC-AC-ZrV"/>
+                <outlet property="titleLabel" destination="Pq0-EB-6aN" id="opL-na-xm3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="J5K-8v-6TD"/>
             </connections>
         </placeholder>
@@ -21,7 +29,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-Vm-csi">
-                    <rect key="frame" x="60" y="311.33333333333331" width="273" height="229.66666666666669"/>
+                    <rect key="frame" x="60" y="285" width="273" height="282"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKN-VY-pi5">
                             <rect key="frame" x="218" y="8" width="47" height="35"/>
@@ -34,19 +42,22 @@
                                 <backgroundConfiguration key="background"/>
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="OnClickDismiss:" destination="-1" eventType="touchUpInside" id="el9-iV-30l"/>
+                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="0RH-BR-8ck">
-                            <rect key="frame" x="10" y="64.999999999999986" width="253" height="144.66666666666663"/>
+                            <rect key="frame" x="10" y="65" width="253" height="167"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Sandra!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq0-EB-6aN">
-                                    <rect key="frame" x="82" y="0.0" width="89.333333333333314" height="28"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                    <rect key="frame" x="66" y="0.0" width="121.33333333333331" height="29"/>
+                                    <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="24"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenida a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asw-3b-xV0">
-                                    <rect key="frame" x="7.6666666666666714" y="70" width="238" height="74.666666666666686"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <rect key="frame" x="0.0" y="71" width="253" height="96"/>
+                                    <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="16"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -55,7 +66,7 @@
                     </subviews>
                     <color key="backgroundColor" name="PrimaryCAII"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="0RH-BR-8ck" secondAttribute="bottom" constant="20" id="23B-Lx-L7D"/>
+                        <constraint firstAttribute="bottom" secondItem="0RH-BR-8ck" secondAttribute="bottom" constant="50" id="23B-Lx-L7D"/>
                         <constraint firstAttribute="trailing" secondItem="0RH-BR-8ck" secondAttribute="trailing" constant="10" id="B7y-s2-XTd"/>
                         <constraint firstItem="pKN-VY-pi5" firstAttribute="top" secondItem="Dfu-Vm-csi" secondAttribute="top" constant="8" id="HKf-UY-0S4"/>
                         <constraint firstItem="0RH-BR-8ck" firstAttribute="top" secondItem="pKN-VY-pi5" secondAttribute="bottom" constant="22" id="dtv-sd-B2w"/>

@@ -22,20 +22,12 @@ class PonentesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        title = "Ponentes"
+        
         self.setNavbar()
         loadPonentes()
         configureTableView()
         setFirstFilterSelected()
     }
-    
-//    func setNavbar(){
-//        navigationItem.titleView = UIImageView(image: UIImage(named: "CAII_logo_title"))
-//        navigationItem.titleView?.contentMode = UIView.ContentMode.scaleAspectFill
-//        navigationItem.titleView?.widthAnchor.constraint(equalToConstant: 150).isActive = true
-//        
-//        navigationItem.backButtonTitle = " "
-//    }
     
     func loadPonentes(){
         ponentes =  fetchData()
@@ -77,10 +69,10 @@ class PonentesViewController: UIViewController {
         let data8 = PonentesData(name: "Laura Martinez", id: 8, category: "Foro", description: "Discover success stories of startups, their challenges, and their path to growth and profitability.", eventName: "Startup Success", timeLabel: "11:30 AM", dateLabel: "2023-10-19", placeLabel: "Conference Hall")
         let data9 = PonentesData(name: "Michael Anderson", id: 9, category: "Foro", description: "Engage in discussions about various aspects of Swift development, including best practices, libraries, and frameworks.", eventName: "Swift Development", timeLabel: "1:15 PM", dateLabel: "2023-10-19", placeLabel: "Conference Hall")
         let data10 = PonentesData(name: "Sarah Wilson", id: 10, category: "Foro", description: "Explore the impact of new technologies on industries, their applications, and potential disruptions they may bring.", eventName: "New Technologies", timeLabel: "3:00 PM", dateLabel: "2023-10-19", placeLabel: "Conference Hall")
-
+        
         return [data1, data2, data3, data4, data5, data6, data7, data8, data9, data10]
     }
-
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
@@ -145,9 +137,9 @@ extension PonentesViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! TableViewCell
         cell.nameLabel.text = ponente.name
         cell.descriptionLabel.text = ponente.description
-//        cell.imageViewPhoto = ponente.imagen
-//        cell.imageViewPhoto.image = UIImage(named: "")
-
+        //        cell.imageViewPhoto = ponente.imagen
+        //        cell.imageViewPhoto.image = UIImage(named: "")
+        
         return cell
     }
     
@@ -157,7 +149,7 @@ extension PonentesViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let cell = tableView.cellForRow(at: indexPath)
+        //        let cell = tableView.cellForRow(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
         
         performSegue(withIdentifier: "ponenteDetailSegue", sender: ponentes[indexPath.row])

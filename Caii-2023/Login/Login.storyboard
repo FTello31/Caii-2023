@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pd7-mA-ZSF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eBG-7h-bF0">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login Animation View Controller-->
         <scene sceneID="s6K-w4-wfq">
             <objects>
-                <viewController id="eBG-7h-bF0" sceneMemberID="viewController">
+                <viewController id="eBG-7h-bF0" customClass="LoginAnimationViewController" customModule="Caii_2023" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cL7-ci-BKo">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVm-0y-Hv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-454.88372093023253" y="34.763948497854081"/>
+            <point key="canvasLocation" x="-529" y="21"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="aBP-ky-PhS">
@@ -138,6 +138,7 @@
                             <constraint firstItem="xdX-ba-7tS" firstAttribute="trailing" secondItem="5Uj-Wx-RKd" secondAttribute="trailing" constant="50" id="x6v-cU-eqR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KOP-24-dDe"/>
                     <connections>
                         <outlet property="inputDNI" destination="Oxm-1R-aej" id="tmK-ym-547"/>
                         <outlet property="loginBtn" destination="mmA-Xz-NT3" id="RW6-bP-bQA"/>

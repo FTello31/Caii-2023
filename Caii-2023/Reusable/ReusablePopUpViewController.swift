@@ -9,28 +9,30 @@ import UIKit
 
 class ReusablePopUpViewController: UIViewController {
     
-    //    @IBOutlet weak var descriptionLabel: UILabel!
-    //    @IBOutlet weak var titleLabel: UILabel!
-    //    @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+        @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var backgroundRedView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //        setupValues()
+                setupValues()
     }
     
     func setupValues(){
-        //        backgroundView.layer.cornerRadius = 50
+        backgroundRedView.layer.cornerRadius = 30
         //        descriptionLabel.text =
         //        titleLabel.text =
         
     }
 
-//    
-//    @IBAction func OnClickDismiss(_ sender: UIButton) {
-//        self.dismiss(animated: true, completion: nil)
-//    }
-//    
+
+
+    @IBAction func OnClickDismiss(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
      // MARK: - Navigation
      

@@ -46,6 +46,12 @@ class HomeViewController: UIViewController {
         setupCollectionView()
 
         fetchData()
+
+        if (defaults.bool(forKey: "firstTimeHome") == true) {
+            showPopUp()
+            defaults.setValue(false, forKey: "firstTimeHome")
+        }
+        
     }
     
     func formatTodayDateLabel(){
@@ -83,11 +89,13 @@ class HomeViewController: UIViewController {
     }
     
     
-    @IBAction func showPopUp(_ sender: UIButton) {
+  func showPopUp() {
         let avc : ReusablePopUpViewController = ReusablePopUpViewController()
         avc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         avc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         avc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        avc.titleLabel.text = "¡Hola, Sandra!"
+        avc.descriptionLabel.text = "Bienvenida a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí."
         //print("Freaking tab bar below ---")
         //print(self.navigationController?.tabBarController?.tabBar.isHidden)
         //self.navigationController?.tabBarController?.tabBar.isHidden = true

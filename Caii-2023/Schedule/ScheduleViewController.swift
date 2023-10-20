@@ -8,11 +8,12 @@
 import UIKit
 
 class ScheduleViewController: UIViewController {
-
+    let defaults = UserDefaults.standard
+    
     var filters = ["DIA 1","DIA 2"]
-
+    
     var schedules: [ScheduleData] = []
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionViewFilter: UICollectionView!
     
@@ -22,8 +23,14 @@ class ScheduleViewController: UIViewController {
         // Do any additional setup after loading the view.
         configureCollectionView()
         configureTableView()
+        
         loadSchedule()
         setFirstFilterSelected()
+        
+        if (defaults.bool(forKey: "firstTimeSchedule") == true) {
+            showPopUp()
+            defaults.setValue(false, forKey: "firstTimeSchedule")
+        }
     }
     
     func loadSchedule(){
@@ -70,11 +77,9 @@ class ScheduleViewController: UIViewController {
         let schedule8 = ScheduleData(id: 8, name: "Wireless App Development", description: "Discover how to develop and test your mobile apps wirelessly, saving time and enhancing development workflows.", descriptionShort: "Wireless App Development", day: "DIA 2", linkVideo: "wireless-development-link", eventTime: "2:00 PM")
         let schedule9 = ScheduleData(id: 9, name: "Swift Language Updates", description: "Stay updated with the latest changes and updates in the Swift programming language, including Swift 5.6 features.", descriptionShort: "Swift Updates", day: "DIA 2", linkVideo: "swift-updates-link", eventTime: "3:30 PM")
         let schedule10 = ScheduleData(id: 10, name: "Emerging Technologies Showcase", description: "Get a firsthand look at emerging technologies and their applications across various industries.", descriptionShort: "Emerging Technologies", day: "DIA 2", linkVideo: "emerging-technologies-link", eventTime: "5:00 PM")
-
+        
         return [schedule1, schedule2, schedule3, schedule4, schedule5, schedule6, schedule7, schedule8, schedule9, schedule10]
     }
-
-    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -83,22 +88,33 @@ class ScheduleViewController: UIViewController {
         if segue.destination is ScheduleDetailViewController {
             let vc = segue.destination as? ScheduleDetailViewController
             let detailToSend = sender as? ScheduleData
-//            print("***")
             vc?.detail = detailToSend
         }
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func showPopUp() {
+        let vc : ReusablePopUpViewController = ReusablePopUpViewController()
+        vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        vc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        vc.titleLabel.text = "¡Sandra!"
+        vc.descriptionLabel.text = "Encuentra todos los detalles de tu programa seleccionado aquí."
+        
+        present(vc, animated: true)
     }
-    */
-
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    
 }
 
 
@@ -149,7 +165,7 @@ extension ScheduleViewController: UICollectionViewDelegate,UICollectionViewDataS
 extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let schedule = schedules[indexPath.row]
-//        print(schedule)
+        //        print(schedule)
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleTableViewCell", for: indexPath) as! ScheduleTableViewCell
         cell.eventNameLabel.text = schedule.name
         cell.eventDescriptionLabel.text = schedule.descriptionShort
@@ -164,12 +180,12 @@ extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let cell = tableView.cellForRow(at: indexPath)
+        //        let cell = tableView.cellForRow(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
         print(schedules[indexPath.row])
-//        performSegue(withIdentifier: "scheduleDetailSegue", sender: schedules[indexPath.row])
+        //        performSegue(withIdentifier: "scheduleDetailSegue", sender: schedules[indexPath.row])
         performSegue(withIdentifier: "scheduleDetailSegue", sender: schedules[indexPath.row])
-
+        
     }
     
     

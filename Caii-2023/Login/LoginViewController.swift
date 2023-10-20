@@ -11,7 +11,7 @@ import SwiftyGif
 
 class LoginViewController: UIViewController {
     
-    let logoAnimationView = LogoAnimationView()
+//    let logoAnimationView = LogoAnimationView()
 
     let defaults = UserDefaults.standard
     
@@ -24,10 +24,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(logoAnimationView)
-        
-        logoAnimationView.pinEdgesToSuperView()
-        logoAnimationView.logoGifImageView.delegate = self
+//        view.addSubview(logoAnimationView)
+//        
+//        logoAnimationView.pinEdgesToSuperView()
+//        logoAnimationView.logoGifImageView.delegate = self
         
         // Do any additional setup after loading the view.
         setupStyles()
@@ -35,10 +35,21 @@ class LoginViewController: UIViewController {
         
     }
     
+    func presentGif(){
+        print("aaaaa")
+        let avc : LoginAnimationViewController = LoginAnimationViewController()
+        avc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        avc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+//        avc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        
+        present(avc, animated: true)
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        logoAnimationView.logoGifImageView.startAnimatingGif()
+//        presentGif()
+
+//        logoAnimationView.logoGifImageView.startAnimatingGif()
         
 //        segmentedControlDni.layer.cornerRadius = 30;
 //        segmentedControlDni.layer.borderColor = UIColor.blue.cgColor;
@@ -96,6 +107,8 @@ class LoginViewController: UIViewController {
     func saveAuthenticatedUser(_ dni: String,_ version:String) -> Void {
         defaults.set(dni, forKey: "isLoggedIn")
         defaults.set(version, forKey: "version")
+        defaults.set(true, forKey: "firstTimeHome")
+        defaults.set(true, forKey: "firstTimeSchedule")
     }
     
     
@@ -119,10 +132,34 @@ class LoginViewController: UIViewController {
      */
     
 }
+//
+//
+//extension LoginViewController: SwiftyGifDelegate {
+//    func gifDidStop(sender: UIImageView) {
+//        logoAnimationView.isHidden = true
+//    }
+//}
 
 
 extension LoginViewController: SwiftyGifDelegate {
-    func gifDidStop(sender: UIImageView) {
-        logoAnimationView.isHidden = true
-    }
+    
+    func gifURLDidFinish(sender: UIImageView) {
+            print("gifURLDidFinish")
+        }
+
+        func gifURLDidFail(sender: UIImageView) {
+            print("gifURLDidFail")
+        }
+
+        func gifDidStart(sender: UIImageView) {
+            print("gifDidStart")
+        }
+        
+        func gifDidLoop(sender: UIImageView) {
+            print("gifDidLoop")
+        }
+        
+        func gifDidStop(sender: UIImageView) {
+            print("gifDidStop")
+        }
 }

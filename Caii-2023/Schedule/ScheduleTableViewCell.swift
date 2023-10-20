@@ -8,8 +8,8 @@
 import UIKit
 
 class ScheduleTableViewCell: UITableViewCell {
-
-
+    
+    
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var greyView: UIView!
     @IBOutlet weak var whiteView: UIView!
@@ -34,7 +34,7 @@ class ScheduleTableViewCell: UITableViewCell {
         
         goTodetailBtn.layer.cornerRadius = min(goTodetailBtn.frame.size.height, goTodetailBtn.frame.size.width) / 2.0
         goTodetailBtn.layer.masksToBounds = true
-
+        
     }
     
     func makeCircle(){
