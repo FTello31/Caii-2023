@@ -37,10 +37,19 @@ class GalleryViewController: UIViewController {
         let video8 = UIImage(named: "sede_main")
         let video9 = UIImage(named: "Presentacion_main_image")
         let video10 = UIImage(named: "Presentacion_main_image")
+        let video11 = UIImage(named: "sede_main")
+        let video12 = UIImage(named: "sede_main")
+        let video13 = UIImage(named: "sede_main")
+        let video14 = UIImage(named: "sede_main")
+        let video15 = UIImage(named: "sede_main")
 
-        return [video1!, video2!, video3!, video4!, video5!, video6!, video7!, video8!, video9!, video10!]
+        return [video1!, video2!, video3!, video4!, video5!, video6!, video7!, video8!, video9!, video10!,
+                video11!,
+                video12!,
+                video13!,
+                video14!,
+                video15!]
     }
-    
     
     /*
     // MARK: - Navigation
