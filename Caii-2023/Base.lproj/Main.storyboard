@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAU-nG-qE5" userLabel="GreyView">
-                                <rect key="frame" x="0.0" y="103" width="393" height="233"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="240"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 de noviembre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df3-zM-1bL">
                                         <rect key="frame" x="76.333333333333329" y="32" width="240.66666666666669" height="29"/>
@@ -37,22 +37,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqr-XJ-eCd">
-                                        <rect key="frame" x="20" y="83" width="353" height="110"/>
+                                        <rect key="frame" x="20" y="83" width="353" height="117"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ceremonia de inaguración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOI-Uh-Td5">
-                                                <rect key="frame" x="15" y="15" width="242" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ceremonia de inaguración Ceremonia de inaguración" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOI-Uh-Td5">
+                                                <rect key="frame" x="15" y="15" width="328" height="33.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Hora: 8:45 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARv-LN-QUg">
-                                                <rect key="frame" x="15" y="37" width="107" height="17"/>
+                                                <rect key="frame" x="15" y="53.666666666666657" width="107" height="17"/>
                                                 <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Lugar: Sala de las naciones 2 y 3, 8vo piso." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpc-y2-g9k">
-                                                <rect key="frame" x="15" y="62" width="248" height="33.666666666666657"/>
+                                                <rect key="frame" x="15" y="74.666666666666686" width="248" height="33.666666666666657"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="248" id="kTE-9x-hOW"/>
                                                 </constraints>
@@ -61,7 +61,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caii_icono_primary" translatesAutoresizingMaskIntoConstraints="NO" id="wDx-OH-OGP">
-                                                <rect key="frame" x="265" y="15" width="80" height="80"/>
+                                                <rect key="frame" x="265" y="25" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="fkD-3g-6FF"/>
                                                     <constraint firstAttribute="height" constant="80" id="q4m-8d-WqS"/>
@@ -72,12 +72,13 @@
                                         <constraints>
                                             <constraint firstItem="ARv-LN-QUg" firstAttribute="leading" secondItem="Hqr-XJ-eCd" secondAttribute="leading" constant="15" id="Dyd-1c-Rwd"/>
                                             <constraint firstItem="ARv-LN-QUg" firstAttribute="top" secondItem="VOI-Uh-Td5" secondAttribute="bottom" constant="5" id="I3m-jm-yyI"/>
-                                            <constraint firstAttribute="bottom" secondItem="wDx-OH-OGP" secondAttribute="bottom" constant="15" id="Jj2-sb-bWI"/>
+                                            <constraint firstAttribute="bottom" secondItem="wDx-OH-OGP" secondAttribute="bottom" constant="12" id="Jj2-sb-bWI"/>
                                             <constraint firstAttribute="trailing" secondItem="wDx-OH-OGP" secondAttribute="trailing" constant="8" id="KXv-lc-AiO"/>
-                                            <constraint firstItem="tpc-y2-g9k" firstAttribute="top" secondItem="ARv-LN-QUg" secondAttribute="bottom" constant="8" id="S0h-dm-tAG"/>
+                                            <constraint firstItem="tpc-y2-g9k" firstAttribute="top" secondItem="ARv-LN-QUg" secondAttribute="bottom" constant="4" id="S0h-dm-tAG"/>
                                             <constraint firstItem="VOI-Uh-Td5" firstAttribute="leading" secondItem="Hqr-XJ-eCd" secondAttribute="leading" constant="15" id="g5D-QM-cgI"/>
+                                            <constraint firstAttribute="trailing" secondItem="VOI-Uh-Td5" secondAttribute="trailing" constant="10" id="h6Z-6x-Ll1"/>
                                             <constraint firstItem="VOI-Uh-Td5" firstAttribute="top" secondItem="Hqr-XJ-eCd" secondAttribute="top" constant="15" id="q3C-8R-v0j"/>
-                                            <constraint firstItem="wDx-OH-OGP" firstAttribute="top" secondItem="Hqr-XJ-eCd" secondAttribute="top" constant="15" id="r2F-SY-9V8"/>
+                                            <constraint firstItem="wDx-OH-OGP" firstAttribute="top" secondItem="Hqr-XJ-eCd" secondAttribute="top" constant="25" id="r2F-SY-9V8"/>
                                             <constraint firstItem="tpc-y2-g9k" firstAttribute="leading" secondItem="Hqr-XJ-eCd" secondAttribute="leading" constant="15" id="tdt-Tq-N5M"/>
                                         </constraints>
                                     </view>
@@ -112,7 +113,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="a90-pR-JmS">
-                                <rect key="frame" x="15" y="396" width="363" height="314"/>
+                                <rect key="frame" x="15" y="403" width="363" height="307"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ba8-yq-0f2">
                                     <size key="itemSize" width="128" height="128"/>

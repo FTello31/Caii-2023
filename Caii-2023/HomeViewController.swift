@@ -342,8 +342,8 @@ class HomeViewController: UIViewController {
         print("Subtítulo: \(eventoActual.subtitulo)")
         print("Lugar: \(eventoActual.lugar)")
         mainEventNameLabel.text = eventoActual.titulo
-        mainEventTimeLabel.text = "\(eventoActual.hora_inicio) - \(eventoActual.hora_final)"
-        mainEventPlaceLabel.text = eventoActual.lugar
+        mainEventTimeLabel.text = "Hora: \(eventoActual.hora_inicio) - \(eventoActual.hora_final)"
+        mainEventPlaceLabel.text = "Lugar: \(eventoActual.lugar)"
     }
     
     
