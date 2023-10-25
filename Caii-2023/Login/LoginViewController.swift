@@ -6,13 +6,11 @@
 //
 
 import UIKit
-import SwiftyGif
-
 
 class LoginViewController: UIViewController {
     
-//    let logoAnimationView = LogoAnimationView()
-
+    //    let logoAnimationView = LogoAnimationView()
+    
     let defaults = UserDefaults.standard
     
     
@@ -24,15 +22,13 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.addSubview(logoAnimationView)
-//        
-//        logoAnimationView.pinEdgesToSuperView()
-//        logoAnimationView.logoGifImageView.delegate = self
+        //        view.addSubview(logoAnimationView)
+        //
+        //        logoAnimationView.pinEdgesToSuperView()
+        //        logoAnimationView.logoGifImageView.delegate = self
         
         // Do any additional setup after loading the view.
-        setupStyles()
-        
-        
+        setupStyles()        
     }
     
     func presentGif(){
@@ -40,21 +36,21 @@ class LoginViewController: UIViewController {
         let avc : LoginAnimationViewController = LoginAnimationViewController()
         avc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         avc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-//        avc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        //        avc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         
         present(avc, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        presentGif()
-
-//        logoAnimationView.logoGifImageView.startAnimatingGif()
+        //        presentGif()
         
-//        segmentedControlDni.layer.cornerRadius = 30;
-//        segmentedControlDni.layer.borderColor = UIColor.blue.cgColor;
-//        segmentedControlDni.layer.borderWidth = 3.0;
-//        segmentedControlDni.layer.masksToBounds = true;
+        //        logoAnimationView.logoGifImageView.startAnimatingGif()
+        
+        //        segmentedControlDni.layer.cornerRadius = 30;
+        //        segmentedControlDni.layer.borderColor = UIColor.blue.cgColor;
+        //        segmentedControlDni.layer.borderWidth = 3.0;
+        //        segmentedControlDni.layer.masksToBounds = true;
     }
     
     func setupStyles(){
@@ -89,26 +85,56 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func onLoginPressed(_ sender: UIButton) {
-        if(inputDNI.text == "1"){
-            saveAuthenticatedUser(inputDNI.text! , "online")
-            goToMainStoryboard();
-        } else if(inputDNI.text == "2"){
-            saveAuthenticatedUser(inputDNI.text! , "offline")
-            goToMainStoryboard();
-        } else{
-            let alert = UIAlertController(title: "Hey", message: "DNI input esta vacio", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
+        //TODO
+//        if(inputDNI.text == "2"){
+//            saveAuthenticatedUser(inputDNI.text! , "Fer2", "2")
+//            goToMainStoryboard();
+//            return
+//        } else if(inputDNI.text == "1"){
+//            saveAuthenticatedUser(inputDNI.text! , "Fer1", "1")
+//            goToMainStoryboard();
+//            return
+//        }
         
-        
+        let apiService = APIService()
+        apiService.login(inputDNI.text!, completion: { result in
+            switch result {
+            case .success(let data):
+                // Handle the success case with the data
+                print("SuccessAGAGA: \(data)")
+                self.saveAuthenticatedUser(data.dni_doc,String(data.nombres.components(separatedBy: " ").first ?? data.nombres) , String(data.modalidad_id))
+                self.goToMainStoryboard();
+                
+            case .failure(let error):
+                let message: String
+                switch error {
+                case .userError:
+                    message = "Credenciales invalidas"
+                case .decodingError, .networkError:
+                    message = "Por favor contactese con el administrador: \(error)"
+                }
+                self.showAlert(message: message)
+                
+                //                 Handle the failure case with the error
+                print("Error: \(error)")
+            }
+        })
     }
     
-    func saveAuthenticatedUser(_ dni: String,_ version:String) -> Void {
-        defaults.set(dni, forKey: "isLoggedIn")
-        defaults.set(version, forKey: "version")
-        defaults.set(true, forKey: "firstTimeHome")
-        defaults.set(true, forKey: "firstTimeSchedule")
+    
+    func showAlert(message:String){
+        let alert = UIAlertController(title: "Hey", message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    func saveAuthenticatedUser(_ dni: String,_ firstName: String,_ version:String) -> Void {
+        defaults.set(dni, forKey: UDefaultValues.isLoggedIn.rawValue)
+        defaults.set(firstName, forKey: UDefaultValues.firstName.rawValue)
+        defaults.set(version, forKey: UDefaultValues.version.rawValue) // modalidad_id: 1 [PRESENCIAL], 2 [VIRTUAL]
+        defaults.set(true, forKey: UDefaultValues.firstTimeHome.rawValue)
+        defaults.set(true, forKey: UDefaultValues.firstTimeSchedule.rawValue)
     }
     
     
@@ -131,35 +157,10 @@ class LoginViewController: UIViewController {
      }
      */
     
-}
-//
-//
-//extension LoginViewController: SwiftyGifDelegate {
-//    func gifDidStop(sender: UIImageView) {
-//        logoAnimationView.isHidden = true
-//    }
-//}
-
-
-extension LoginViewController: SwiftyGifDelegate {
     
-    func gifURLDidFinish(sender: UIImageView) {
-            print("gifURLDidFinish")
-        }
-
-        func gifURLDidFail(sender: UIImageView) {
-            print("gifURLDidFail")
-        }
-
-        func gifDidStart(sender: UIImageView) {
-            print("gifDidStart")
-        }
-        
-        func gifDidLoop(sender: UIImageView) {
-            print("gifDidLoop")
-        }
-        
-        func gifDidStop(sender: UIImageView) {
-            print("gifDidStop")
-        }
+//
+//    func dispatchNotification(){
+//        let title = "ola"
+//        let body = "body1"
+//    }
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class ScheduleDetailViewController: UIViewController {
     
-    var detail: ScheduleData?
+    var detail: EventD?
     @IBOutlet weak var titleNameLabel: UILabel!
     
     @IBOutlet weak var descriptionShortLabel: UILabel!
@@ -22,9 +22,7 @@ class ScheduleDetailViewController: UIViewController {
     
     @IBOutlet weak var secondWhiteView: UIView!
     
-    
-    @IBOutlet weak var viewWrapper: UIView!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,10 +36,14 @@ class ScheduleDetailViewController: UIViewController {
     
     func setupData(){
         if let detailUnwrapped = detail {
-            print(detailUnwrapped)
-            titleNameLabel.text = detailUnwrapped.name
-            descriptionShortLabel.text = detailUnwrapped.descriptionShort
-            descriptionLongLabel.text = detailUnwrapped.description
+            titleNameLabel.text = detailUnwrapped.titulo
+            descriptionShortLabel.text = 
+"""
+Hora: \(detailUnwrapped.hora_inicio) - \(detailUnwrapped.hora_final)
+Fecha: \(detailUnwrapped.fecha_desde.components(separatedBy: " ").first ?? detailUnwrapped.fecha_desde)
+Lugar: \(detailUnwrapped.lugar)
+"""
+            descriptionLongLabel.text = detailUnwrapped.subtitulo
         }
     }
     
@@ -49,7 +51,6 @@ class ScheduleDetailViewController: UIViewController {
     func setupViewStyles(){
         firstWhiteView.layer.cornerRadius = 16
         secondWhiteView.layer.cornerRadius = 16
-        viewWrapper.layer.cornerRadius = 16
         
         watchOnlineBtn.layer.cornerRadius = 20
         watchOnlineBtn.layer.masksToBounds = true

@@ -29,13 +29,18 @@
 		ED2E09D22ADC3D93002C1A14 /* ReusablePopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */; };
 		ED5190C42ADCC9830057284D /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5190C32ADCC9830057284D /* PresentationViewController.swift */; };
 		ED5190C62ADCCEDB0057284D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */; };
+		ED61F3A12AE59FB4000C5A07 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED61F3A02AE59FB4000C5A07 /* LoginDataModel.swift */; };
 		ED692E852AD495AE00CD928D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED692E842AD495AE00CD928D /* Colors.xcassets */; };
+		ED6DD40C2AE709AE00FFE989 /* ScheduleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6DD40B2AE709AE00FFE989 /* ScheduleDataModel.swift */; };
+		ED6DD4102AE71C7900FFE989 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6DD40F2AE71C7900FFE989 /* Enums.swift */; };
+		ED6F40802AE410ED00703BBF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ED6F407F2AE410ED00703BBF /* Localizable.xcstrings */; };
 		ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C512AD6458A0078ABDB /* PonentesViewController.swift */; };
 		ED779C582AD645A90078ABDB /* FilterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C562AD645A80078ABDB /* FilterViewCell.swift */; };
 		ED779C592AD645A90078ABDB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C572AD645A90078ABDB /* Extension.swift */; };
 		ED779C5C2AD6562E0078ABDB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C5A2AD6562E0078ABDB /* TableViewCell.swift */; };
 		ED779C5D2AD6562E0078ABDB /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED779C5B2AD6562E0078ABDB /* TableViewCell.xib */; };
 		ED7FB6062AE1FE6E004D6283 /* LoginAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7FB6052AE1FE6E004D6283 /* LoginAnimationViewController.swift */; };
+		EDA75F1A2AE61102007966C6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA75F192AE61102007966C6 /* APIService.swift */; };
 		EDB8A2D62AD21C88002A0980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A2D52AD21C88002A0980 /* AppDelegate.swift */; };
 		EDB8A2D82AD21C88002A0980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB8A2D72AD21C88002A0980 /* SceneDelegate.swift */; };
 		EDB8A2DD2AD21C88002A0980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB8A2DB2AD21C88002A0980 /* Main.storyboard */; };
@@ -55,6 +60,7 @@
 		EDC7D7232AD9AE4F00997971 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */; };
 		EDD5A1D12AD284C6008BA59F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D02AD284C6008BA59F /* DataModel.swift */; };
 		EDD5A1D32AD28532008BA59F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D22AD28532008BA59F /* Data.swift */; };
+		EDF0CB932AE87DC90071F6D0 /* NotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0CB922AE87DC90071F6D0 /* NotificationsService.swift */; };
 		EDFE922C2ADAFEB9009175F5 /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,13 +110,20 @@
 		ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusablePopUpViewController.xib; sourceTree = "<group>"; };
 		ED5190C32ADCC9830057284D /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		ED61F3A02AE59FB4000C5A07 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
 		ED692E842AD495AE00CD928D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		ED6DD40B2AE709AE00FFE989 /* ScheduleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDataModel.swift; sourceTree = "<group>"; };
+		ED6DD40F2AE71C7900FFE989 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		ED6F407D2AE410AE00703BBF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		ED6F407E2AE410AE00703BBF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		ED6F407F2AE410ED00703BBF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		ED779C512AD6458A0078ABDB /* PonentesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonentesViewController.swift; sourceTree = "<group>"; };
 		ED779C562AD645A80078ABDB /* FilterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewCell.swift; sourceTree = "<group>"; };
 		ED779C572AD645A90078ABDB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		ED779C5A2AD6562E0078ABDB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		ED779C5B2AD6562E0078ABDB /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		ED7FB6052AE1FE6E004D6283 /* LoginAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAnimationViewController.swift; sourceTree = "<group>"; };
+		EDA75F192AE61102007966C6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		EDB8A2D22AD21C88002A0980 /* Caii-2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caii-2023.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB8A2D52AD21C88002A0980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDB8A2D72AD21C88002A0980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +147,7 @@
 		EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EDD5A1D02AD284C6008BA59F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		EDD5A1D22AD28532008BA59F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		EDF0CB922AE87DC90071F6D0 /* NotificationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsService.swift; sourceTree = "<group>"; };
 		EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,6 +249,7 @@
 		ED1A6CB42AD7562900008622 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				ED6DD40B2AE709AE00FFE989 /* ScheduleDataModel.swift */,
 				ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */,
 				ED18B49E2ADF2BFB0084EBD7 /* ScheduleDetailViewController.swift */,
 				ED18B49A2ADEFAAA0084EBD7 /* ScheduleTableViewCell.swift */,
@@ -246,6 +261,7 @@
 		ED1A6CB52AD7568800008622 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				ED61F3A02AE59FB4000C5A07 /* LoginDataModel.swift */,
 				EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */,
 				ED7FB6052AE1FE6E004D6283 /* LoginAnimationViewController.swift */,
 				EDB8A3132AD22556002A0980 /* LoginViewController.swift */,
@@ -273,9 +289,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		EDA75F182AE61052007966C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EDA75F192AE61102007966C6 /* APIService.swift */,
+				EDF0CB922AE87DC90071F6D0 /* NotificationsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EDB8A2C92AD21C88002A0980 = {
 			isa = PBXGroup;
 			children = (
+				ED6F407F2AE410ED00703BBF /* Localizable.xcstrings */,
 				EDB8A2D42AD21C88002A0980 /* Caii-2023 */,
 				EDB8A2EE2AD21C89002A0980 /* Caii-2023Tests */,
 				EDB8A2F82AD21C89002A0980 /* Caii-2023UITests */,
@@ -298,6 +324,7 @@
 		EDB8A2D42AD21C88002A0980 /* Caii-2023 */ = {
 			isa = PBXGroup;
 			children = (
+				EDA75F182AE61052007966C6 /* Services */,
 				EDD5A1CF2AD2848F008BA59F /* Model */,
 				EDB8A3082AD21D67002A0980 /* Fonts */,
 				EDB8A2D52AD21C88002A0980 /* AppDelegate.swift */,
@@ -313,6 +340,7 @@
 				ED1A6CAD2AD7408400008622 /* EmergencyPhones */,
 				ED1A6CB02AD7544400008622 /* Reusable */,
 				ED779C572AD645A90078ABDB /* Extension.swift */,
+				ED6DD40F2AE71C7900FFE989 /* Enums.swift */,
 				EDB8A2E32AD21C89002A0980 /* LaunchScreen.storyboard */,
 				ED692E832AD494D800CD928D /* Resources */,
 				EDB8A2E62AD21C89002A0980 /* Info.plist */,
@@ -452,11 +480,13 @@
 			};
 			buildConfigurationList = EDB8A2CD2AD21C88002A0980 /* Build configuration list for PBXProject "Caii-2023" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = es;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				es,
+				fr,
 			);
 			mainGroup = EDB8A2C92AD21C88002A0980;
 			productRefGroup = EDB8A2D32AD21C88002A0980 /* Products */;
@@ -487,6 +517,7 @@
 				ED18B49D2ADEFAAA0084EBD7 /* ScheduleTableViewCell.xib in Resources */,
 				ED1A6CAC2AD73BAD00008622 /* EmergencyPhonesTableViewCell.xib in Resources */,
 				ED692E852AD495AE00CD928D /* Colors.xcassets in Resources */,
+				ED6F40802AE410ED00703BBF /* Localizable.xcstrings in Resources */,
 				ED18B4992ADEE4060084EBD7 /* Animación_CAII_sin_fondo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +658,8 @@
 				EDB8A30E2AD21F81002A0980 /* HomeViewController.swift in Sources */,
 				ED1A6CA62AD6DE3600008622 /* PonenteDetailViewController.swift in Sources */,
 				ED779C592AD645A90078ABDB /* Extension.swift in Sources */,
+				EDF0CB932AE87DC90071F6D0 /* NotificationsService.swift in Sources */,
+				ED6DD40C2AE709AE00FFE989 /* ScheduleDataModel.swift in Sources */,
 				ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */,
 				ED0CAA0F2AD8924D00AC4159 /* WhereIsViewController.swift in Sources */,
 				ED5190C62ADCCEDB0057284D /* ScheduleViewController.swift in Sources */,
@@ -636,8 +669,11 @@
 				ED1A6CB92AD75B3A00008622 /* RestaurantsViewController.swift in Sources */,
 				ED18B49F2ADF2BFB0084EBD7 /* ScheduleDetailViewController.swift in Sources */,
 				ED1A6CAB2AD73BAD00008622 /* EmergencyPhonesTableViewCell.swift in Sources */,
+				ED6DD4102AE71C7900FFE989 /* Enums.swift in Sources */,
 				EDC7D7202AD9A6C800997971 /* GalleryViewController.swift in Sources */,
+				EDA75F1A2AE61102007966C6 /* APIService.swift in Sources */,
 				EDB8A2E02AD21C88002A0980 /* Caii_2023.xcdatamodeld in Sources */,
+				ED61F3A12AE59FB4000C5A07 /* LoginDataModel.swift in Sources */,
 				ED7FB6062AE1FE6E004D6283 /* LoginAnimationViewController.swift in Sources */,
 				ED18B49C2ADEFAAA0084EBD7 /* ScheduleTableViewCell.swift in Sources */,
 				EDB8A2D82AD21C88002A0980 /* SceneDelegate.swift in Sources */,
@@ -685,6 +721,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EDB8A2DC2AD21C88002A0980 /* Base */,
+				ED6F407D2AE410AE00703BBF /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -693,6 +730,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EDB8A2E42AD21C89002A0980 /* Base */,
+				ED6F407E2AE410AE00703BBF /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -705,6 +743,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -768,6 +807,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -838,6 +878,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -871,6 +912,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

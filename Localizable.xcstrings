@@ -1,0 +1,32 @@
+{
+  "sourceLanguage" : "es",
+  "strings" : {
+    "¡Hola, %@!" : {
+
+    },
+    "Bienvenido a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí." : {
+
+    },
+    "Encuentra todos los detalles de tu programa seleccionado aquí." : {
+
+    },
+    "iOS App Development Workshop" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS english"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS french"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

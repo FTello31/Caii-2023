@@ -12,8 +12,9 @@ class ScheduleViewController: UIViewController {
     
     var filters = ["DIA 1","DIA 2"]
     
-    var schedules: [ScheduleData] = []
-    
+    var schedules: [EventD] = []
+    var schedulesFromAPI: [EventD] = []
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionViewFilter: UICollectionView!
     
@@ -24,18 +25,18 @@ class ScheduleViewController: UIViewController {
         configureCollectionView()
         configureTableView()
         
-        loadSchedule()
+//        loadSchedule()
         setFirstFilterSelected()
         
-        if (defaults.bool(forKey: "firstTimeSchedule") == true) {
+        if (defaults.bool(forKey: UDefaultValues.firstTimeSchedule.rawValue) == true) {
             showPopUp()
-            defaults.setValue(false, forKey: "firstTimeSchedule")
+            defaults.setValue(false, forKey: UDefaultValues.firstTimeSchedule.rawValue)
         }
     }
     
-    func loadSchedule(){
-        schedules =  fetchData()
-    }
+//    func loadSchedule(){
+//        fetchData()
+//    }
     
     func configureCollectionView(){
         collectionViewFilter.dataSource = self
@@ -51,35 +52,37 @@ class ScheduleViewController: UIViewController {
     func setFirstFilterSelected(){
         let indexPath = self.collectionViewFilter.indexPathsForSelectedItems?.last ?? IndexPath(item: 0, section: 0)
         collectionViewFilter.selectItem(at: indexPath, animated: true, scrollPosition: UICollectionView.ScrollPosition.centeredHorizontally)
-        filterDay(category: filters[0])
+        filterDay(category: 1)
     }
     
     
-    func filterDay(category: String){
-        loadSchedule()
-        
-        schedules = schedules.filter { schedulePro in
-            return schedulePro.day == category
-        }
+    func filterDay(category: Int){
+        schedules = schedulesFromAPI
+
+        schedules = schedules.filter({ schedu in
+            return schedu.categoria == category
+        })
         
         self.tableView.reloadData()
     }
     
     
-    func fetchData() -> [ScheduleData] {
-        let schedule1 = ScheduleData(id: 1, name: "iOS App Development Workshop", description: "A hands-on workshop covering iOS app development, including UI design, networking, and Core Data.", descriptionShort: "Learn iOS App Development", day: "DIA 1", linkVideo: "workshop-ios-link", eventTime: "10:00 AM")
-        let schedule2 = ScheduleData(id: 2, name: "Effective Team Collaboration", description: "Explore effective team collaboration strategies for software development projects, including communication and task management.", descriptionShort: "Team Collaboration", day: "DIA 1", linkVideo: "team-collaboration-link", eventTime: "11:30 AM")
-        let schedule3 = ScheduleData(id: 3, name: "Xcode 13 Features Overview", description: "Discover the latest features and improvements in Xcode 13, including SwiftUI enhancements and debugging tools.", descriptionShort: "Xcode 13 Features", day: "DIA 1", linkVideo: "xcode-13-link", eventTime: "1:00 PM")
-        let schedule4 = ScheduleData(id: 4, name: "Restaurant Marketing Panel", description: "Join a panel discussion on successful restaurant marketing strategies, featuring industry experts and case studies.", descriptionShort: "Restaurant Marketing", day: "DIA 1", linkVideo: "restaurant-panel-link", eventTime: "2:30 PM")
-        let schedule5 = ScheduleData(id: 5, name: "Career Growth Success Stories", description: "Hear inspiring stories of professionals who achieved substantial career growth and increased their incomes.", descriptionShort: "Career Success Stories", day: "DIA 1", linkVideo: "career-success-stories-link", eventTime: "4:00 PM")
-        let schedule6 = ScheduleData(id: 6, name: "Mobile App Gesture Design", description: "Learn the principles and techniques of designing user-friendly mobile app gestures for improved user experiences.", descriptionShort: "Gesture Design", day: "DIA 2", linkVideo: "gesture-design-link", eventTime: "10:30 AM")
-        let schedule7 = ScheduleData(id: 7, name: "Tech Industry Trends 2023", description: "Explore the current and upcoming trends in the tech industry, from artificial intelligence to cybersecurity.", descriptionShort: "Tech Trends", day: "DIA 2", linkVideo: "tech-trends-2023-link", eventTime: "12:00 PM")
-        let schedule8 = ScheduleData(id: 8, name: "Wireless App Development", description: "Discover how to develop and test your mobile apps wirelessly, saving time and enhancing development workflows.", descriptionShort: "Wireless App Development", day: "DIA 2", linkVideo: "wireless-development-link", eventTime: "2:00 PM")
-        let schedule9 = ScheduleData(id: 9, name: "Swift Language Updates", description: "Stay updated with the latest changes and updates in the Swift programming language, including Swift 5.6 features.", descriptionShort: "Swift Updates", day: "DIA 2", linkVideo: "swift-updates-link", eventTime: "3:30 PM")
-        let schedule10 = ScheduleData(id: 10, name: "Emerging Technologies Showcase", description: "Get a firsthand look at emerging technologies and their applications across various industries.", descriptionShort: "Emerging Technologies", day: "DIA 2", linkVideo: "emerging-technologies-link", eventTime: "5:00 PM")
-        
-        return [schedule1, schedule2, schedule3, schedule4, schedule5, schedule6, schedule7, schedule8, schedule9, schedule10]
-    }
+//    func fetchData() {
+//        let apiService = APIService()
+//        apiService.getSchedulePrograms(completion: {sch in
+//            switch sch {
+//            case .success(let schedules):
+//                self.schedulesFromAPI = schedules
+//                self.filterDay(category: 1)
+//
+//            case .failure(let error):
+//                print(error)
+//            }
+//        })
+//            
+//            
+////        let schedule1 = ScheduleData(id: 1, name: String(localized: "iOS App Development Workshop"), description: "A hands-on workshop covering iOS app development, including UI design, networking, and Core Data.", descriptionShort: "Learn iOS App Development", day: "DIA 1", linkVideo: "workshop-ios-link", eventTime: "10:00 AM")
+//    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -87,7 +90,7 @@ class ScheduleViewController: UIViewController {
         // Pass the selected object to the new view controller.
         if segue.destination is ScheduleDetailViewController {
             let vc = segue.destination as? ScheduleDetailViewController
-            let detailToSend = sender as? ScheduleData
+            let detailToSend = sender as? EventD
             vc?.detail = detailToSend
         }
         
@@ -98,8 +101,8 @@ class ScheduleViewController: UIViewController {
         vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         vc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-        vc.titleLabel.text = "¡Sandra!"
-        vc.descriptionLabel.text = "Encuentra todos los detalles de tu programa seleccionado aquí."
+        vc.titleLabel.text = defaults.string(forKey: UDefaultValues.firstName.rawValue)
+        vc.descriptionLabel.text = String(localized: "Encuentra todos los detalles de tu programa seleccionado aquí.")
         
         present(vc, animated: true)
     }
@@ -148,7 +151,7 @@ extension ScheduleViewController: UICollectionViewDelegate,UICollectionViewDataS
         cell.labelFilterName.textColor = .white
         cell.viewFilter.backgroundColor = .black
         
-        filterDay(category: cell.labelFilterName.text!)
+        filterDay(category: indexPath.row+1)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -167,9 +170,9 @@ extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
         let schedule = schedules[indexPath.row]
         //        print(schedule)
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleTableViewCell", for: indexPath) as! ScheduleTableViewCell
-        cell.eventNameLabel.text = schedule.name
-        cell.eventDescriptionLabel.text = schedule.descriptionShort
-        cell.timeLabel.text = schedule.eventTime
+        cell.eventNameLabel.text = schedule.titulo
+        cell.eventDescriptionLabel.text = schedule.subtitulo
+        cell.timeLabel.text = "\(schedule.hora_inicio) - \(schedule.hora_final)"
         
         return cell
     }
