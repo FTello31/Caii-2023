@@ -23,9 +23,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var logoutBtn: UIButton!
     
     @IBOutlet weak var mainEventNameLabel: UILabel!
-    
-    @IBOutlet weak var mainEventPlaceLabel: UILabel!
-    
+        
     @IBOutlet weak var mainEventTimeLabel: UILabel!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -94,7 +92,7 @@ class HomeViewController: UIViewController {
         logoutBtn.layer.masksToBounds = true
         
         mainEventTimeLabel.font = customFont
-        mainEventPlaceLabel.font = customFont
+//        mainEventPlaceLabel.font = customFont
     }
     
     func formatTodayDateLabel(){
@@ -344,8 +342,8 @@ class HomeViewController: UIViewController {
 //        print("Subtítulo: \(eventoActual.subtitulo)")
 //        print("Lugar: \(eventoActual.lugar)")
         mainEventNameLabel.text = eventoActual.titulo
-        mainEventTimeLabel.text = "Hora: \(eventoActual.hora_inicio) - \(eventoActual.hora_final)"
-        mainEventPlaceLabel.text = "Lugar: \(eventoActual.lugar)"
+        mainEventTimeLabel.text = eventoActual.hora_inicio
+//        mainEventPlaceLabel.text = "Lugar: \(eventoActual.lugar)"
     }
     
     

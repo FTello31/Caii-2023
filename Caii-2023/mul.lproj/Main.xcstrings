@@ -92,13 +92,13 @@
       }
     },
     "ARv-LN-QUg.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Hora: 8:45 am\"; ObjectID = \"ARv-LN-QUg\";",
+      "comment" : "Class = \"UILabel\"; text = \"08:45 hrs\"; ObjectID = \"ARv-LN-QUg\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Hora: 8:45 am"
+            "value" : "08:45 hrs"
           }
         }
       }
@@ -140,13 +140,13 @@
       }
     },
     "df3-zM-1bL.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"27 de noviembre\"; ObjectID = \"df3-zM-1bL\";",
+      "comment" : "Class = \"UILabel\"; text = \"27 noviembre\"; ObjectID = \"df3-zM-1bL\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "27 de noviembre"
+            "value" : "27 noviembre"
           }
         }
       }
@@ -415,26 +415,14 @@
         }
       }
     },
-    "tpc-y2-g9k.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Lugar: Sala de las naciones 2 y 3, 8vo piso.\"; ObjectID = \"tpc-y2-g9k\";",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Lugar: Sala de las naciones 2 y 3, 8vo piso."
-          }
-        }
-      }
-    },
     "VOI-Uh-Td5.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Ceremonia de inaguración Ceremonia de inaguración\"; ObjectID = \"VOI-Uh-Td5\";",
+      "comment" : "Class = \"UILabel\"; text = \"Ceremonia de inaguración Ceremonia de inaguración Ceremonia de inaguración Ceremonia de inaguración\"; ObjectID = \"VOI-Uh-Td5\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Ceremonia de inaguración Ceremonia de inaguración"
+            "value" : "Ceremonia de inaguración Ceremonia de inaguración Ceremonia de inaguración Ceremonia de inaguración"
           }
         }
       }

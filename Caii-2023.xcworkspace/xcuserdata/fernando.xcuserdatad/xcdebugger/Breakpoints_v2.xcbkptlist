@@ -138,8 +138,8 @@
             filePath = "Caii-2023/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "HomeViewController"
             landmarkType = "3">
             <Locations>
@@ -268,8 +268,8 @@
             filePath = "Caii-2023/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "setupStyles()"
             landmarkType = "7">
          </BreakpointContent>
