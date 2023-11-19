@@ -1,0 +1,198 @@
+{
+  "sourceLanguage" : "es",
+  "strings" : {
+    "5Uj-Wx-RKd.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Si estás inscrito, accede aquí:\"; ObjectID = \"5Uj-Wx-RKd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If you are registered, access here:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Si estás inscrito, accede aquí:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si vous êtes inscrit, accédez ici :"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se você estiver inscrito, acesse aqui:"
+          }
+        }
+      }
+    },
+    "6PZ-Ke-9dY.segmentTitles[0]" : {
+      "comment" : "Class = \"UISegmentedControl\"; 6PZ-Ke-9dY.segmentTitles[0] = \"Peruano\"; ObjectID = \"6PZ-Ke-9dY\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruvian"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Peruano"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Péruvien"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruano"
+          }
+        }
+      }
+    },
+    "6PZ-Ke-9dY.segmentTitles[1]" : {
+      "comment" : "Class = \"UISegmentedControl\"; 6PZ-Ke-9dY.segmentTitles[1] = \"Extranjero\"; ObjectID = \"6PZ-Ke-9dY\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foreigner"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Extranjero"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Étranger"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estrangeiro"
+          }
+        }
+      }
+    },
+    "mmA-Xz-NT3.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Ingresa\"; ObjectID = \"mmA-Xz-NT3\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log in"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ingresa"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connexion"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrar"
+          }
+        }
+      }
+    },
+    "mmA-Xz-NT3.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Ingresa\"; ObjectID = \"mmA-Xz-NT3\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log in"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ingresa"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connexion"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrar"
+          }
+        }
+      }
+    },
+    "Oxm-1R-aej.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"Ingresar DNI\"; ObjectID = \"Oxm-1R-aej\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter ID"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ingresar DNI"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrer le numéro d'identité"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserir ID"
+          }
+        }
+      }
+    },
+    "Oxm-1R-aej.text" : {
+      "comment" : "Class = \"UITextField\"; text = \"25782655\"; ObjectID = \"Oxm-1R-aej\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "25782655"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

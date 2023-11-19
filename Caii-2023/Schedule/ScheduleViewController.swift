@@ -186,6 +186,7 @@ extension ScheduleViewController: UITableViewDataSource, UITableViewDelegate {
         //        let cell = tableView.cellForRow(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
         print(schedules[indexPath.row])
+        print("*****",schedules)
         //        performSegue(withIdentifier: "scheduleDetailSegue", sender: schedules[indexPath.row])
         performSegue(withIdentifier: "scheduleDetailSegue", sender: schedules[indexPath.row])
         

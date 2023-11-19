@@ -10,6 +10,7 @@ import UIKit
 class ScheduleDetailViewController: UIViewController {
     
     var detail: EventD?
+    var buttonLink: String = ""
     @IBOutlet weak var titleNameLabel: UILabel!
     
     @IBOutlet weak var descriptionShortLabel: UILabel!
@@ -28,22 +29,26 @@ class ScheduleDetailViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         setupViewStyles()
-        setupData()
-        
+        setupData()        
     }
-    
     
     
     func setupData(){
         if let detailUnwrapped = detail {
             titleNameLabel.text = detailUnwrapped.titulo
             descriptionShortLabel.text = 
-"""
+            String(localized: """
 Hora: \(detailUnwrapped.hora_inicio) - \(detailUnwrapped.hora_final)
 Fecha: \(detailUnwrapped.fecha_desde.components(separatedBy: " ").first ?? detailUnwrapped.fecha_desde)
 Lugar: \(detailUnwrapped.lugar)
-"""
+""")
+
             descriptionLongLabel.text = detailUnwrapped.subtitulo
+            if(detailUnwrapped.enlace == nil){
+                watchOnlineBtn.isHidden = true
+            }else {
+                buttonLink = detailUnwrapped.enlace!
+            }
         }
     }
     
@@ -61,18 +66,13 @@ Lugar: \(detailUnwrapped.lugar)
     
     
     @IBAction func onClickWatchOnline(_ sender: UIButton) {
-        
-        print("*****",sender)
-        
-        let youtubeId = "daI3lBeZgqM"
-        if let youtubeURL = URL(string: "youtube://\(youtubeId)"),
-           UIApplication.shared.canOpenURL(youtubeURL) {
-            // redirect to app
-            UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
-        } else if let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") {
-            // redirect through safari
-            UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+        if(buttonLink != ""){
+            if let zoomURL = URL(string: buttonLink) {
+                // redirect through safari
+                UIApplication.shared.open(zoomURL, options: [:], completionHandler: nil)
+            }
         }
+        
     }
     /*
      // MARK: - Navigation

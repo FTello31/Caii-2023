@@ -2,27 +2,258 @@
   "sourceLanguage" : "es",
   "strings" : {
     "¡Hola, %@!" : {
-
-    },
-    "Bienvenido a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí." : {
-
-    },
-    "Encuentra todos los detalles de tu programa seleccionado aquí." : {
-
-    },
-    "iOS App Development Workshop" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "iOS english"
+            "value" : "Hello, %@!"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "iOS french"
+            "value" : "Bonjour, %@!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olá, %@!"
+          }
+        }
+      }
+    },
+    "Bienvenido a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to CAII 2023. Find your personalized schedule and all the information about the event here."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenue à la CAII 2023. Trouvez votre programme personnalisé et toutes les informations sur l'événement ici."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bem-vindo à CAII 2023. Encontre sua programação personalizada e todas as informações sobre o evento aqui."
+          }
+        }
+      }
+    },
+    "CAII en vivo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CAII Live"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CAII en direct"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CAII ao vivo"
+          }
+        }
+      }
+    },
+    "Carnes, pastas" : {
+
+    },
+    "Contactos de emergencia" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emergency Contacts"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contacts d'urgence"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contatos de Emergência"
+          }
+        }
+      }
+    },
+    "Credenciales invalidas" : {
+
+    },
+    "Encuentra todos los detalles de tu programa seleccionado aquí." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find all the details of your selected program here."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trouvez tous les détails de votre programme sélectionné ici."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontre todos os detalhes do seu programa selecionado aqui."
+          }
+        }
+      }
+    },
+    "Hora: %@ - %@\nFecha: %@\nLugar: %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Hora: %1$@ - %2$@\nFecha: %3$@\nLugar: %4$@"
+          }
+        }
+      }
+    },
+    "Italiana, fusión" : {
+
+    },
+    "Japonesa, fusión" : {
+
+    },
+    "LUGARES TURÍSTICOS" : {
+
+    },
+    "Mi Programa" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Schedule"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mon programme"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meu Programa"
+          }
+        }
+      }
+    },
+    "Peruana" : {
+
+    },
+    "Peruana, Latina" : {
+
+    },
+    "Ponentes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speakers"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conférenciers"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palestrantes"
+          }
+        }
+      }
+    },
+    "Por favor contactese con el administrador: " : {
+
+    },
+    "Presentación" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Presentation"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Présentation"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apresentação"
+          }
+        }
+      }
+    },
+    "RESTAURANTES" : {
+
+    },
+    "Sede" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Venue"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lieu"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Local"
+          }
+        }
+      }
+    },
+    "Turismo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tourism"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tourisme"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turismo"
           }
         }
       }

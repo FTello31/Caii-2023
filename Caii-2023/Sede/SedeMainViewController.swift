@@ -9,7 +9,8 @@ import UIKit
 
 class SedeMainViewController: UIViewController {
 
-    var filters = ["¿DÓNDE ES?","¿CÓMO LLEGAR?","GALERÍA"]
+//    var filters = ["¿DÓNDE ES?","¿CÓMO LLEGAR?","GALERÍA"]
+    var filters = ["¿DÓNDE ES?","¿CÓMO LLEGAR?"]
 
     
     @IBOutlet weak var collectionViewFilter: UICollectionView!
@@ -78,11 +79,11 @@ class SedeMainViewController: UIViewController {
           add(asChildViewController: howToGetThereViewController)
 //            remove(asChildViewController: whereIsViewController)
 //            remove(asChildViewController: galleryViewController)
-        } else if(category == filters[2]) {
-//            containerView.addSubview(galleryViewController.view)
-            add(asChildViewController: galleryViewController)
-//            remove(asChildViewController: whereIsViewController)
-//            remove(asChildViewController: howToGetThereViewController)
+//        } else if(category == filters[2]) {
+////            containerView.addSubview(galleryViewController.view)
+//            add(asChildViewController: galleryViewController)
+////            remove(asChildViewController: whereIsViewController)
+////            remove(asChildViewController: howToGetThereViewController)
         }
     }
     

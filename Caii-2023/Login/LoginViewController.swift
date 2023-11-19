@@ -101,7 +101,7 @@ class LoginViewController: UIViewController {
             switch result {
             case .success(let data):
                 // Handle the success case with the data
-                print("SuccessAGAGA: \(data)")
+//                print("SuccessAGAGA: \(data)")
                 self.saveAuthenticatedUser(data.dni_doc,String(data.nombres.components(separatedBy: " ").first ?? data.nombres) , String(data.modalidad_id))
                 self.goToMainStoryboard();
                 
@@ -109,9 +109,9 @@ class LoginViewController: UIViewController {
                 let message: String
                 switch error {
                 case .userError:
-                    message = "Credenciales invalidas"
+                    message = String(localized: "Credenciales invalidas")
                 case .decodingError, .networkError:
-                    message = "Por favor contactese con el administrador: \(error)"
+                    message = String(localized: "Por favor contactese con el administrador: ") + error.localizedDescription
                 }
                 self.showAlert(message: message)
                 

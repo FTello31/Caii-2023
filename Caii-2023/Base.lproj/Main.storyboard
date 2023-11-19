@@ -1013,10 +1013,10 @@ mattis. </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjB-af-umS">
-                                <rect key="frame" x="16" y="218.66666666666666" width="361" height="323.33333333333337"/>
+                                <rect key="frame" x="16" y="220.33333333333334" width="361" height="321.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6p-2A-QBf">
-                                        <rect key="frame" x="18" y="18" width="325" height="287.33333333333331"/>
+                                        <rect key="frame" x="18" y="18" width="325" height="285.66666666666669"/>
                                         <string key="text">Lorem ipsum dolor sit amet, consectetur 
 adipiscing elit. Integer a venenatis sapien. 
 Nulla facilisi. Proin a lobortis urna, a imperdiet
@@ -1040,41 +1040,26 @@ mattis. </string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCU-zq-cah">
-                                <rect key="frame" x="16" y="50.000000000000007" width="361" height="118.66666666666669"/>
+                                <rect key="frame" x="16" y="49.999999999999993" width="361" height="120.33333333333331"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xp-mF-gl7">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="118.66666666666667"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpN-bA-wZf">
-                                                <rect key="frame" x="18" y="10.000000000000002" width="78.666666666666671" height="18.666666666666671"/>
-                                                <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFt-Ue-rcA">
-                                                <rect key="frame" x="18" y="38.666666666666671" width="217" height="61"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="217" id="CVJ-Wc-zln"/>
-                                                    <constraint firstAttribute="height" constant="61" id="jOn-Ig-jaa"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evento 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpN-bA-wZf">
+                                        <rect key="frame" x="18" y="9.9999999999999982" width="325" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFt-Ue-rcA">
+                                        <rect key="frame" x="18" y="39.333333333333329" width="217" height="61"/>
                                         <constraints>
-                                            <constraint firstItem="JpN-bA-wZf" firstAttribute="top" secondItem="3Xp-mF-gl7" secondAttribute="top" constant="10" id="KOe-6i-RvH"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JpN-bA-wZf" secondAttribute="trailing" constant="20" symbolic="YES" id="NMA-2c-KCg"/>
-                                            <constraint firstAttribute="trailing" secondItem="KFt-Ue-rcA" secondAttribute="trailing" constant="5" id="NS0-oO-RIk"/>
-                                            <constraint firstItem="KFt-Ue-rcA" firstAttribute="top" secondItem="JpN-bA-wZf" secondAttribute="bottom" constant="10" id="SEs-8e-fIc"/>
-                                            <constraint firstItem="JpN-bA-wZf" firstAttribute="leading" secondItem="3Xp-mF-gl7" secondAttribute="leading" constant="18" id="VFF-Kv-Ntq"/>
-                                            <constraint firstAttribute="bottom" secondItem="KFt-Ue-rcA" secondAttribute="bottom" constant="19" id="XDi-Ov-4jB"/>
-                                            <constraint firstItem="KFt-Ue-rcA" firstAttribute="leading" secondItem="3Xp-mF-gl7" secondAttribute="leading" constant="18" id="Yr2-mn-9LW"/>
+                                            <constraint firstAttribute="width" constant="217" id="CVJ-Wc-zln"/>
+                                            <constraint firstAttribute="height" constant="61" id="jOn-Ig-jaa"/>
                                         </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="l2M-6j-1bx">
-                                        <rect key="frame" x="250" y="30" width="103" height="60"/>
+                                        <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="l2M-6j-1bx">
+                                        <rect key="frame" x="250" y="40" width="103" height="50.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Ver en vivo" titleAlignment="center">
                                             <fontDescription key="titleFontDescription" name="Franie-Regular" family="Franie" pointSize="12"/>
@@ -1087,14 +1072,16 @@ mattis. </string>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="l2M-6j-1bx" secondAttribute="trailing" constant="18" id="65p-J4-Ive"/>
-                                    <constraint firstItem="l2M-6j-1bx" firstAttribute="top" secondItem="rCU-zq-cah" secondAttribute="top" constant="30" id="8tj-Cf-eHV"/>
-                                    <constraint firstAttribute="bottom" secondItem="3Xp-mF-gl7" secondAttribute="bottom" id="9bM-qY-NJ6"/>
-                                    <constraint firstItem="3Xp-mF-gl7" firstAttribute="top" secondItem="rCU-zq-cah" secondAttribute="top" id="MgI-H4-Ms4"/>
+                                    <constraint firstAttribute="trailing" secondItem="l2M-6j-1bx" secondAttribute="trailing" constant="8" id="65p-J4-Ive"/>
+                                    <constraint firstItem="l2M-6j-1bx" firstAttribute="top" secondItem="rCU-zq-cah" secondAttribute="top" constant="40" id="8tj-Cf-eHV"/>
+                                    <constraint firstItem="l2M-6j-1bx" firstAttribute="leading" secondItem="KFt-Ue-rcA" secondAttribute="trailing" constant="15" id="AsC-bs-R04"/>
                                     <constraint firstAttribute="bottom" secondItem="l2M-6j-1bx" secondAttribute="bottom" constant="30" id="PWP-UZ-r8A"/>
-                                    <constraint firstItem="3Xp-mF-gl7" firstAttribute="leading" secondItem="rCU-zq-cah" secondAttribute="leading" id="PvE-mi-3hA"/>
-                                    <constraint firstItem="l2M-6j-1bx" firstAttribute="leading" secondItem="3Xp-mF-gl7" secondAttribute="trailing" constant="10" id="Qhk-Hk-Lc4"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="hO6-mh-OEG"/>
+                                    <constraint firstAttribute="bottom" secondItem="KFt-Ue-rcA" secondAttribute="bottom" constant="20" id="gGG-hg-lqm"/>
+                                    <constraint firstItem="KFt-Ue-rcA" firstAttribute="top" secondItem="JpN-bA-wZf" secondAttribute="bottom" constant="10" id="hfu-W5-2xO"/>
+                                    <constraint firstItem="KFt-Ue-rcA" firstAttribute="leading" secondItem="rCU-zq-cah" secondAttribute="leading" constant="18" id="jn1-dC-4N9"/>
+                                    <constraint firstItem="JpN-bA-wZf" firstAttribute="leading" secondItem="rCU-zq-cah" secondAttribute="leading" constant="18" id="kcn-a5-PNq"/>
+                                    <constraint firstAttribute="trailing" secondItem="JpN-bA-wZf" secondAttribute="trailing" constant="18" id="rxe-S8-Gt5"/>
+                                    <constraint firstItem="JpN-bA-wZf" firstAttribute="top" secondItem="rCU-zq-cah" secondAttribute="top" constant="10" id="yus-ns-Cqz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1117,7 +1104,6 @@ mattis. </string>
                         <outlet property="firstWhiteView" destination="rCU-zq-cah" id="kLb-se-9rO"/>
                         <outlet property="secondWhiteView" destination="EjB-af-umS" id="L8K-MN-yUR"/>
                         <outlet property="titleNameLabel" destination="JpN-bA-wZf" id="Apw-60-joi"/>
-                        <outlet property="viewWrapper" destination="3Xp-mF-gl7" id="KVv-hP-Sii"/>
                         <outlet property="watchOnlineBtn" destination="l2M-6j-1bx" id="r6T-Fv-InN"/>
                     </connections>
                 </viewController>

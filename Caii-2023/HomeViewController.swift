@@ -100,9 +100,9 @@ class HomeViewController: UIViewController {
     func formatTodayDateLabel(){
         let date = Date()
         
-        print("a",Bundle.main.preferredLocalizations)
-        print("a",Bundle.main.preferredLocalizations[0])
-        print("b",Locale.current)
+//        print("a",Bundle.main.preferredLocalizations)
+//        print("a",Bundle.main.preferredLocalizations[0])
+//        print("b",Locale.current)
         
         let formatter = DateFormatter()
         formatter.locale = .current
@@ -121,18 +121,19 @@ class HomeViewController: UIViewController {
     
     
     func setHomeButtons() {
-        let button1 = HomeButton(id: 1, name: "Presentación", color: "PrimaryCAII", image: "icons8-presentation-60", viewControllerName: "PresentationViewController")
-        let button2 = HomeButton(id: 2, name: "Mi Programa", color: "GreyCAII", image: "icons8-schedule-60", viewControllerName: "ScheduleViewController")
-        let button3 = HomeButton(id: 3, name: "Sede", color: "YellowCAII", image: "icons8-library-60", viewControllerName: "SedeMainViewController")
-        let button4 = HomeButton(id: 4, name: "Ponentes", color: "LightblueCAII", image: "icons8-people-60", viewControllerName: "PonentesViewController")
-        let button5 = HomeButton(id: 5, name: "Turismo", color: "BlueCAII", image: "icons8-food-60", viewControllerName: "TourismViewController")
-        let button6 = HomeButton(id: 6, name: "Contactos de emergencia", color: "PrimaryCAII", image: "icons8-emergency-60", viewControllerName: "EmergencyPhonesViewController")
-        let button7 = HomeButton(id: 7, name: "CAII en vivo", color: "BlueCAII", image: "icons8-live-video-on-60", viewControllerName: "CAIIViewController")
+        let button1 = HomeButton(id: 1, name: String(localized: "Presentación"), color: "PrimaryCAII", image: "icons8-presentation-60", viewControllerName: "PresentationViewController")
+        let button2 = HomeButton(id: 2, name: String(localized: "Mi Programa"), color: "GreyCAII", image: "icons8-schedule-60", viewControllerName: "ScheduleViewController")
+        let button3 = HomeButton(id: 3, name: String(localized: "Sede"), color: "YellowCAII", image: "icons8-library-60", viewControllerName: "SedeMainViewController")
+        let button4 = HomeButton(id: 4, name: String(localized: "Ponentes"), color: "LightblueCAII", image: "icons8-people-60", viewControllerName: "PonentesViewController")
+        let button5 = HomeButton(id: 5, name: String(localized: "Turismo"), color: "BlueCAII", image: "turism", viewControllerName: "TourismViewController")
+        let button6 = HomeButton(id: 6, name: String(localized: "Contactos de emergencia"), color: "PrimaryCAII", image: "icons8-emergency-60", viewControllerName: "EmergencyPhonesViewController")
+        let button7 = HomeButton(id: 7, name: String(localized: "CAII en vivo"), color: "BlueCAII", image: "icons8-live-video-on-60", viewControllerName: "CAIIViewController")
+
         
         if(defaults.string(forKey: "version")!.elementsEqual("1")){
             homeButtons = [button1, button2, button3, button4, button5, button6]
         }else if(defaults.string(forKey: "version")!.elementsEqual("2")){
-            homeButtons = [button1, button2, button7, button4, button3, button6]
+            homeButtons = [button7, button1, button2, button4, button3, button6]
         }else if(defaults.string(forKey: "version")!.elementsEqual("3")){
             homeButtons = [button1, button2, button3, button4, button5, button6]
         }
@@ -145,8 +146,9 @@ class HomeViewController: UIViewController {
         apiService.getSchedulePrograms(completion: {sch in
             switch sch {
             case .success(let schedules):
-                //                self.schedulesFromAPI = schedules TODO
-                self.schedulesFromAPI = self.offlineData()
+                print(schedules)
+                    self.schedulesFromAPI = schedules /*TODO*/
+//                self.schedulesFromAPI = self.offlineData()
                 self.setEventShown(self.schedulesFromAPI)
                 self.setNotificationsFromAPI(self.schedulesFromAPI)
                 //            self.setNotifications(self.schedulesFromAPI)
@@ -157,99 +159,99 @@ class HomeViewController: UIViewController {
         
     }
     
-    func offlineData() -> [EventD] {
-        let data = [
-            [
-                "titulo": "PANEL 1:",
-                "subtitulo": "A casi una década de su revelación: ¿estamos ante el final del caso “Lava Jato” y sus redes en América Latina?",
-                "lugar": "Sala De las Naciones 1 – 8vo piso",
-                "fecha_desde": "2023-10-25 00:00:00",
-                "hora_inicio": "11:12",
-                "hora_final": "11:15",
-                "id": 609,
-                "confirmado": "S",
-                "enlace": nil
-            ],
-            [
-                "titulo": "FORO 1:",
-                "subtitulo": "Control gubernamental y control político. El trabajo conjunto de las Entidades Fiscalizadoras Superiores y los Parlamentos",
-                "lugar": "Sala Puruchuco – 4to piso",
-                "fecha_desde": "2023-10-25 00:00:00",
-                "hora_inicio": "11:20",
-                "hora_final": "11:22",
-                "id": 611,
-                "confirmado": "S",
-                "enlace": nil
-            ],
-            [
-                "titulo": "PRESENTACIÓN DE INVESTIGACIÓN",
-                "subtitulo": "De película de terror a las instituciones públicas de la región: El escándalo de los trabajadores y empresas fantasmas",
-                "lugar": "Sala Huallamarca – 4to piso",
-                "fecha_desde": "2023-10-25 00:00:00",
-                "hora_inicio": "11:25",
-                "hora_final": "11:30",
-                "id": 614,
-                "confirmado": "S",
-                "enlace": nil
-            ],
-            [
-                "titulo": "PANEL 4:",
-                "subtitulo": "¿Se puede elegir al mejor postor? Avances y retos de las contrataciones públicas en el Perú",
-                "lugar": "Sala de las Naciones 1 – 8vo piso",
-                "fecha_desde": "2023-10-25 00:00:00",
-                "hora_inicio": "11:33",
-                "hora_final": "11:36",
-                "id": 615,
-                "confirmado": "S",
-                "enlace": nil
-            ],
-            [
-                "titulo": "EXPOSICIÓN DE CORTOMETRAJES POR LA INTEGRIDAD",
-                "subtitulo": "Proyecto “Haz corto con la corrupción”",
-                "lugar": "Sala De las Naciones 3 – 8vo piso",
-                "fecha_desde": "2023-10-25 00:00:00",
-                "hora_inicio": "11:40",
-                "hora_final": "11:43",
-                "id": 620,
-                "confirmado": "S",
-                "enlace": nil
-            ],
-            [
-                "titulo": "EXPOSICIÓN DE CORTOMETRAJES POR LA INTEGRIDAD",
-                "subtitulo": "“La colaboración transnacional para investigar casos de corrupción”",
-                "lugar": "Sala de las Naciones 1 – 8vo piso",
-                "fecha_desde": "2023-10-25 00:00:00",
-                "hora_inicio": "11:45",
-                "hora_final": "11:50",
-                "id": 622,
-                "confirmado": "S",
-                "enlace": nil
-            ]
-        ]
-        
-        var eventDArray = [EventD]()
-        
-        for event in data {
-            if let titulo = event["titulo"] as? String,
-               let subtitulo = event["subtitulo"] as? String,
-               let lugar = event["lugar"] as? String,
-               let fecha_desde = event["fecha_desde"] as? String,
-               let hora_inicio = event["hora_inicio"] as? String,
-               let hora_final = event["hora_final"] as? String,
-               let id = event["id"] as? Int,
-               let confirmado = event["confirmado"] as? String {
-                
-                let enlace = event["enlace"] as? String
-                
-                let eventD = EventD(titulo: titulo, subtitulo: subtitulo, lugar: lugar, fecha_desde: fecha_desde, hora_inicio: hora_inicio, hora_final: hora_final, id: id, confirmado: confirmado, enlace: enlace)
-                
-                eventDArray.append(eventD)
-            }
-        }
-        
-        return eventDArray
-    }
-    
+//    func offlineData() -> [EventD] {
+//        let data = [
+//            [
+//                "titulo": "PANEL 1:",
+//                "subtitulo": "A casi una década de su revelación: ¿estamos ante el final del caso “Lava Jato” y sus redes en América Latina?",
+//                "lugar": "Sala De las Naciones 1 – 8vo piso",
+//                "fecha_desde": "2023-10-25 00:00:00",
+//                "hora_inicio": "11:12",
+//                "hora_final": "11:15",
+//                "id": 609,
+//                "confirmado": "S",
+//                "enlace": nil
+//            ],
+//            [
+//                "titulo": "FORO 1:",
+//                "subtitulo": "Control gubernamental y control político. El trabajo conjunto de las Entidades Fiscalizadoras Superiores y los Parlamentos",
+//                "lugar": "Sala Puruchuco – 4to piso",
+//                "fecha_desde": "2023-10-25 00:00:00",
+//                "hora_inicio": "11:20",
+//                "hora_final": "11:22",
+//                "id": 611,
+//                "confirmado": "S",
+//                "enlace": nil
+//            ],
+//            [
+//                "titulo": "PRESENTACIÓN DE INVESTIGACIÓN",
+//                "subtitulo": "De película de terror a las instituciones públicas de la región: El escándalo de los trabajadores y empresas fantasmas",
+//                "lugar": "Sala Huallamarca – 4to piso",
+//                "fecha_desde": "2023-10-25 00:00:00",
+//                "hora_inicio": "11:25",
+//                "hora_final": "11:30",
+//                "id": 614,
+//                "confirmado": "S",
+//                "enlace": nil
+//            ],
+//            [
+//                "titulo": "PANEL 4:",
+//                "subtitulo": "¿Se puede elegir al mejor postor? Avances y retos de las contrataciones públicas en el Perú",
+//                "lugar": "Sala de las Naciones 1 – 8vo piso",
+//                "fecha_desde": "2023-10-25 00:00:00",
+//                "hora_inicio": "11:33",
+//                "hora_final": "11:36",
+//                "id": 615,
+//                "confirmado": "S",
+//                "enlace": nil
+//            ],
+//            [
+//                "titulo": "EXPOSICIÓN DE CORTOMETRAJES POR LA INTEGRIDAD",
+//                "subtitulo": "Proyecto “Haz corto con la corrupción”",
+//                "lugar": "Sala De las Naciones 3 – 8vo piso",
+//                "fecha_desde": "2023-10-25 00:00:00",
+//                "hora_inicio": "11:40",
+//                "hora_final": "11:43",
+//                "id": 620,
+//                "confirmado": "S",
+//                "enlace": nil
+//            ],
+//            [
+//                "titulo": "EXPOSICIÓN DE CORTOMETRAJES POR LA INTEGRIDAD",
+//                "subtitulo": "“La colaboración transnacional para investigar casos de corrupción”",
+//                "lugar": "Sala de las Naciones 1 – 8vo piso",
+//                "fecha_desde": "2023-10-25 00:00:00",
+//                "hora_inicio": "11:45",
+//                "hora_final": "11:50",
+//                "id": 622,
+//                "confirmado": "S",
+//                "enlace": nil
+//            ]
+//        ]
+//        
+//        var eventDArray = [EventD]()
+//        
+//        for event in data {
+//            if let titulo = event["titulo"] as? String,
+//               let subtitulo = event["subtitulo"] as? String,
+//               let lugar = event["lugar"] as? String,
+//               let fecha_desde = event["fecha_desde"] as? String,
+//               let hora_inicio = event["hora_inicio"] as? String,
+//               let hora_final = event["hora_final"] as? String,
+//               let id = event["id"] as? Int,
+//               let confirmado = event["confirmado"] as? String {
+//                
+//                let enlace = event["enlace"] as? String
+//                
+//                let eventD = EventD(titulo: titulo, subtitulo: subtitulo, lugar: lugar, fecha_desde: fecha_desde, hora_inicio: hora_inicio, hora_final: hora_final, id: id, confirmado: confirmado, enlace: enlace)
+//                
+//                eventDArray.append(eventD)
+//            }
+//        }
+//        
+//        return eventDArray
+//    }
+//    
     
     func setEventShown(_ schedules: [EventD]){
         
@@ -337,10 +339,10 @@ class HomeViewController: UIViewController {
     
     
     func showCurrentEvent(_ eventoActual:EventD){
-        print("El evento actual es:")
-        print("Título: \(eventoActual.titulo)")
-        print("Subtítulo: \(eventoActual.subtitulo)")
-        print("Lugar: \(eventoActual.lugar)")
+//        print("El evento actual es:")
+//        print("Título: \(eventoActual.titulo)")
+//        print("Subtítulo: \(eventoActual.subtitulo)")
+//        print("Lugar: \(eventoActual.lugar)")
         mainEventNameLabel.text = eventoActual.titulo
         mainEventTimeLabel.text = "Hora: \(eventoActual.hora_inicio) - \(eventoActual.hora_final)"
         mainEventPlaceLabel.text = "Lugar: \(eventoActual.lugar)"
@@ -368,7 +370,7 @@ class HomeViewController: UIViewController {
         
         let content = UNMutableNotificationContent()
         content.title = schedule.titulo
-        content.body = schedule.subtitulo
+        content.body = schedule.subtitulo ?? "-"
         content.sound = UNNotificationSound.default
         
         let dateFormatter = DateFormatter()

@@ -31,7 +31,8 @@ class TourismPlacesViewController: UIViewController {
             tourismName.text = detailUnwrapped.name
 //            timeLabel.text = String (detailUnwrapped.id)
             tourismDescription.text = detailUnwrapped.description
-            }
+            imageView.image = UIImage(named: detailUnwrapped.image)
+        }
     }
     /*
     // MARK: - Navigation

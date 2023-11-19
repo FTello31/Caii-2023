@@ -56,15 +56,21 @@ class EmergencyPhonesViewController: UIViewController {
     }
     
     func fetchData() -> [EmergencyPhones] {
-        let video1 = EmergencyPhones(name: "POLICIA", number: 1, category: "Seguridad")
-        let video2 = EmergencyPhones(name: "POLICIA 2", number: 2, category: "Seguridad")
-        let video3 = EmergencyPhones(name: "What's New in Xcode 11", number: 3, category: "Seguridad")
-        let video4 = EmergencyPhones(name: "Patreon Revamp", number: 4, category: "Salud")
-        let video5 = EmergencyPhones(name: "BOMBEROS", number: 5, category: "Salud")
-        let video6 = EmergencyPhones(name: "Shake Gesture", number: 6, category: "Salud")
-        
-        return [video1, video2, video3, video4, video5, video6]
+        let video1 = EmergencyPhones(name: "Central Policial", number: 105, category: "Seguridad")
+            let video2 = EmergencyPhones(name: "Defensa Civil", number: 110, category: "Seguridad")
+            let video3 = EmergencyPhones(name: "Cruz Roja", number: 115, category: "Seguridad")
+            let video4 = EmergencyPhones(name: "Bomberos", number: 116, category: "Seguridad")
+            let video5 = EmergencyPhones(name: "Serenazgo San Borja", number: 016311000, category: "Seguridad")
+            let video6 = EmergencyPhones(name: "Clínica San Borja", number: 016355000, category: "Salud")
+            let video7 = EmergencyPhones(name: "Clínica Internacional", number: 016196161, category: "Salud")
+            let video8 = EmergencyPhones(name: "Clínica Bienestar Medico y Tecnologia - BMT", number: 015002100, category: "Salud")
+            let video9 = EmergencyPhones(name: "Clínica San Borja Salud 24 Horas", number: 998870012, category: "Salud")
+            let video10 = EmergencyPhones(name: "Clínica Javier Prado", number: 012114141, category: "Salud")
+            let video11 = EmergencyPhones(name: "Clínica Ricardo Palma", number: 012242224, category: "Salud")
+
+            return [video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11]
     }
+    
     
     /*
      // MARK: - Navigation

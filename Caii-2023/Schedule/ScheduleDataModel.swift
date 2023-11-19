@@ -16,13 +16,13 @@ struct EventsData: Codable {
 
 struct EventD: Codable {
     let titulo: String
-    let subtitulo: String
+    let subtitulo: String?
     let lugar: String
     let fecha_desde: String
     let hora_inicio: String
     let hora_final: String
     let id: Int
-    let confirmado: String
+    let confirmado: String?
     let enlace: String?
     
     var day:String{

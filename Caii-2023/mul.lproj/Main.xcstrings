@@ -1,0 +1,504 @@
+{
+  "sourceLanguage" : "es",
+  "strings" : {
+    "0eM-G7-Idf.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Contralor general de la República \\ndel Perú\"; ObjectID = \"0eM-G7-Idf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Contralor general de la República \ndel Perú"
+          }
+        }
+      }
+    },
+    "2j4-T8-y2k.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Sobre el restaurante\"; ObjectID = \"2j4-T8-y2k\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About the restaurant"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Sobre el restaurante"
+          }
+        }
+      }
+    },
+    "2nC-wp-GWx.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Conferencia magistral\"; ObjectID = \"2nC-wp-GWx\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Conferencia magistral"
+          }
+        }
+      }
+    },
+    "7Tn-Pa-WsW.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"exampleFilter\"; ObjectID = \"7Tn-Pa-WsW\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "exampleFilter"
+          }
+        }
+      }
+    },
+    "55k-1O-ocR.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Label\"; ObjectID = \"55k-1O-ocR\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Label"
+          }
+        }
+      }
+    },
+    "58s-yM-wbl.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a venenatis sapien. \\nNulla facilisi. Proin a lobortis urna, a imperdiet  odio. Integer ligula purus, gravida sit amet magna in, lobortis laoreet justo. Pellentesque \\nut efficitur sapien, a congue purus. Praesent Fusce sem ligula, imperdiet vitae facilisis eg, \\ntincidunt eu metus. Nunc elementum ornare mattis. Integer vehicula eleifend dolor et convallis. Maecenas tempus et diam sed\\nlobortis. \"; ObjectID = \"58s-yM-wbl\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a venenatis sapien. \nNulla facilisi. Proin a lobortis urna, a imperdiet  odio. Integer ligula purus, gravida sit amet magna in, lobortis laoreet justo. Pellentesque \nut efficitur sapien, a congue purus. Praesent Fusce sem ligula, imperdiet vitae facilisis eg, \ntincidunt eu metus. Nunc elementum ornare mattis. Integer vehicula eleifend dolor et convallis. Maecenas tempus et diam sed\nlobortis. "
+          }
+        }
+      }
+    },
+    "94E-g4-ls2.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"exampleFilter\"; ObjectID = \"94E-g4-ls2\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "exampleFilter"
+          }
+        }
+      }
+    },
+    "ARv-LN-QUg.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Hora: 8:45 am\"; ObjectID = \"ARv-LN-QUg\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Hora: 8:45 am"
+          }
+        }
+      }
+    },
+    "CFe-rI-UIn.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lima Centro de Convenciones LCC\"; ObjectID = \"CFe-rI-UIn\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lima Centro de Convenciones LCC"
+          }
+        }
+      }
+    },
+    "ch1-vZ-qrc.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Abrir en mapas\"; ObjectID = \"ch1-vZ-qrc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Abrir en mapas"
+          }
+        }
+      }
+    },
+    "ch1-vZ-qrc.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"ch1-vZ-qrc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "df3-zM-1bL.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"27 de noviembre\"; ObjectID = \"df3-zM-1bL\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "27 de noviembre"
+          }
+        }
+      }
+    },
+    "DOO-ox-TWR.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"exampleFilter\"; ObjectID = \"DOO-ox-TWR\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "exampleFilter"
+          }
+        }
+      }
+    },
+    "dYi-xX-Az2.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Carla Example\"; ObjectID = \"dYi-xX-Az2\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Carla Example"
+          }
+        }
+      }
+    },
+    "g6p-2A-QBf.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lorem ipsum dolor sit amet, consectetur \\nadipiscing elit. Integer a venenatis sapien. \\nNulla facilisi. Proin a lobortis urna, a imperdiet\\n odio. Integer ligula purus, gravida sit amet \\nmagna in, lobortis laoreet justo. Pellentesque \\nut efficitur sapien, a congue purus. Praesent \\nFusce sem ligula, imperdiet vitae facilisis eg, \\ntincidunt eu metus. Nunc elementum ornare \\nmattis. \"; ObjectID = \"g6p-2A-QBf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Integer a venenatis sapien. \nNulla facilisi. Proin a lobortis urna, a imperdiet\n odio. Integer ligula purus, gravida sit amet \nmagna in, lobortis laoreet justo. Pellentesque \nut efficitur sapien, a congue purus. Praesent \nFusce sem ligula, imperdiet vitae facilisis eg, \ntincidunt eu metus. Nunc elementum ornare \nmattis. "
+          }
+        }
+      }
+    },
+    "gtA-LP-3PO.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lorem ipsum dolor sit amet, consectetur.\"; ObjectID = \"gtA-LP-3PO\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lorem ipsum dolor sit amet, consectetur."
+          }
+        }
+      }
+    },
+    "HOr-wg-XFP.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Av. de la Arqueología 206\\nSan Borja 15021\"; ObjectID = \"HOr-wg-XFP\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Av. de la Arqueología 206\nSan Borja 15021"
+          }
+        }
+      }
+    },
+    "jgd-8P-BKb.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lorem ipsum dolor sit amet, consectetur \\nadipiscing elit. Integer a venenatis sapien. \\nNulla facilisi. Proin a lobortis urna, a imperdiet\\n odio. Integer ligula purus, gravida sit amet \\nmagna in, lobortis laoreet justo. Pellentesque \\nut efficitur sapien, a congue purus. Praesent \\nFusce sem ligula, imperdiet vitae facilisis eg, \\ntincidunt eu metus. Nunc elementum ornare \\nmattis. Integer vetincidunt eu metus. Nunc elementum ornare \\nmattis. Integer vehicula eleifend dolor et \\nconvallis. Maecenas tempus et diam sed\\nlobortis. \"; ObjectID = \"jgd-8P-BKb\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Integer a venenatis sapien. \nNulla facilisi. Proin a lobortis urna, a imperdiet\n odio. Integer ligula purus, gravida sit amet \nmagna in, lobortis laoreet justo. Pellentesque \nut efficitur sapien, a congue purus. Praesent \nFusce sem ligula, imperdiet vitae facilisis eg, \ntincidunt eu metus. Nunc elementum ornare \nmattis. Integer vetincidunt eu metus. Nunc elementum ornare \nmattis. Integer vehicula eleifend dolor et \nconvallis. Maecenas tempus et diam sed\nlobortis. "
+          }
+        }
+      }
+    },
+    "JlU-cE-UZU.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lugar Ejemplo\"; ObjectID = \"JlU-cE-UZU\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lugar Ejemplo"
+          }
+        }
+      }
+    },
+    "JpN-bA-wZf.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Evento 1\"; ObjectID = \"JpN-bA-wZf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Evento 1"
+          }
+        }
+      }
+    },
+    "KFt-Ue-rcA.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lorem ipsum dolor sit amet, consectetur \"; ObjectID = \"KFt-Ue-rcA\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lorem ipsum dolor sit amet, consectetur "
+          }
+        }
+      }
+    },
+    "l2M-6j-1bx.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Ver en vivo\"; ObjectID = \"l2M-6j-1bx\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ver en vivo"
+          }
+        }
+      }
+    },
+    "l2M-6j-1bx.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"l2M-6j-1bx\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "N2x-CI-n01.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Fecha: 12/10/2023\"; ObjectID = \"N2x-CI-n01\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Fecha: 12/10/2023"
+          }
+        }
+      }
+    },
+    "oBX-Aj-f7g.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"exampleFilter\"; ObjectID = \"oBX-Aj-f7g\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "exampleFilter"
+          }
+        }
+      }
+    },
+    "P64-4I-K8L.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lorem ipsum dolor sit amet, consectetur.\"; ObjectID = \"P64-4I-K8L\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lorem ipsum dolor sit amet, consectetur."
+          }
+        }
+      }
+    },
+    "qV2-ec-vB7.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Diseñado para responder a cuatro objetivos estratégicos: ser un motor cultural y económico del país, representar un lugar de encuentro en el corazón de la capital enraizado en la cultura colectiva peruana, convertirse en un hito arquitectónico singular, flexible y tecnológicamente avanzado, y finalmente, ser el detonante de la transformación urbana del Centro Cultural de la Nación y de su entorno próximo.\"; ObjectID = \"qV2-ec-vB7\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Diseñado para responder a cuatro objetivos estratégicos: ser un motor cultural y económico del país, representar un lugar de encuentro en el corazón de la capital enraizado en la cultura colectiva peruana, convertirse en un hito arquitectónico singular, flexible y tecnológicamente avanzado, y finalmente, ser el detonante de la transformación urbana del Centro Cultural de la Nación y de su entorno próximo."
+          }
+        }
+      }
+    },
+    "rko-tH-TNd.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lorem ipsum dolor sit amet, consectetur \\nadipiscing elit. Integer a venenatis sapien. \\nNulla facilisi. Proin a lobortis urna, a imperdiet\\n odio. Integer ligula purus, gravida sit amet \\nmagna in, lobortis laoreet justo. Pellentesque \\nut efficitur sapien, a congue purus. Praesent \\nFusce sem ligula, imperdiet vitae facilisis eg, \\ntincidunt eu metus. Nunc elementum ornare \\nmattis. \"; ObjectID = \"rko-tH-TNd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Integer a venenatis sapien. \nNulla facilisi. Proin a lobortis urna, a imperdiet\n odio. Integer ligula purus, gravida sit amet \nmagna in, lobortis laoreet justo. Pellentesque \nut efficitur sapien, a congue purus. Praesent \nFusce sem ligula, imperdiet vitae facilisis eg, \ntincidunt eu metus. Nunc elementum ornare \nmattis. "
+          }
+        }
+      }
+    },
+    "Sdh-27-bjm.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Hora: 2:00 pm\"; ObjectID = \"Sdh-27-bjm\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Hora: 2:00 pm"
+          }
+        }
+      }
+    },
+    "t58-Jz-1kD.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"La Conferencia Anual Internacional por la Integridad-CAII 2023, es un espacio académico global que fomenta el análisis y debate experto sobre integridad y anticorrupción. Con el tema \\\"Frenando la corrupción: Estrategias colaborativas y sanciones\\\", se exploran innovaciones en teorías, estrategias y roles multiactor en la investigación y sanción de la corrupción. Esta novena edición se alinea con nuestra estrategia institucional para reducir la corrupción, gestionar eficazmente recursos públicos y fomentar valores e integridad. Únete a este encuentro especializado que busca impulsar el conocimiento y acceso a buenas prácticas en integridad pública. ¡Bienvenidos a la CAII 2023!\"; ObjectID = \"t58-Jz-1kD\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "La Conferencia Anual Internacional por la Integridad-CAII 2023, es un espacio académico global que fomenta el análisis y debate experto sobre integridad y anticorrupción. Con el tema \"Frenando la corrupción: Estrategias colaborativas y sanciones\", se exploran innovaciones en teorías, estrategias y roles multiactor en la investigación y sanción de la corrupción. Esta novena edición se alinea con nuestra estrategia institucional para reducir la corrupción, gestionar eficazmente recursos públicos y fomentar valores e integridad. Únete a este encuentro especializado que busca impulsar el conocimiento y acceso a buenas prácticas en integridad pública. ¡Bienvenidos a la CAII 2023!"
+          }
+        }
+      }
+    },
+    "tD8-T9-tfz.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Nelson Shack Yalta\"; ObjectID = \"tD8-T9-tfz\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Nelson Shack Yalta"
+          }
+        }
+      }
+    },
+    "tj2-qu-fef.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Restaurante Ejemplo\"; ObjectID = \"tj2-qu-fef\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Restaurante Ejemplo"
+          }
+        }
+      }
+    },
+    "Tlm-ig-3Rm.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Cerrar Sesion\"; ObjectID = \"Tlm-ig-3Rm\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Cerrar Sesion"
+          }
+        }
+      }
+    },
+    "Tlm-ig-3Rm.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Cerrar Sesion\"; ObjectID = \"Tlm-ig-3Rm\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Cerrar Sesion"
+          }
+        }
+      }
+    },
+    "tpc-y2-g9k.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lugar: Sala de las naciones 2 y 3, 8vo piso.\"; ObjectID = \"tpc-y2-g9k\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lugar: Sala de las naciones 2 y 3, 8vo piso."
+          }
+        }
+      }
+    },
+    "VOI-Uh-Td5.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Ceremonia de inaguración Ceremonia de inaguración\"; ObjectID = \"VOI-Uh-Td5\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ceremonia de inaguración Ceremonia de inaguración"
+          }
+        }
+      }
+    },
+    "XCn-Lb-FEe.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"exampleFilter\"; ObjectID = \"XCn-Lb-FEe\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "exampleFilter"
+          }
+        }
+      }
+    },
+    "xcR-Oa-rgo.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Lugar: Sala Nº1 - 8vo Piso\"; ObjectID = \"xcR-Oa-rgo\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Lugar: Sala Nº1 - 8vo Piso"
+          }
+        }
+      }
+    },
+    "YIX-k3-Sly.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Ver vídeo\"; ObjectID = \"YIX-k3-Sly\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ver vídeo"
+          }
+        }
+      }
+    },
+    "YIX-k3-Sly.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"YIX-k3-Sly\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "ZTu-85-3Qa.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Av. de la Arqueología 206 - San Borja 15021\"; ObjectID = \"ZTu-85-3Qa\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Av. de la Arqueología 206 - San Borja 15021"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -43,6 +43,7 @@ class RestaurantsViewController: UIViewController {
             restaurantDescriptionLabel.text = detailUnwrapped.description
             locationInfoLabel.text = detailUnwrapped.location
             informationLabel.text = detailUnwrapped.website
+            restaurantImageView.image = UIImage(named: detailUnwrapped.image)
             }
     }
 

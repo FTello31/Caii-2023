@@ -11,6 +11,7 @@ protocol ListItem {
     var name: String { get }
     var id: Int { get }
     var description: String { get }
+    var image: String { get }
     // Otras propiedades comunes si es necesario
 }
 
@@ -31,9 +32,10 @@ struct PonentesData: Codable {
     let category: String
     let description: String
     let eventName: String
+    let placeLabel: String
     let timeLabel: String
     let dateLabel: String
-    let placeLabel: String
+    let image: String
 }
 
 struct EmergencyPhones: Codable {
@@ -43,15 +45,18 @@ struct EmergencyPhones: Codable {
 }
 
 struct TourismPlaces: Codable,ListItem {
+    var image: String
     let name: String
     let id: Int
     let description: String
 }
 
 struct Restaurants: Codable,ListItem {
+    var image: String
     let id: Int
     let name: String
     let description: String
+    let hours: String
     let location: String
     let website: String
 }
