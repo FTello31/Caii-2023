@@ -125,7 +125,7 @@ class HomeViewController: UIViewController {
         let button2 = HomeButton(id: 2, name: String(localized: "Mi Programa"), color: "GreyCAII", image: "icons8-schedule-60", viewControllerName: "ScheduleViewController")
         let button3 = HomeButton(id: 3, name: String(localized: "Sede"), color: "YellowCAII", image: "icons8-library-60", viewControllerName: "SedeMainViewController")
         let button4 = HomeButton(id: 4, name: String(localized: "Ponentes"), color: "LightblueCAII", image: "icons8-people-60", viewControllerName: "PonentesViewController")
-        let button5 = HomeButton(id: 5, name: String(localized: "Turismo"), color: "BlueCAII", image: "turism", viewControllerName: "TourismViewController")
+        let button5 = HomeButton(id: 5, name: String(localized: "Turismo"), color: "BlueCAII", image: "icons8-tourism-60", viewControllerName: "TourismViewController")
         let button6 = HomeButton(id: 6, name: String(localized: "Contactos de emergencia"), color: "PrimaryCAII", image: "icons8-emergency-60", viewControllerName: "EmergencyPhonesViewController")
         let button7 = HomeButton(id: 7, name: String(localized: "CAII en vivo"), color: "BlueCAII", image: "icons8-live-video-on-60", viewControllerName: "CAIIViewController")
 

@@ -21,13 +21,16 @@ class PonenteDetailViewController: UIViewController {
     @IBOutlet weak var viewRedContainer: UIView!
     @IBOutlet weak var whiteContainer: UIView!
     
+    @IBOutlet weak var imageViewPhoto: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavbar()
         // Do any additional setup after loading the view.
         setup()
         whiteContainer.layer.cornerRadius = 16
-        
+        imageViewPhoto.layer.cornerRadius = min(imageViewPhoto.frame.size.height, imageViewPhoto.frame.size.width) / 2.0
+
     }
     
 
@@ -40,6 +43,8 @@ class PonenteDetailViewController: UIViewController {
             dateLabel.text = "Fecha: \(detailUnwrapped.dateLabel)"
             placeLabel.text = "Lugar: \(detailUnwrapped.placeLabel)"
             descriptionLabel.text = detailUnwrapped.description
+            imageViewPhoto.image = UIImage(named: detailUnwrapped.image)
+            imageViewPhoto.contentMode = .scaleAspectFill
             }
     }
     /*
