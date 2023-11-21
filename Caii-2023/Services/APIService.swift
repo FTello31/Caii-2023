@@ -83,6 +83,38 @@ class APIService{
     
     
     
+    func getGeneralPrograms(completion: @escaping (Result<[EventD], APIError>) -> Void){
+        let url = "https://enc-ticketing.org/app/actividades_generales";
+        
+        AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil)
+            .response{ resp in
+                switch resp.result{
+                case .success(let data):
+                    do{
+                        
+                        let jsonData = try JSONDecoder().decode(EventsData.self, from: data!)
+                        
+                        if let dataInfo = jsonData.datos {
+                            completion(.success(dataInfo))
+                            
+                        } else {
+                            completion(.failure(.userError))
+                            print(jsonData.message ?? "ERROR")       // "Invalid credentials"
+                        }
+                        
+                    } catch {
+                        completion(.failure(.decodingError))
+                        
+                        print("catch",error)
+                    }
+                case .failure(let error):
+                    completion(.failure(.networkError))
+                    print("err",error)
+                    //                    print("err",error.localizedDescription)
+                }
+            }
+        
+    }
 //
 //    func loginTicketing(dni:String){
 //        let url = "https://enc-ticketing.org/applogin/\(dni)";

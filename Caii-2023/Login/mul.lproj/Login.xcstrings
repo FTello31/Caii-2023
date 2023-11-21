@@ -16,18 +16,6 @@
             "state" : "new",
             "value" : "Si estás inscrito, accede aquí:"
           }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si vous êtes inscrit, accédez ici :"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Se você estiver inscrito, acesse aqui:"
-          }
         }
       }
     },
@@ -44,18 +32,6 @@
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Peruano"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Péruvien"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
             "value" : "Peruano"
           }
         }
@@ -76,18 +52,6 @@
             "state" : "new",
             "value" : "Extranjero"
           }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Étranger"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Estrangeiro"
-          }
         }
       }
     },
@@ -105,18 +69,6 @@
           "stringUnit" : {
             "state" : "new",
             "value" : "Ingresa"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Connexion"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Entrar"
           }
         }
       }
@@ -136,18 +88,6 @@
             "state" : "new",
             "value" : "Ingresa"
           }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Connexion"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Entrar"
-          }
         }
       }
     },
@@ -166,29 +106,23 @@
             "state" : "new",
             "value" : "Ingresar DNI"
           }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Entrer le numéro d'identité"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inserir ID"
-          }
         }
       }
     },
-    "Oxm-1R-aej.text" : {
-      "comment" : "Class = \"UITextField\"; text = \"25782655\"; ObjectID = \"Oxm-1R-aej\";",
+    "YSS-WA-aLd.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Organizado por:\"; ObjectID = \"YSS-WA-aLd\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Organized by:"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "25782655"
+            "value" : "Organizado por:"
           }
         }
       }

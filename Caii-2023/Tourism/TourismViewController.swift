@@ -49,7 +49,7 @@ class TourismViewController: UIViewController {
     
     func filterList(category: String){
         loadLists()
-        if (category.elementsEqual("LUGARES TURÍSTICOS") ){
+        if (category.elementsEqual(String(localized:"LUGARES TURÍSTICOS")) ){
             nextSegue = "tourismPlacesSegue"
             tableList = tourismPlaces
         }else{
@@ -60,13 +60,13 @@ class TourismViewController: UIViewController {
     }
     
     func fetchTourismPlacesData() -> [TourismPlaces] {
-        let place2 = TourismPlaces(image: "catedral-limaImage", name: "Catedral de Lima", id: 2, description: "Majestuoso ejemplo del barroco colonial, la deslumbrante catedral de Lima destaca con sus altas torres de pizarra en el centro histórico de la ciudad. Bastión de la fe católica en el Perú, el templo mayor vigila la vida de la ciudad desde hace casi medio milenio. Su arquitectura y ornamentos dan una idea de la importancia del virreinato del Perú para la corona española en tiempos de conquista.")
+        let place2 = TourismPlaces(hours: "", image: "catedral-limaImage", name: "Catedral de Lima", id: 2, description: String(localized: "Majestuoso ejemplo del barroco colonial, la deslumbrante catedral de Lima destaca con sus altas torres de pizarra en el centro histórico de la ciudad. Bastión de la fe católica en el Perú, el templo mayor vigila la vida de la ciudad desde hace casi medio milenio. Su arquitectura y ornamentos dan una idea de la importancia del virreinato del Perú para la corona española en tiempos de conquista."))
 
-        let place3 = TourismPlaces(image: "museo-larco-limaImage", name: "Museo Larco", id: 3, description: "Instalado en una casona virreinal del siglo XVIII, el Museo Larco es uno de los más visitados de Lima. Cinco milenios de historia están resguardados en la colección de distintas culturas que fueron recopiladas y adquiridas por dos generaciones de la familia Larco: Rafael Larco Herrera y su hijo, Rafael Larco Hoyle. En 1923 abrió el museo con los objetos que el hijo, arqueólogo, fue recuperando en todo el Perú.")
+        let place3 = TourismPlaces(hours: "", image: "museo-larco-limaImage", name: "Museo Larco", id: 3, description: String(localized: "Instalado en una casona virreinal del siglo XVIII, el Museo Larco es uno de los más visitados de Lima. Cinco milenios de historia están resguardados en la colección de distintas culturas que fueron recopiladas y adquiridas por dos generaciones de la familia Larco: Rafael Larco Herrera y su hijo, Rafael Larco Hoyle. En 1923 abrió el museo con los objetos que el hijo, arqueólogo, fue recuperando en todo el Perú."))
 
-        let place4 = TourismPlaces(image: "circuito-magico-del-agua-limaImage", name: "Parque de la Reserva", id: 4, description: "Ubicado en el corazón de Lima, es un conjunto de fuentes mecanizadas y operadas por computador que ofrece un bellísimo espectáculo de luz, sonido y color. Llamado popularmente Circuito Mágico del Agua, ostenta el récord Guiness de ser el mayor circuito de fuentes en un parque público en el mundo.")
+        let place4 = TourismPlaces(hours: "", image: "circuito-magico-del-agua-limaImage", name: "Parque de la Reserva", id: 4, description: String(localized: "Ubicado en el corazón de Lima, es un conjunto de fuentes mecanizadas y operadas por computador que ofrece un bellísimo espectáculo de luz, sonido y color. Llamado popularmente Circuito Mágico del Agua, ostenta el récord Guiness de ser el mayor circuito de fuentes en un parque público en el mundo."))
 
-        let place5 = TourismPlaces(image: "huaca-pucllanaImage", name: "Huaca Pucllana", id: 5, description: "Monumental conjunto arqueológico, la Huaca Pucllana es la más impresionante y conservada de las huellas de la civilización Lima en el área urbana de la capital del Perú. Un museo de sitio, reproducciones de hábitos culturales de sus pobladores, y recorridos guiados son parte de la oferta del lugar, cuyo cuidado y explotación es vigilado con celo por el gobierno peruano.")
+        let place5 = TourismPlaces(hours: "", image: "huaca-pucllanaImage", name: "Huaca Pucllana", id: 5, description: String(localized: "Monumental conjunto arqueológico, la Huaca Pucllana es la más impresionante y conservada de las huellas de la civilización Lima en el área urbana de la capital del Perú. Un museo de sitio, reproducciones de hábitos culturales de sus pobladores, y recorridos guiados son parte de la oferta del lugar, cuyo cuidado y explotación es vigilado con celo por el gobierno peruano."))
 
 
         return [place2, place3, place4, place5]
@@ -169,7 +169,12 @@ extension TourismViewController:  UITableViewDataSource, UITableViewDelegate {
         cell.descriptionLabel.text = element.description
         cell.imageViewPhoto.image = UIImage(named: element.image)
         cell.imageViewPhoto.contentMode = .scaleAspectFill
-        
+        if(!element.hours.isEmpty){
+            cell.descriptionLabel.text = String(localized:"""
+Especialidad: \(element.description)
+Horario de atencion: \(element.hours)
+""")
+        }
         return cell
     }
     

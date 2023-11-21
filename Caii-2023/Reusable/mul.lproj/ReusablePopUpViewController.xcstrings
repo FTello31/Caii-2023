@@ -1,0 +1,48 @@
+{
+  "sourceLanguage" : "es",
+  "strings" : {
+    "asw-3b-xV0.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Bienvenida a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí.\"; ObjectID = \"asw-3b-xV0\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to CAII 2023. Find your personalized schedule and all the information about the event here."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Bienvenida a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí."
+          }
+        }
+      }
+    },
+    "pKN-VY-pi5.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"pKN-VY-pi5\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "Pq0-EB-6aN.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"¡Sandra!\"; ObjectID = \"Pq0-EB-6aN\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "¡Sandra!"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -5,6 +5,12 @@
       "comment" : "Class = \"UILabel\"; text = \"Contralor general de la República \\ndel Perú\"; ObjectID = \"0eM-G7-Idf\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comptroller General of the Republic of Peru"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -35,6 +41,12 @@
       "comment" : "Class = \"UILabel\"; text = \"Conferencia magistral\"; ObjectID = \"2nC-wp-GWx\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keynote Lecture"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -119,6 +131,12 @@
       "comment" : "Class = \"UIButton\"; configuration.title = \"Abrir en mapas\"; ObjectID = \"ch1-vZ-qrc\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open with maps"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -187,14 +205,14 @@
         }
       }
     },
-    "gtA-LP-3PO.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Lorem ipsum dolor sit amet, consectetur.\"; ObjectID = \"gtA-LP-3PO\";",
+    "H3o-gs-QhF.text" : {
+      "comment" : "Class = \"UITextView\"; text = \"Ladwefwe ewfwe fwe fw fwe fwe fwe fwe \"; ObjectID = \"H3o-gs-QhF\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Lorem ipsum dolor sit amet, consectetur."
+            "value" : "Ladwefwe ewfwe fwe fw fwe fwe fwe fwe "
           }
         }
       }
@@ -263,6 +281,12 @@
       "comment" : "Class = \"UIButton\"; configuration.title = \"Ver en vivo\"; ObjectID = \"l2M-6j-1bx\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watch live"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -323,6 +347,12 @@
       "comment" : "Class = \"UILabel\"; text = \"Diseñado para responder a cuatro objetivos estratégicos: ser un motor cultural y económico del país, representar un lugar de encuentro en el corazón de la capital enraizado en la cultura colectiva peruana, convertirse en un hito arquitectónico singular, flexible y tecnológicamente avanzado, y finalmente, ser el detonante de la transformación urbana del Centro Cultural de la Nación y de su entorno próximo.\"; ObjectID = \"qV2-ec-vB7\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Designed to meet four strategic objectives: to be a cultural and economic engine of the country, to represent a meeting place in the heart of the capital rooted in Peruvian collective culture, to become a unique, flexible, and technologically advanced architectural landmark, and finally, to be the catalyst for the urban transformation of the Cultural Center of the Nation and its immediate surroundings."
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -359,6 +389,12 @@
       "comment" : "Class = \"UILabel\"; text = \"La Conferencia Anual Internacional por la Integridad-CAII 2023, es un espacio académico global que fomenta el análisis y debate experto sobre integridad y anticorrupción. Con el tema \\\"Frenando la corrupción: Estrategias colaborativas y sanciones\\\", se exploran innovaciones en teorías, estrategias y roles multiactor en la investigación y sanción de la corrupción. Esta novena edición se alinea con nuestra estrategia institucional para reducir la corrupción, gestionar eficazmente recursos públicos y fomentar valores e integridad. Únete a este encuentro especializado que busca impulsar el conocimiento y acceso a buenas prácticas en integridad pública. ¡Bienvenidos a la CAII 2023!\"; ObjectID = \"t58-Jz-1kD\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Annual International Conference on Integrity - CAII 2023 is a global academic forum that promotes expert analysis and debate on integrity and anti-corruption. With the theme 'Halting Corruption: Collaborative Strategies and Sanctions,' the conference explores innovations in theories, strategies, and multi-actor roles in the investigation and punishment of corruption. This ninth edition aligns with our institutional strategy to reduce corruption, effectively manage public resources, and promote values and integrity. Join this specialized gathering that aims to drive knowledge and access to best practices in public integrity. Welcome to CAII 2023!"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -380,13 +416,19 @@
       }
     },
     "tj2-qu-fef.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Restaurante Ejemplo\"; ObjectID = \"tj2-qu-fef\";",
+      "comment" : "Class = \"UILabel\"; text = \"Restaurante\"; ObjectID = \"tj2-qu-fef\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurant"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Restaurante Ejemplo"
+            "value" : "Restaurante"
           }
         }
       }
@@ -395,6 +437,12 @@
       "comment" : "Class = \"UIButton\"; configuration.title = \"Cerrar Sesion\"; ObjectID = \"Tlm-ig-3Rm\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log Out"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -407,6 +455,12 @@
       "comment" : "Class = \"UIButton\"; normalTitle = \"Cerrar Sesion\"; ObjectID = \"Tlm-ig-3Rm\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log Out"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -416,13 +470,13 @@
       }
     },
     "VOI-Uh-Td5.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Ceremonia de inaguración Ceremonia de inaguración Ceremonia de inaguración Ceremonia de inaguración\"; ObjectID = \"VOI-Uh-Td5\";",
+      "comment" : "Class = \"UILabel\"; text = \"Ceremonia de inaguración\"; ObjectID = \"VOI-Uh-Td5\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Ceremonia de inaguración Ceremonia de inaguración Ceremonia de inaguración Ceremonia de inaguración"
+            "value" : "Ceremonia de inaguración"
           }
         }
       }
@@ -443,6 +497,12 @@
       "comment" : "Class = \"UILabel\"; text = \"Lugar: Sala Nº1 - 8vo Piso\"; ObjectID = \"xcR-Oa-rgo\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Place: Sala Nº1 - 8vo Piso"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -455,6 +515,12 @@
       "comment" : "Class = \"UIButton\"; configuration.title = \"Ver vídeo\"; ObjectID = \"YIX-k3-Sly\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watch video"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",

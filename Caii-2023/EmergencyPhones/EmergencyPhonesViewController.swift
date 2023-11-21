@@ -60,13 +60,13 @@ class EmergencyPhonesViewController: UIViewController {
             let video2 = EmergencyPhones(name: "Defensa Civil", number: 110, category: "Seguridad")
             let video3 = EmergencyPhones(name: "Cruz Roja", number: 115, category: "Seguridad")
             let video4 = EmergencyPhones(name: "Bomberos", number: 116, category: "Seguridad")
-            let video5 = EmergencyPhones(name: "Serenazgo San Borja", number: 016311000, category: "Seguridad")
-            let video6 = EmergencyPhones(name: "Clínica San Borja", number: 016355000, category: "Salud")
-            let video7 = EmergencyPhones(name: "Clínica Internacional", number: 016196161, category: "Salud")
-            let video8 = EmergencyPhones(name: "Clínica Bienestar Medico y Tecnologia - BMT", number: 015002100, category: "Salud")
-            let video9 = EmergencyPhones(name: "Clínica San Borja Salud 24 Horas", number: 998870012, category: "Salud")
-            let video10 = EmergencyPhones(name: "Clínica Javier Prado", number: 012114141, category: "Salud")
-            let video11 = EmergencyPhones(name: "Clínica Ricardo Palma", number: 012242224, category: "Salud")
+            let video5 = EmergencyPhones(name: "Serenazgo San Borja", number: +5116311000, category: "Seguridad")
+            let video6 = EmergencyPhones(name: "Clínica San Borja", number: +5116355000, category: "Salud")
+            let video7 = EmergencyPhones(name: "Clínica Internacional", number: +5116196161, category: "Salud")
+            let video8 = EmergencyPhones(name: "Clínica Bienestar Medico y Tecnologia - BMT", number: +5115002100, category: "Salud")
+            let video9 = EmergencyPhones(name: "Clínica San Borja Salud 24 Horas", number: +51998870012, category: "Salud")
+            let video10 = EmergencyPhones(name: "Clínica Javier Prado", number: +5112114141, category: "Salud")
+            let video11 = EmergencyPhones(name: "Clínica Ricardo Palma", number: +5112242224, category: "Salud")
 
             return [video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11]
     }

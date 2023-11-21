@@ -10,7 +10,7 @@ import UIKit
 class SedeMainViewController: UIViewController {
 
 //    var filters = ["¿DÓNDE ES?","¿CÓMO LLEGAR?","GALERÍA"]
-    var filters = ["¿DÓNDE ES?","¿CÓMO LLEGAR?"]
+    var filters = [String(localized: "¿DÓNDE ES?"),String(localized: "¿CÓMO LLEGAR?")]
 
     
     @IBOutlet weak var collectionViewFilter: UICollectionView!

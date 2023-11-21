@@ -8,17 +8,125 @@
             "state" : "translated",
             "value" : "Hello, %@!"
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "¿CÓMO LLEGAR?" : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bonjour, %@!"
+            "value" : "HOW TO GET THERE"
           }
-        },
-        "pt-BR" : {
+        }
+      }
+    },
+    "¿DÓNDE ES?" : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Olá, %@!"
+            "value" : "WHERE IS IT?"
+          }
+        }
+      }
+    },
+    "Abogada de la PUCP con especialización en Contratación Pública y Derecho Administrativo. Máster en Contratación Pública Orientada a Resultados por la Université Laval (Canadá) y estudios de Maestría en Ciencia Política y Políticas Públicas. Presidenta Ejecutiva del OSCE, con más de 15 años de experiencia en contrataciones públicas." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lawyer from Universidad del Rosario with more than 10 years of experience, specialized in commercial law and with a master's degree in Law, Government and Justice Management from Universidad de los Andes. Officer of the Attorney General's Office for 6 years, leading cases of national relevance."
+          }
+        }
+      }
+    },
+    "Abogada de la Universidad del Rosario con más de 10 años de experiencia, especializada en derecho comercial y con un máster en Derecho, Gobierno y Gestión de la Justicia de la Universidad de los Andes. Funcionaria de la Fiscalía General de la Nación durante 6 años, liderando casos de relevancia nacional." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lawyer from Universidad del Rosario with more than 10 years of experience, specialized in commercial law and with a master's degree in Law, Government and Justice Management from Universidad de los Andes. Officer of the Attorney General's Office for 6 years, leading cases of national relevance."
+          }
+        }
+      }
+    },
+    "Abogada y senadora argentina por Jujuy desde 2015. Actual Presidenta de PARLATINO y Co-Vicepresidenta de EUROLAT. Perteneciente a la Unión Cívica Radical." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argentinean lawyer and senator for Jujuy since 2015. Current President of PARLATINO and Co-Vice President of EUROLAT. Member of the Radical Civic Union."
+          }
+        }
+      }
+    },
+    "Abogado con maestría en Estudios Políticos e Internacionales, especialista en Derecho Penal y Gestión Pública. Experto en políticas públicas y criminales, enfoque anticorrupción, prevención del delito y estrategias contra crimen organizado." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lawyer with a master's degree in Political and International Studies, specialist in Criminal Law and Public Management. Expert in public and criminal policies, anti-corruption approach, crime prevention and strategies against organised crime."
+          }
+        }
+      }
+    },
+    "Abogado con más de 15 años de experiencia en derecho administrativo, Contralor General del Estado Plurinacional de Bolivia (2016-2022). Lideró la reestructuración institucional y formuló planes estratégicos en la Contraloría General del Estado." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A lawyer by profession with a degree from the Universidad Mayor de San Simón in Bolivia, he has over 15 years of experience in administrative law. He served as Comptroller General of the Plurinational State of Bolivia from 2016 to 2022. He led institutional restructuring, formulated strategic plans, and implemented an integrated Strategic and Operational Planning System (SIPEO) for monitoring and evaluating compliance."
+          }
+        }
+      }
+    },
+    "Abogado especializado en Derecho Penal y Procesal Penal, con maestría en argumentación jurídica y estudios en Derecho Penal y gestión pública. Procurador Público Especializado en Delitos de Corrupción de Funcionarios, con experiencia en estrategias legales y extradición." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lawyer specialized in Criminal Law and Criminal Procedure, with a master's degree in legal argumentation and studies in Criminal Law and public management. Public Prosecutor specialized in Corruption of Public Officials, with experience in legal strategies and extradition."
+          }
+        }
+      }
+    },
+    "Abogado y Notario Público con maestría en Argumentación Jurídica. Doctor en Derecho con Summa Cum Laude. Profesor Adjunto y expresidente del OLACEFS." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lawyer and Notary Public with a Master's Degree in Legal Argumentation. Juris Doctor Summa Cum Laude. Adjunct Professor and former President of OLACEFS."
+          }
+        }
+      }
+    },
+    "Asesora especializada en Gestión Pública, Posconflicto, Monitoreo y Evaluación, Fortalecimiento Institucional, Participación Pública y Desarrollo de Capacidades. Expertise en políticas públicas y gobernanza, con enfoque en resultados y participación ciudadana." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Advisor specialising in Public Management, Post-Conflict, Monitoring and Evaluation, Institutional Strengthening, Public Participation and Capacity Development. Expertise in public policy and governance, with a focus on results and citizen participation."
+          }
+        }
+      }
+    },
+    "Asumió como octavo Contralor General de los Estados Unidos y jefe de la Oficina de Responsabilidad Gubernamental en diciembre de 2010, confirmado por el Senado tras ser nominado por el presidente Obama en septiembre de 2010. Anteriormente, había ejercido como Contralor General Interino desde marzo de 2008." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assumed office as the eighth Comptroller General of the United States and head of the Government Accountability Office in December 2010, confirmed by the Senate after being nominated by President Obama in September 2010. Previously served as Acting Comptroller General from March 2008."
+          }
+        }
+      }
+    },
+    "Auditor federal de control externo en el Tribunal de Cuentas de la Unión desde 1999. Cuenta con maestrías en ciencia política y gestión ambiental." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Federal auditor of external control at the Federal Court of Audit since 1999. He holds master's degrees in political science and environmental management."
           }
         }
       }
@@ -30,18 +138,6 @@
             "state" : "translated",
             "value" : "Welcome to CAII 2023. Find your personalized schedule and all the information about the event here."
           }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bienvenue à la CAII 2023. Trouvez votre programme personnalisé et toutes les informations sur l'événement ici."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bem-vindo à CAII 2023. Encontre sua programação personalizada e todas as informações sobre o evento aqui."
-          }
         }
       }
     },
@@ -52,23 +148,109 @@
             "state" : "translated",
             "value" : "CAII Live"
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "Candidata a doctora en Politics y Master en Philisophy por la Universidad de Oxford. Licenciada en Ciencia Política por la Pontificia Universidad Católica del Perú. Experta en corrupción a nivel individual e institucional, con publicaciones en revistas académicas y coautora del libro \"Prosecutors, Voters, and The Criminalization of Corruption in Latin America: The Case of Lava Jato\" de Cambridge University Press." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "CAII en direct"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CAII ao vivo"
+            "value" : "PhD candidate in Politics and Master in Philosophy from the University of Oxford. She holds a degree in Political Science from the Pontifical Catholic University of Peru, focusing on corruption at individual and institutional levels. Her work is published in various journals, and she co-authored \"\"Prosecutors, Voters, and The Criminalization of Corruption in Latin America: The Case of Lava Jato\"\" by Cambridge University Press."
           }
         }
       }
     },
     "Carnes, pastas" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meat, pasta"
+          }
+        }
+      }
+    },
+    "Catedrático de Ciencias Políticas en la Universidad de Pisa, es autor de más de 170 publicaciones y director del Programa de Maestría en “Análisis, prevención y lucha contra la corrupción y el crimen organizado”. Además, es miembro del consejo de dirección de la ONG “Libera” y asesor de Transparencia International-Italia, contribuyendo a investigaciones sobre la politización de la corrupción y estrategias anticorrupción." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Professor of Political Science at the University of Pisa, he is the author of more than 170 publications and director of the Master's Program in \"Analysis, prevention and fight against corruption and organized crime\". He is also a member of the board of directors of the NGO \"Libera\" and advisor to Transparency International-Italy, contributing to research on the politicization of corruption and anti-corruption strategies."
+          }
+        }
+      }
+    },
+    "Catedrático-Director del Grupo de Investigación de Derecho Público Global de la Universidad de A Coruña. Presidente Foro Iberoamericano de Derecho Administrativo. Director Doctorado Internacional en Derecho Administrativo Iberoamericano" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Professor-Director of the Global Public Law Research Group at the University of A Coruña. President of the Ibero-American Forum on Administrative Law. Director of the International Doctorate in Ibero-American Administrative Law."
+          }
+        }
+      }
+    },
+    "Co-fundador y vicepresidente del Grupo de Investigación en Gobierno, Administración y Políticas Públicas (GIGAPP). Presidente de la Fundación Observatorio del Gasto Fiscal en Chile. Profesor y director académico en la Universidad de Chile. Especializado en gobierno abierto, innovación pública y reforma del Estado." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Co-founder and vice-president of the Research Group on Government, Administration and Public Policy (GIGAPP). President of the Fundación Observatorio del Gasto Fiscal en Chile. Professor and academic director at the University of Chile. Specialised in open government, public innovation and state reform."
+          }
+        }
+      }
+    },
+    "Cofundadora y CEO de Laboratoria, empresa social de tecnología en América Latina. Reconocida por el MIT y la BBC. Anteriormente en la Organización de Estados Americanos. Titulada por la London School of Economics y la Universidad de Columbia." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Co-founder and CEO of Laboratoria, a social technology company in Latin America. Recognized by MIT and the BBC. Formerly with the Organization of American States. Graduated from the London School of Economics and Columbia University."
+          }
+        }
+      }
+    },
+    "Compliance Officer - Head of Compliance & AML at Lemon. Ex funcionario de la justicia criminal. Abogado y Profesor de la Universidad de Buenos Aires - UBA." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compliance Officer - Head of Compliance & AML at Lemon.\nFormer criminal justice official.\nLawyer and Professor at the University of Buenos Aires - UBA."
+          }
+        }
+      }
+    },
+    "Con más de 40 años en el sector financiero, ha ocupado roles destacados en banca, finanzas y consultoría. Ex Presidente de la Entidad Fiscalizadora Suprema de Curazao, actualmente preside la Autoridad de Competencia y es miembro del Consejo de Supervisión del Banco Central de Curazao y St. Maarten." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "With more than 40 years in the financial sector, he has held prominent roles in banking, finance and consulting. Former President of the Supreme Audit Institution of Curaçao, he currently chairs the Competition Authority and is a member of the Supervisory Board of the Central Bank of Curaçao and St. Maarten."
+          }
+        }
+      }
+    },
+    "Conferencista, Doctor y Magíster en Derecho por la Pontificia Universidad Católica de São Paulo (PUC-SP), con Post-Doctorado en la Universidad del Estado de Río de Janeiro (UERJ). Ministro del Tribunal Federal de Cuentas (TCU) y profesor titular en UNINOVE (São Paulo), con amplia experiencia como Consultor General del Senado Federal y Consejero del CNJ y del CNMP." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doctor and Master of Laws from the Pontifical Catholic University of São Paulo (PUC-SP), with a Post-Doctorate in Law from the State University of Rio de Janeiro (UERJ). He has been a Minister of the Federal Court of Accounts (TCU) since 2014 and is a tenured professor in the master's degree in law at UNINOVE (São Paulo). He is the author of numerous scientific articles and books."
+          }
+        }
+      }
+    },
+    "Consultor en transparencia y rendición de cuentas con experiencia en organismos internacionales. Trabajó en el Banco Mundial durante 16 años. Co-coordinador de cursos de capacitación para la Organización Latinoamericana y del Caribe de Entidades Fiscalizadoras Superiores (OLACEFS). Autor del documento \"La participación ciudadana en las entidades fiscalizadoras superiores: ¿avance o impasse?\" (2020)." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transparency and accountability consultant with experience in international organisations. Worked at the World Bank for 16 years. Co-coordinator of training courses for the Latin American and Caribbean Organisation of Supreme Audit Institutions (OLACEFS). Author of the document \"Citizen participation in supreme audit institutions: progress or stalemate?"
+          }
+        }
+      }
     },
     "Contactos de emergencia" : {
       "localizations" : {
@@ -77,23 +259,178 @@
             "state" : "translated",
             "value" : "Emergency Contacts"
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "Contador público y auditor con doctorado en Administración Pública. Ex-Contralor General de Cuentas de Guatemala y expresidente de la OCCEFS. Docente universitario y con experiencia en roles directivos y financieros en diversas organizaciones." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Contacts d'urgence"
+            "value" : "Public accountant and auditor with a PhD in Public Administration. Former Comptroller General of Accounts of Guatemala and former president of OCCEFS. University lecturer with experience in managerial and financial roles in various organisations."
           }
-        },
-        "pt-BR" : {
+        }
+      }
+    },
+    "Contralor General de la República del Perú, licenciado en economía por la Universidad del Pacífico y magíster en Gestión y Políticas Públicas por la Universidad de Chile, con sólida experiencia en roles directivos y consultorías internacionales. Su trayectoria en el Ministerio de Economía y Finanzas incluye destacados logros en Gestión Presupuestaria, Planificación Estratégica y Evaluación de Gasto Público. Es autor de publicaciones especializadas y docente en instituciones de postgrado." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Contatos de Emergência"
+            "value" : "Comptroller General of the Republic of Peru, with a degree in economics from the University of the Pacific and a master's degree in Management and Public Policies from the University of Chile. Solid experience in leadership roles and international consulting. His career at the Ministry of Economy and Finance includes notable achievements in Budget Management, Strategic Planning, and Public Expenditure Evaluation. Author of specialized publications and a lecturer in postgraduate institutions."
+          }
+        }
+      }
+    },
+    "Coordinadora del Área en Derecho de la Información del IIJ, con maestría en derechos humanos de la London School of Economics. Especializada en medios de comunicación, democracia, libertad de expresión e información. Miembro del Sistema Nacional de Investigadores del CONACYT." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coordinator of the Area in Information Law at the IIJ, with a master's degree in human rights from the London School of Economics. Specialized in media, democracy, freedom of expression and information. Member of the National System of Researchers of CONACYT."
           }
         }
       }
     },
     "Credenciales invalidas" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid credentials"
+          }
+        }
+      }
+    },
+    "Director ejecutivo de Proética, capítulo peruano de Transparencia Internacional desde 2003. Bachiller en Ciencias Sociales por la PUCP, experto en anticorrupción. Consultor independiente y expositor frecuente en eventos sobre lucha anticorrupción en Perú y el extranjero. Autor de artículos sobre corrupción." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Executive Director of Proética, the Peruvian chapter of Transparency International since 2003. Bachelor in Social Sciences from PUCP, expert in anti-corruption. Independent consultant and frequent speaker at events on anti-corruption efforts in Peru and abroad. Author of articles on corruption."
+          }
+        }
+      }
+    },
+    "Directora en Perú de Environmental Investigation Agency, especialista en tala ilegal y tráfico de madera. Periodista, investigadora y consultora con más de 15 años de experiencia en gobernabilidad, transparencia y desarrollo sostenible." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Director in Peru of the Environmental Investigation Agency, specializing in illegal logging and timber trafficking. Journalist, researcher, and consultant with over 15 years of experience in governance, transparency, and sustainable development."
+          }
+        }
+      }
+    },
+    "Doctor socioeconomista, experto en desarrollo en España, África y América Latina. Director general de Participación Ciudadana en el Cabildo de Gran Canaria y coordinador de la Agenda Gran Canaria 2030 de Desarrollo Sostenible desde 2015." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Socioeconomic doctor, expert in development in Spain, Africa, and Latin America. General Director of Citizen Participation at the Cabildo de Gran Canaria and coordinator of the Gran Canaria 2030 Agenda for Sustainable Development since 2015."
+          }
+        }
+      }
+    },
+    "Doctor y catedrático de Derecho Administrativo en la Universidad de Valladolid, con 35 años de experiencia docente, especializado en Derecho Administrativo Sancionador y autor de más de diez libros y cien artículos en revistas especializadas." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ph.D. and Professor of Administrative Law at the University of Valladolid, with 35 years of teaching experience, specialized in Sanctioning Administrative Law, and author of more than ten books and a hundred articles in specialized journals."
+          }
+        }
+      }
+    },
+    "Doctor y Magíster en Derecho por la Pontificia Universidad Católica de São Paulo (PUC-SP), con Post-Doctorado en la Universidad del Estado de Río de Janeiro (UERJ). Ministro del Tribunal Federal de Cuentas (TCU) y profesor titular en UNINOVE (São Paulo), con amplia experiencia como Consultor General del Senado Federal y Consejero del CNJ y del CNMP." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ph.D. and Master of Law from the Pontifical Catholic University of São Paulo (PUC-SP), with Post-Doctorate from the State University of Rio de Janeiro (UERJ). Minister of the Federal Court of Auditors (TCU) and full professor at UNINOVE (São Paulo), with extensive experience as General Consultant of the Federal Senate and Advisor to the National Council of Justice (CNJ) and the National Council of Public Prosecution (CNMP)."
+          }
+        }
+      }
+    },
+    "Doctora en Ciencia Política por la Universidad Autónoma de Barcelona, especializada en integridad pública, anticorrupción, transparencia y prevención del blanqueo de capitales. Profesora asociada de políticas públicas en la UAB." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ph.D. in Political Science from the Autonomous University of Barcelona, specializing in public integrity, anti-corruption, transparency, and prevention of money laundering. Associate professor of public policies at the UAB."
+          }
+        }
+      }
+    },
+    "Doctora en Derecho y Ciencias Sociales, magíster en Derecho Administrativo, es miembro fundador de importantes entidades jurídicas, directora de Comisión de Género, y cuenta con una amplia trayectoria como profesora y autora de libros y artículos en el ámbito del derecho administrativo." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ph.D. in Law and Social Sciences, Master in Administrative Law, founding member of important legal entities, Gender Commission director, and has a extensive career as a professor and author of books and articles in the field of administrative law."
+          }
+        }
+      }
+    },
+    "Economista con maestría de Georgetown University y licenciatura de la Universidad del Pacífico. Ex viceministro de Economía, combina investigación académica y formulación de políticas públicas, con experiencia en consultoría para empresas, organismos internacionales y gobiernos. Columnista en Gestión y América Economía." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Economist with a master's degree from Georgetown University and a bachelor's degree from the University of the Pacific. Former Deputy Minister of Economy, combining academic research and public policy formulation, with experience in consulting for businesses, international organizations, and governments. Columnist in Gestión and América Economía."
+          }
+        }
+      }
+    },
+    "Economista Especialista en la Oficina de Efectividad para el Desarrollo y Planeamiento Estratégico del BID, con enfoque en Eficiencia Fiscal, Buena Gobernanza y su interacción con la Tecnología Digital. Doctor en Economía y Master en Administración Pública por la Universidad de Alcalá." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Economic Specialist in the Office of Development Effectiveness and Strategic Planning at the IDB, with a focus on Fiscal Efficiency, Good Governance, and its interaction with Digital Technology. Ph.D. in Economics and Master in Public Administration from the University of Alcalá."
+          }
+        }
+      }
+    },
+    "Economista y actual ministro de Transportes y Comunicaciones del Perú, con experiencia en diversos roles gubernamentales, incluyendo ministro de la Producción. Con una sólida formación académica, ha contribuido al desarrollo en sectores clave y ocupado roles cruciales en instituciones como Indecopi, Osinergmin y Osiptel." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Economist and current Minister of Transport and Communications of Peru, with experience in various government roles, including Minister of Production. With a solid academic background, he has contributed to development in key sectors and held crucial roles in institutions such as Indecopi, Osinergmin, and Osiptel."
+          }
+        }
+      }
+    },
+    "Economista y Máster en Humanidades por UDEM, cuenta con más de 19 años de experiencia en programas educativos innovadores para niños y jóvenes. Co-creó 'Pequeños Ciudadanos' y lidera la organización Líderes Ciudadanos, fomentando la participación y propuestas juveniles contra la corrupción." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Economist and Master in Humanities from UDEM, with over 19 years of experience in innovative educational programs for children and youth. Co-created 'Pequeños Ciudadanos' and leads the organization Líderes Ciudadanos, promoting youth participation and proposals against corruption."
+          }
+        }
+      }
+    },
+    "Economista y profesor por 30 años en la Universidad Nacional Autónoma de México. Presidió OLACEFS en 2016-2018 y lidera el Grupo de Trabajo sobre Valor y Beneficios de las EFS y IntoSAINT en INTOSAI." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Economist and professor for 30 years at the National Autonomous University of Mexico. He presided over OLACEFS in 2016-2018 and leads the Working Group on Value and Benefits of SAIs and IntoSAINT at INTOSAI."
+          }
+        }
+      }
+    },
+    "Egresada de la Universidad Externado de Colombia, cuenta con un máster en Estudios de Paz y Seguridad. Con ocho años de experiencia, se ha dedicado a investigar delitos ambientales y crimen organizado en la Cuenca Amazónica, liderando publicaciones sobre la deforestación y sus causas en diversos países como Colombia, Perú, Bolivia y otros." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Graduate of the Universidad Externado de Colombia, with a master's degree in Peace and Security Studies. With eight years of experience, she has focused on researching environmental crimes and organized crime in the Amazon Basin, leading publications on deforestation and its causes in various countries such as Colombia, Peru, Bolivia, and others."
+          }
+        }
+      }
     },
     "Encuentra todos los detalles de tu programa seleccionado aquí." : {
       "localizations" : {
@@ -102,23 +439,123 @@
             "state" : "translated",
             "value" : "Find all the details of your selected program here."
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "Especialidad: %@\nHorario de atencion: %@" : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Trouvez tous les détails de votre programme sélectionné ici."
+            "value" : "Specialty: %1$@\nBusiness hours: %2$@"
           }
         },
-        "pt-BR" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Especialidad: %1$@\nHorario de atencion: %2$@"
+          }
+        }
+      }
+    },
+    "Especialista Legal del Equipo Ambiental de UNODC" : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Encontre todos os detalhes do seu programa selecionado aqui."
+            "value" : "Legal Specialist in the Environmental Team of UNODC"
+          }
+        }
+      }
+    },
+    "Especialista líder del Banco Interamericano de Desarrollo en gestión pública, transparencia, gobierno digital y seguridad ciudadana en la República Dominicana. Lidera la iniciativa MapaInversiones a nivel regional. Con experiencia en investigación y docencia." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lead Specialist at the Inter-American Development Bank in public management, transparency, digital government, and citizen security in the Dominican Republic. Leads the MapaInversiones initiative at the regional level. Experienced in research and teaching."
+          }
+        }
+      }
+    },
+    "Ex Contralor de la República de Colombia con doble titulación en Derecho. Amplia trayectoria, destacando su rol en el caso Hidroituango. Actual Asesor Jurídico y de Gestión Administrativa de Proffense." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Former Comptroller General of the Republic of Colombia with dual degrees in Law. Extensive career, highlighting his role in the Hidroituango case. Currently serves as Legal and Administrative Management Advisor at Proffense."
+          }
+        }
+      }
+    },
+    "Excoordinador del clúster de transparencia e integridad del BID, es secretario del Fondo de Transparencia, liderando proyectos en integridad pública, gobierno abierto y prevención del lavado de activos. Además, dirige la Infoguia de Transparencia Financiera del BID, ofreciendo recursos técnicos de alto nivel. Abogado por la Universidad de Buenos Aires con un LL.M. de la Facultad de Derecho de Yale." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Former Coordinator of the transparency and integrity cluster at the IDB, he is the secretary of the Transparency Fund, leading projects in public integrity, open government, and prevention of money laundering. He also leads the Financial Transparency Infoguide of the IDB, providing high-level technical resources. Lawyer from the University of Buenos Aires with an LL.M. from the Yale Law School."
+          }
+        }
+      }
+    },
+    "Experimentada periodista, lideró la Asociación Brasileña de Periodismo de Investigación. Supervisó proyectos de monitoreo de violencia de género contra periodistas y reportó sobre violencia en el Examen Periódico Universal de Brasil en la ONU. Con un DEA en Comunicación de la Universidad Michel de Montaigne y un MBA en Gestión Empresarial de la FIA-USP." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Experienced journalist, led the Brazilian Association of Investigative Journalism. Supervised projects monitoring gender violence against journalists and reported on violence in Brazil's Universal Periodic Review at the UN. Holds a DEA in Communication from the Michel de Montaigne University and an MBA in Business Management from FIA-USP."
+          }
+        }
+      }
+    },
+    "Experta en ciencias sociales y relaciones internacionales, analiza el respaldo del gobierno de EE. UU. a programas de salud en países de bajos y medianos ingresos. Historiadora de formación, ha enseñado y publicado sobre género y salud pública en México. Su experiencia incluye trabajo en el Departamento de Estado de EE. UU. en salud ambiental y políticas exteriores para la preparación ante pandemias. Bliss tiene un A.B. en historia y literatura de Harvard College y un Ph.D. en historia de la Universidad de Chicago, con una beca David E. Bell en Harvard." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Expert in social sciences and international relations, analyzes the U.S. government's support for health programs in low- and middle-income countries. Trained historian, she has taught and published on gender and public health in Mexico. Her experience includes work at the U.S. Department of State on environmental health and foreign policies for pandemic preparedness. Bliss holds an A.B. in history and literature from Harvard College and a Ph.D. in history from the University of Chicago, with a David E. Bell Fellowship at Harvard."
+          }
+        }
+      }
+    },
+    "Filósofo y fundador de Fundación Vortex, reconocido por combatir el crimen. Investigador y autor prolífico, ha dirigido proyectos y publicado sobre redes de crimen transnacional en diversos continentes, destacando en la lucha contra la corrupción." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Philosopher and founder of the Vortex Foundation, recognized for combating crime. Prolific researcher and author, he has led projects and published on transnational crime networks on various continents, excelling in the fight against corruption."
+          }
+        }
+      }
+    },
+    "Geógrafo con más de 23 años de experiencia, Máster y Doctor en Ingeniería Urbana, especializado en Análisis de Datos Geográficos, Sistemas de Información Geográfica y Planificación Territorial. Docente y conferencista en posgrados y mentor en Innovation hubs en Brasil, Paraguay y Perú." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geographer with over 23 years of experience, Master's and Doctorate in Urban Engineering, specializing in Geographic Data Analysis, Geographic Information Systems, and Territorial Planning. Teacher and lecturer in postgraduate programs and mentor in Innovation hubs in Brazil, Paraguay, and Peru."
+          }
+        }
+      }
+    },
+    "Gerente del Centro de Conocimiento Anticorrupción de Transparencia Internacional Brasil y candidato a Doctor en Ciencias Políticas en la Universidad Estatal de Río de Janeiro. Investigador y consultor para organismos internacionales y ONGs. Coautor de \"Nuevas medidas contra la corrupción\"." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manager of the Anti-Corruption Knowledge Center of Transparency International Brazil and Ph.D. candidate in Political Science at the State University of Rio de Janeiro. Researcher and consultant for international organizations and NGOs. Co-author of 'New measures against corruption.'"
           }
         }
       }
     },
     "Hora: %@ - %@\nFecha: %@\nLugar: %@" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time: %1$@ - %2$@\nDate: %3$@\nLocation: %4$@"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "new",
@@ -127,14 +564,115 @@
         }
       }
     },
+    "Ingeniero económico con Máster en Política Económica por la UNI y Williams College. Con más de 15 años de experiencia en gestión pública, destacando su rol en el Banco Central de Reserva del Perú. Experto en estadísticas monetarias, proyección macroeconómica y política monetaria." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Economic engineer with a Master's in Economic Policy from UNI and Williams College. With over 15 years of experience in public management, highlighting his role at the Central Reserve Bank of Peru. Expert in monetary statistics, macroeconomic projection, and monetary policy."
+          }
+        }
+      }
+    },
+    "Ingeniero eléctrico y político peruano. Actualmente es presidente de la Asociación de Municipalidades del Perú para el periodo 2023 - 2026. Fue elegido como Alcalde provincial de Huancayo en las elecciones municipales del 2022. Además, fue alcalde de su natal distrito de Quilcas entre 2015 y 2018." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Electrical engineer and Peruvian politician. Currently serves as president of the Association of Municipalities of Peru for the period 2023 - 2026. Elected as provincial mayor of Huancayo in the municipal elections of 2022. Additionally, he was the mayor of his native district of Quilcas between 2015 and 2018."
+          }
+        }
+      }
+    },
+    "Instalado en una casona virreinal del siglo XVIII, el Museo Larco es uno de los más visitados de Lima. Cinco milenios de historia están resguardados en la colección de distintas culturas que fueron recopiladas y adquiridas por dos generaciones de la familia Larco: Rafael Larco Herrera y su hijo, Rafael Larco Hoyle. En 1923 abrió el museo con los objetos que el hijo, arqueólogo, fue recuperando en todo el Perú." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Installed in a viceregal mansion from the 18th century, the Larco Museum is one of the most visited in Lima. Five millennia of history are preserved in the collection of different cultures compiled and acquired by two generations of the Larco family: Rafael Larco Herrera and his son, Rafael Larco Hoyle. In 1923, the museum opened with objects that the son, an archaeologist, recovered throughout Peru."
+          }
+        }
+      }
+    },
     "Italiana, fusión" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Italian, fusion"
+          }
+        }
+      }
     },
     "Japonesa, fusión" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Japanese, fusion"
+          }
+        }
+      }
+    },
+    "Licenciada en Economía y Políticas Sociales, con una Maestría en Prácticas Sociales de Desarrollo. Experta en gerencia de proyectos de desarrollo sostenible, innovación y responsabilidad social. Presidenta ejecutiva del Indecopi, asesora de la Presidencia y el Ministerio de la Producción en Perú." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bachelor in Economics and Social Policies, with a Master's in Social Development Practices. Expert in sustainable development project management, innovation, and social responsibility. Executive President of Indecopi, advisor to the Presidency and the Ministry of Production in Peru."
+          }
+        }
+      }
+    },
+    "Licenciado en Derecho de la Universidad de Chile, fue Contralor General de la República (2007-2015). Socio fundador de MOMAG Abogados, destacado en Derecho Administrativo. Presidente del Colegio de Abogados de Chile AG desde 2022." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Law graduate from the University of Chile, was Comptroller General of the Republic (2007-2015). Founding partner of MOMAG Abogados, distinguished in Administrative Law. President of the Chilean Bar Association since 2022."
+          }
+        }
+      }
     },
     "LUGARES TURÍSTICOS" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TOURIST PLACES"
+          }
+        }
+      }
+    },
+    "Maestro en Economía Política por la Universidad Complutense de Madrid, especializado en análisis institucional. Director General de Inteligencia Pública, centrado en fortalecimiento institucional, evaluación del desempeño y transparencia presupuestaria para ciudadanizar información pública." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Master in Political Economy from the Complutense University of Madrid, specialized in institutional analysis. Director General of Public Intelligence, focused on institutional strengthening, performance evaluation, and budget transparency to make public information accessible to citizens."
+          }
+        }
+      }
+    },
+    "Magistrado Coordinador de la Sala Laboral - Contencioso Administrativo. Experiencia como Magistrado del Tribunal Superior de Cuentas y en roles directivos en el Banco Central de Honduras. Práctica privada en derecho administrativo y mercantil, y certificación como árbitro y conciliador." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coordinating Magistrate of the Labor - Administrative Litigation Chamber. Experience as a Magistrate of the Superior Court of Auditors and in managerial roles at the Central Bank of Honduras. Private practice in administrative and commercial law, with certification as an arbitrator and conciliator."
+          }
+        }
+      }
+    },
+    "Majestuoso ejemplo del barroco colonial, la deslumbrante catedral de Lima destaca con sus altas torres de pizarra en el centro histórico de la ciudad. Bastión de la fe católica en el Perú, el templo mayor vigila la vida de la ciudad desde hace casi medio milenio. Su arquitectura y ornamentos dan una idea de la importancia del virreinato del Perú para la corona española en tiempos de conquista." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Majestic example of colonial baroque, the dazzling cathedral of Lima stands out with its tall slate towers in the historic center of the city. A bastion of the Catholic faith in Peru, the main temple has watched over the city's life for almost half a millennium. Its architecture and ornaments give an idea of the importance of the Viceroyalty of Peru for the Spanish crown during the conquest."
+          }
+        }
+      }
     },
     "Mi Programa" : {
       "localizations" : {
@@ -143,26 +681,78 @@
             "state" : "translated",
             "value" : "My Schedule"
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "Monumental conjunto arqueológico, la Huaca Pucllana es la más impresionante y conservada de las huellas de la civilización Lima en el área urbana de la capital del Perú. Un museo de sitio, reproducciones de hábitos culturales de sus pobladores, y recorridos guiados son parte de la oferta del lugar, cuyo cuidado y explotación es vigilado con celo por el gobierno peruano." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mon programme"
+            "value" : "Monumental archaeological complex, Huaca Pucllana is the most impressive and well-preserved trace of the Lima civilization in the urban area of the capital of Peru. A site museum, reproductions of cultural habits of its inhabitants, and guided tours are part of the offerings of the place, whose care and exploitation are closely monitored by the Peruvian government."
           }
-        },
-        "pt-BR" : {
+        }
+      }
+    },
+    "Periodista de investigación con más de 15 años de experiencia trabajando en prensa escrita, televisión y medios digitales. Finalizó la maestría de Antropología Visual en la Pontificia Universidad Católica del Perú." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Meu Programa"
+            "value" : "Investigative journalist with over 15 years of experience working in print media, television, and digital media. Completed a master's degree in Visual Anthropology at the Pontifical Catholic University of Peru."
+          }
+        }
+      }
+    },
+    "Periodista de la sección de Investigación. Licenciado en Periodismo por el CEU y máster de EL PAÍS por la Universidad Autónoma de Madrid. Tiene dos décadas de experiencia en prensa, radio y televisión. Escribe desde 2011 en EL PAÍS, donde pasó por la sección de España y ha participado en investigaciones internacionales." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Investigative journalist in the Investigation section. Bachelor of Journalism from CEU and master's degree from EL PAÍS at the Autonomous University of Madrid. With two decades of experience in print, radio, and television. Has been writing for EL PAÍS since 2011, where he worked in the Spain section and participated in international investigations."
+          }
+        }
+      }
+    },
+    "Periodista. Director de Inteligencia Colaborativa de la Fundación Avina Latinoamérica. Ex director ejecutivo de la Fundación Poder Ciudadano. Integra 10 consejos directivos de organizaciones sociales argentinas. Autor de cuatro libros, entre ellos “Diginidad para todos” (2009) y “Democracia bipolar” (2021)." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Journalist. Director of Collaborative Intelligence at the Avina Foundation Latin America. Former executive director of the Poder Ciudadano Foundation. Serves on 10 boards of directors of Argentine social organizations. Author of four books, including 'Dignity for All' (2009) and 'Bipolar Democracy' (2021)."
           }
         }
       }
     },
     "Peruana" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruvian"
+          }
+        }
+      }
     },
     "Peruana, Latina" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruvian, Latina"
+          }
+        }
+      }
+    },
+    "Ph.D. en Dirección Estratégica y Máster en Administración de Empresas, es Presidente Ejecutivo de Koplast Industrial. Destaca como líder en la Sociedad Nacional de Industrias, coordinador del Grupo de Trabajo de Economía Circular en la Alianza del Pacífico y reconocido como Líder Empresarial del Cambio 2023." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ph.D. in Strategic Management and Master in Business Administration, he is the CEO of Koplast Industrial. Stands out as a leader in the National Society of Industries, coordinator of the Circular Economy Working Group in the Pacific Alliance, and recognized as a Business Leader of Change 2023."
+          }
+        }
+      }
     },
     "Ponentes" : {
       "localizations" : {
@@ -171,23 +761,18 @@
             "state" : "translated",
             "value" : "Speakers"
           }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conférenciers"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Palestrantes"
-          }
         }
       }
     },
     "Por favor contactese con el administrador: " : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please contact the administrator:"
+          }
+        }
+      }
     },
     "Presentación" : {
       "localizations" : {
@@ -196,23 +781,58 @@
             "state" : "translated",
             "value" : "Presentation"
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "Profesional en cumplimiento normativo internacional, abogado y Compliance Officer para una multinacional en varios países de América y Europa. Destacado docente y conferenciante, ha coordinado el manual Compliance Organizacional en México, una obra relevante en el ámbito del cumplimiento normativo." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Présentation"
+            "value" : "International compliance professional, lawyer, and Compliance Officer for a multinational in various countries in America and Europe. Distinguished educator and speaker, has coordinated the Organizational Compliance Manual in Mexico, a significant work in the field of regulatory compliance."
           }
-        },
-        "pt-BR" : {
+        }
+      }
+    },
+    "Profesor en Claremont Graduate University, exdecano de Pardee RAND Graduate School, con experiencia en Harvard y Yale. Autor de 14 libros, incluyendo \"Tropical Gangsters,\" nombrado uno de los \"Libros del Siglo\" por el New York Times. Sus obras recientes incluyen \"Bold and Humble: How to Lead Public-Private-Citizen Partnerships\" y \"Policy Analysis for Big Questions: Addressing Corruption, Elitism, Inequality, and Desperation." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apresentação"
+            "value" : "Professor at Claremont Graduate University, former dean of Pardee RAND Graduate School, with experience at Harvard and Yale. Author of 14 books, including 'Tropical Gangsters,' named one of the 'Books of the Century' by the New York Times. His recent works include 'Bold and Humble: How to Lead Public-Private-Citizen Partnerships' and 'Policy Analysis for Big Questions: Addressing Corruption, Elitism, Inequality, and Desperation.'"
+          }
+        }
+      }
+    },
+    "Profesor Titular de Derecho Administrativo, Pontificia Universidad Católica de Valparaíso. Doctor en Derecho, Universidad Carlos III, España. Magíster en Política Territorial y Urbanística, Universidad Carlos III, España" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full Professor of Administrative Law, Pontifical Catholic University of Valparaíso. Doctor of Law, Universidad Carlos III, Spain. Master in Territorial and Urban Policy, Universidad Carlos III, Spain."
+          }
+        }
+      }
+    },
+    "Profesora titular de Tecnologías de la Administración Pública y directora de PoliLab UNR. Doctora en Innovación y Desarrollo Territorial. Especialista en Innovación Pública. Integra la Comisión Directiva de la Asociación Argentina de Estudios en Administración Pública. Consultora en innovación en gobiernos y organismos regionales e internacionales." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full Professor of Public Administration Technologies and director of PoliLab UNR. Ph.D. in Innovation and Territorial Development. Specialist in Public Innovation. Member of the Board of the Argentine Association of Studies in Public Administration. Consultant in innovation for governments and regional and international organizations."
           }
         }
       }
     },
     "RESTAURANTES" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RESTAURANTS"
+          }
+        }
+      }
     },
     "Sede" : {
       "localizations" : {
@@ -221,17 +841,15 @@
             "state" : "translated",
             "value" : "Venue"
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "Sociólogo con maestría y doctorado en Geografía. Director para América Latina del Natural Resource Governance Institute. Experiencia en Oxfam, SPDA y docencia en la PUCP. Investiga gobernanza de recursos y desarrollo en América Latina." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lieu"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Local"
+            "value" : "Sociologist with a master's and doctorate in Geography. Director for Latin America at the Natural Resource Governance Institute. Experience at Oxfam, SPDA, and teaching at PUCP. Researching resource governance and development in Latin America."
           }
         }
       }
@@ -243,17 +861,26 @@
             "state" : "translated",
             "value" : "Tourism"
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "Ubicado en el corazón de Lima, es un conjunto de fuentes mecanizadas y operadas por computador que ofrece un bellísimo espectáculo de luz, sonido y color. Llamado popularmente Circuito Mágico del Agua, ostenta el récord Guiness de ser el mayor circuito de fuentes en un parque público en el mundo." : {
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tourisme"
+            "value" : "Located in the heart of Lima, it is a set of computerized and mechanized fountains that offer a beautiful spectacle of light, sound, and color. Popularly known as the Magic Water Circuit, it holds the Guinness World Record for being the largest fountain circuit in a public park in the world."
           }
-        },
-        "pt-BR" : {
+        }
+      }
+    },
+    "Ubicado en el corazón de Lima, es un conjunto de fuentes mecanizadas y operadas por computadora que ofrece un bellísimo espectáculo de luz, sonido y color. Llamado popularmente Circuito Mágico del Agua, ostenta el récord Guinness de ser el mayor circuito de fuentes en un parque público en el mundo." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Turismo"
+            "value" : "Located in the heart of Lima, it is a set of computerized and mechanized fountains that offer a beautiful spectacle of light, sound, and color. Popularly known as the Magic Water Circuit, it holds the Guinness World Record for being the largest fountain circuit in a public park in the world."
           }
         }
       }

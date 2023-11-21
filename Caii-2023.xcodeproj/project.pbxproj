@@ -26,7 +26,6 @@
 		ED1A6CB72AD75AEC00008622 /* TourismPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CB62AD75AEC00008622 /* TourismPlacesViewController.swift */; };
 		ED1A6CB92AD75B3A00008622 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1A6CB82AD75B3A00008622 /* RestaurantsViewController.swift */; };
 		ED2E09D12ADC3D93002C1A14 /* ReusablePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E09CF2ADC3D93002C1A14 /* ReusablePopUpViewController.swift */; };
-		ED2E09D22ADC3D93002C1A14 /* ReusablePopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */; };
 		ED4FA3742B09ADD6000D1E64 /* ponentesImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4FA3732B09ADD5000D1E64 /* ponentesImages.xcassets */; };
 		ED5190C42ADCC9830057284D /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5190C32ADCC9830057284D /* PresentationViewController.swift */; };
 		ED5190C62ADCCEDB0057284D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */; };
@@ -35,6 +34,7 @@
 		ED6DD40C2AE709AE00FFE989 /* ScheduleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6DD40B2AE709AE00FFE989 /* ScheduleDataModel.swift */; };
 		ED6DD4102AE71C7900FFE989 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6DD40F2AE71C7900FFE989 /* Enums.swift */; };
 		ED6F40802AE410ED00703BBF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = ED6F407F2AE410ED00703BBF /* Localizable.xcstrings */; };
+		ED716B412B0B0FA70090475C /* OrganizadoPorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED716B402B0B0FA70090475C /* OrganizadoPorViewController.swift */; };
 		ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C512AD6458A0078ABDB /* PonentesViewController.swift */; };
 		ED779C582AD645A90078ABDB /* FilterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C562AD645A80078ABDB /* FilterViewCell.swift */; };
 		ED779C592AD645A90078ABDB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED779C572AD645A90078ABDB /* Extension.swift */; };
@@ -59,6 +59,7 @@
 		EDC7D7232AD9AE4F00997971 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */; };
 		EDD5A1D12AD284C6008BA59F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D02AD284C6008BA59F /* DataModel.swift */; };
 		EDD5A1D32AD28532008BA59F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD5A1D22AD28532008BA59F /* Data.swift */; };
+		EDDD1DC62B0C45440040437A /* ReusablePopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDD1DC82B0C45440040437A /* ReusablePopUpViewController.xib */; };
 		EDF0CB932AE87DC90071F6D0 /* NotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF0CB922AE87DC90071F6D0 /* NotificationsService.swift */; };
 		EDFE922C2ADAFEB9009175F5 /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */; };
 		EDFF7ED12AE9DCE100778C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFF7ED32AE9DCE100778C88 /* Main.storyboard */; };
@@ -108,7 +109,6 @@
 		ED1A6CB62AD75AEC00008622 /* TourismPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismPlacesViewController.swift; sourceTree = "<group>"; };
 		ED1A6CB82AD75B3A00008622 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
 		ED2E09CF2ADC3D93002C1A14 /* ReusablePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePopUpViewController.swift; sourceTree = "<group>"; };
-		ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusablePopUpViewController.xib; sourceTree = "<group>"; };
 		ED4FA3732B09ADD5000D1E64 /* ponentesImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ponentesImages.xcassets; sourceTree = "<group>"; };
 		ED5190C32ADCC9830057284D /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		ED5190C52ADCCEDA0057284D /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +117,7 @@
 		ED6DD40B2AE709AE00FFE989 /* ScheduleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDataModel.swift; sourceTree = "<group>"; };
 		ED6DD40F2AE71C7900FFE989 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		ED6F407F2AE410ED00703BBF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		ED716B402B0B0FA70090475C /* OrganizadoPorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizadoPorViewController.swift; sourceTree = "<group>"; };
 		ED779C512AD6458A0078ABDB /* PonentesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PonentesViewController.swift; sourceTree = "<group>"; };
 		ED779C562AD645A80078ABDB /* FilterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewCell.swift; sourceTree = "<group>"; };
 		ED779C572AD645A90078ABDB /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -145,6 +146,8 @@
 		EDC7D7212AD9AE4F00997971 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EDD5A1D02AD284C6008BA59F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		EDD5A1D22AD28532008BA59F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		EDDD1DC72B0C45440040437A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ReusablePopUpViewController.xib; sourceTree = "<group>"; };
+		EDDD1DC92B0C45440040437A /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/ReusablePopUpViewController.xcstrings; sourceTree = "<group>"; };
 		EDF0CB922AE87DC90071F6D0 /* NotificationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsService.swift; sourceTree = "<group>"; };
 		EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
 		EDFF7ED22AE9DCE100778C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -211,7 +214,7 @@
 				ED779C5A2AD6562E0078ABDB /* TableViewCell.swift */,
 				ED779C5B2AD6562E0078ABDB /* TableViewCell.xib */,
 				ED2E09CF2ADC3D93002C1A14 /* ReusablePopUpViewController.swift */,
-				ED2E09D02ADC3D93002C1A14 /* ReusablePopUpViewController.xib */,
+				EDDD1DC82B0C45440040437A /* ReusablePopUpViewController.xib */,
 				ED1526422ADDDF3700F5C522 /* HomeButtonCollectionViewCell.swift */,
 			);
 			path = Reusable;
@@ -266,6 +269,7 @@
 				ED61F3A02AE59FB4000C5A07 /* LoginDataModel.swift */,
 				EDFE922B2ADAFEB9009175F5 /* LogoAnimationView.swift */,
 				ED7FB6052AE1FE6E004D6283 /* LoginAnimationViewController.swift */,
+				ED716B402B0B0FA70090475C /* OrganizadoPorViewController.swift */,
 				EDB8A3132AD22556002A0980 /* LoginViewController.swift */,
 				EDFF7ED72AE9DD7600778C88 /* Login.storyboard */,
 			);
@@ -514,7 +518,7 @@
 				ED4FA3742B09ADD6000D1E64 /* ponentesImages.xcassets in Resources */,
 				ED779C5D2AD6562E0078ABDB /* TableViewCell.xib in Resources */,
 				EDB8A30B2AD21D7E002A0980 /* Franie-Bold.ttf in Resources */,
-				ED2E09D22ADC3D93002C1A14 /* ReusablePopUpViewController.xib in Resources */,
+				EDDD1DC62B0C45440040437A /* ReusablePopUpViewController.xib in Resources */,
 				EDFF7ED12AE9DCE100778C88 /* Main.storyboard in Resources */,
 				EDB982562AD5B9570061D298 /* icons.xcassets in Resources */,
 				ED18B49D2ADEFAAA0084EBD7 /* ScheduleTableViewCell.xib in Resources */,
@@ -663,6 +667,7 @@
 				ED779C592AD645A90078ABDB /* Extension.swift in Sources */,
 				EDF0CB932AE87DC90071F6D0 /* NotificationsService.swift in Sources */,
 				ED6DD40C2AE709AE00FFE989 /* ScheduleDataModel.swift in Sources */,
+				ED716B412B0B0FA70090475C /* OrganizadoPorViewController.swift in Sources */,
 				ED779C542AD6458A0078ABDB /* PonentesViewController.swift in Sources */,
 				ED0CAA0F2AD8924D00AC4159 /* WhereIsViewController.swift in Sources */,
 				ED5190C62ADCCEDB0057284D /* ScheduleViewController.swift in Sources */,
@@ -726,6 +731,15 @@
 				EDB8A2E42AD21C89002A0980 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EDDD1DC82B0C45440040437A /* ReusablePopUpViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDDD1DC72B0C45440040437A /* Base */,
+				EDDD1DC92B0C45440040437A /* mul */,
+			);
+			name = ReusablePopUpViewController.xib;
 			sourceTree = "<group>";
 		};
 		EDFF7ED32AE9DCE100778C88 /* Main.storyboard */ = {
@@ -876,6 +890,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DCASC2V65A;
@@ -883,6 +898,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Caii-2023/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CAII 2023";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -910,6 +926,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DCASC2V65A;
@@ -917,6 +934,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Caii-2023/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "CAII 2023";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

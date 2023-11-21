@@ -20,7 +20,6 @@ class TableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        print("a")
         // Initialization code
 //        contentViewGrey.backgroundColor = .lightGreyCAII
         containerView.layer.cornerRadius = 16

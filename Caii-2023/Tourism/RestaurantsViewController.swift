@@ -20,8 +20,9 @@ class RestaurantsViewController: UIViewController {
     @IBOutlet weak var restaurantImageView: UIImageView!
     
     @IBOutlet weak var locationInfoLabel: UILabel!
-    @IBOutlet weak var informationLabel: UILabel!
+//    @IBOutlet weak var informationLabel: UILabel!
 
+    @IBOutlet weak var informationLabel2: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,11 @@ class RestaurantsViewController: UIViewController {
         locationWhiteViewContainer.layer.cornerRadius = 16
         infoWhiteViewContainer.layer.cornerRadius = 16
         aboutWhiteViewContainer.layer.cornerRadius = 16
+        
+        informationLabel2.isUserInteractionEnabled = true
+        informationLabel2.isSelectable = true
+        informationLabel2.dataDetectorTypes = .link
+        informationLabel2.isEditable = false
     }
     
     func setup(){
@@ -40,9 +46,12 @@ class RestaurantsViewController: UIViewController {
                 print(detailUnwrapped)
             restaurantNameLabel.text = detailUnwrapped.name
 //            timeLabel.text = String (detailUnwrapped.id)
-            restaurantDescriptionLabel.text = detailUnwrapped.description
+            restaurantDescriptionLabel.text = String(localized: """
+Especialidad: \(detailUnwrapped.description)
+Horario de atencion: \(detailUnwrapped.hours)
+""")
             locationInfoLabel.text = detailUnwrapped.location
-            informationLabel.text = detailUnwrapped.website
+            informationLabel2.text = detailUnwrapped.website
             restaurantImageView.image = UIImage(named: detailUnwrapped.image)
             }
     }

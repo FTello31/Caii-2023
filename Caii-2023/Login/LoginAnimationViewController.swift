@@ -50,7 +50,7 @@ class LoginAnimationViewController: UIViewController {
     
     
     func presentLogin(){
-        let vc = storyboard?.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        let vc = storyboard?.instantiateViewController(identifier: "OrganizadoPorViewController") as! OrganizadoPorViewController
         vc.modalPresentationStyle = .overCurrentContext
         vc.modalTransitionStyle = .crossDissolve
         

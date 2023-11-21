@@ -12,6 +12,7 @@ protocol ListItem {
     var id: Int { get }
     var description: String { get }
     var image: String { get }
+    var hours: String { get }
     // Otras propiedades comunes si es necesario
 }
 
@@ -45,6 +46,7 @@ struct EmergencyPhones: Codable {
 }
 
 struct TourismPlaces: Codable,ListItem {
+    var hours: String
     var image: String
     let name: String
     let id: Int

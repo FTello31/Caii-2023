@@ -30,6 +30,8 @@ class HomeViewController: UIViewController {
         .lightContent
     }
     
+    var eventoActualD: EventD? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavbar()
@@ -141,15 +143,31 @@ class HomeViewController: UIViewController {
     
     func fetchScheduleData() {
         let apiService = APIService()
+        
         apiService.getSchedulePrograms(completion: {sch in
             switch sch {
             case .success(let schedules):
                 print(schedules)
-                    self.schedulesFromAPI = schedules /*TODO*/
-//                self.schedulesFromAPI = self.offlineData()
-                self.setEventShown(self.schedulesFromAPI)
-                self.setNotificationsFromAPI(self.schedulesFromAPI)
-                //            self.setNotifications(self.schedulesFromAPI)
+                apiService.getGeneralPrograms(completion: {sch2 in
+                    switch sch2 {
+                    case .success(let schedulesGeneral):
+                        print(schedulesGeneral)
+                        
+                        self.schedulesFromAPI = schedules + schedulesGeneral  /*TODO*/
+    //                  self.schedulesFromAPI = self.offlineData()
+                        self.setEventShown(self.schedulesFromAPI)
+                        self.setNotificationsFromAPI(self.schedulesFromAPI)
+                        //            self.setNotifications(self.schedulesFromAPI)
+                        
+                    case .failure(let error):
+                        self.schedulesFromAPI = schedules /*TODO*/
+    //                  self.schedulesFromAPI = self.offlineData()
+                        self.setEventShown(self.schedulesFromAPI)
+                        self.setNotificationsFromAPI(self.schedulesFromAPI)
+                        print(error)
+                    }
+                })
+                
             case .failure(let error):
                 print(error)
             }
@@ -341,9 +359,10 @@ class HomeViewController: UIViewController {
 //        print("Título: \(eventoActual.titulo)")
 //        print("Subtítulo: \(eventoActual.subtitulo)")
 //        print("Lugar: \(eventoActual.lugar)")
-        mainEventNameLabel.text = eventoActual.titulo
-        mainEventTimeLabel.text = eventoActual.hora_inicio
+        mainEventNameLabel.text = "\(eventoActual.titulo) \(eventoActual.subtitulo ?? " ")"
+        mainEventTimeLabel.text = "\(eventoActual.hora_inicio) hrs"
 //        mainEventPlaceLabel.text = "Lugar: \(eventoActual.lugar)"
+        eventoActualD = eventoActual
     }
     
     
@@ -400,14 +419,13 @@ class HomeViewController: UIViewController {
         
     }
     
-    
     func showPopUp() {
         let avc : ReusablePopUpViewController = ReusablePopUpViewController()
         avc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         avc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         avc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         avc.titleLabel.text = String(localized:"¡Hola, \(defaults.string(forKey: UDefaultValues.firstName.rawValue)!)!")
-        avc.descriptionLabel.text = String(localized: "Bienvenido a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí.")
+        avc.descriptionLabel.text = String(localized:"Bienvenido a la CAII 2023. Encuentra tu programa personalizado y toda la información sobre el evento aquí.")
         
         present(avc, animated: true)
     }
@@ -484,17 +502,12 @@ extension HomeViewController:
         
         if(homeButtons[indexPath.item].viewControllerName.elementsEqual("CAIIViewController")) {
             
-            
-            let youtubeId = "daI3lBeZgqM"
-            if let youtubeURL = URL(string: "youtube://\(youtubeId)"),
-               UIApplication.shared.canOpenURL(youtubeURL) {
-                // redirect to app
-                UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
-            } else if let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") {
-                // redirect through safari
-                UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+            if(eventoActualD?.enlace != ""){
+                if let zoomURL = URL(string: (eventoActualD?.enlace)!) {
+                    // redirect through safari
+                    UIApplication.shared.open(zoomURL, options: [:], completionHandler: nil)
+                }
             }
-            
             
         } else if(homeButtons[indexPath.item].viewControllerName.elementsEqual("ScheduleViewController")){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

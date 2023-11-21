@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Franie-Bold.ttf">
+            <string>Franie-Bold</string>
+        </array>
         <array key="Franie-Regular.ttf">
             <string>Franie-Regular</string>
         </array>
@@ -39,7 +42,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVm-0y-Hv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-529" y="21"/>
+            <point key="canvasLocation" x="-862" y="21"/>
+        </scene>
+        <!--Organizado Por View Controller-->
+        <scene sceneID="q95-fh-gBe">
+            <objects>
+                <viewController storyboardIdentifier="OrganizadoPorViewController" id="eup-aL-1hF" customClass="OrganizadoPorViewController" customModule="Caii_2023" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rw8-nw-T0M">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_image" translatesAutoresizingMaskIntoConstraints="NO" id="4Lv-PC-OqC">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="organizedByContraloria" translatesAutoresizingMaskIntoConstraints="NO" id="xy8-2L-96b">
+                                <rect key="frame" x="25.666666666666657" y="402" width="379" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1jy-bp-f03"/>
+                                    <constraint firstAttribute="width" constant="379" id="iGa-dh-Lys"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Organizado por:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSS-WA-aLd">
+                                <rect key="frame" x="127" y="251" width="177" height="48"/>
+                                <fontDescription key="fontDescription" name="Franie-Bold" family="Franie" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zts-Mc-s1L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xy8-2L-96b" firstAttribute="centerY" secondItem="Rw8-nw-T0M" secondAttribute="centerY" id="DlI-4y-ABm"/>
+                            <constraint firstItem="xy8-2L-96b" firstAttribute="top" secondItem="YSS-WA-aLd" secondAttribute="bottom" constant="50" id="H67-9L-QI0"/>
+                            <constraint firstItem="YSS-WA-aLd" firstAttribute="leading" secondItem="Zts-Mc-s1L" secondAttribute="leading" constant="100" id="f0O-6A-Iee"/>
+                            <constraint firstItem="xy8-2L-96b" firstAttribute="centerX" secondItem="Rw8-nw-T0M" secondAttribute="centerX" id="lHX-rd-6JO"/>
+                            <constraint firstItem="Zts-Mc-s1L" firstAttribute="trailing" secondItem="YSS-WA-aLd" secondAttribute="trailing" constant="100" id="olF-iR-RdJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9X3-wl-JPk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.186046511627907" y="20.600858369098713"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="aBP-ky-PhS">
@@ -92,7 +136,7 @@
                                     <constraint firstAttribute="bottom" secondItem="6PZ-Ke-9dY" secondAttribute="bottom" id="nmV-Ko-4iN"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="25782655" borderStyle="roundedRect" placeholder="Ingresar DNI" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-1R-aej">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresar DNI" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-1R-aej">
                                 <rect key="frame" x="70" y="618" width="290" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="A0a-L7-NDa"/>
@@ -148,12 +192,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKO-CI-VN9" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296.94656488549617" y="21.83098591549296"/>
+            <point key="canvasLocation" x="995" y="21"/>
         </scene>
     </scenes>
     <resources>
         <image name="CAII logo  blanco" width="2251" height="1042"/>
         <image name="background_image" width="1085" height="1930"/>
+        <image name="organizedByContraloria" width="733" height="254"/>
         <namedColor name="PrimaryCAII">
             <color red="0.81599998474121094" green="0.22699999809265137" blue="0.23499999940395355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
