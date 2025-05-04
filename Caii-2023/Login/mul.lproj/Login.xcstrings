@@ -2,19 +2,19 @@
   "sourceLanguage" : "es",
   "strings" : {
     "5Uj-Wx-RKd.text" : {
-      "comment" : "Class = \"UILabel\"; text = \"Si estás inscrito, accede aquí:\"; ObjectID = \"5Uj-Wx-RKd\";",
+      "comment" : "Class = \"UILabel\"; text = \"Si estás inscrito, accede aquí: \"; ObjectID = \"5Uj-Wx-RKd\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "If you are registered, access here:"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Si estás inscrito, accede aquí:"
+            "value" : "Si estás inscrito, accede aquí: "
           }
         }
       }
@@ -92,19 +92,31 @@
       }
     },
     "Oxm-1R-aej.placeholder" : {
-      "comment" : "Class = \"UITextField\"; placeholder = \"Ingresar DNI\"; ObjectID = \"Oxm-1R-aej\";",
+      "comment" : "Class = \"UITextField\"; placeholder = \"Ingresar 1 o 2\"; ObjectID = \"Oxm-1R-aej\";",
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enter ID"
+            "state" : "needs_review",
+            "value" : "Enter 1 or 2"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "Ingresar DNI"
+            "value" : "Ingresar 1 o 2"
+          }
+        }
+      }
+    },
+    "Oxm-1R-aej.text" : {
+      "comment" : "Class = \"UITextField\"; text = \"1\"; ObjectID = \"Oxm-1R-aej\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "1"
           }
         }
       }

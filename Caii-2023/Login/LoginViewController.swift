@@ -86,39 +86,39 @@ class LoginViewController: UIViewController {
     
     @IBAction func onLoginPressed(_ sender: UIButton) {
         //TODO
-//        if(inputDNI.text == "2"){
-//            saveAuthenticatedUser(inputDNI.text! , "Fer2", "2")
-//            goToMainStoryboard();
-//            return
-//        } else if(inputDNI.text == "1"){
-//            saveAuthenticatedUser(inputDNI.text! , "Fer1", "1")
-//            goToMainStoryboard();
-//            return
-//        }
+        if(inputDNI.text == "2"){
+            saveAuthenticatedUser(inputDNI.text! , "Fer2", "2")
+            goToMainStoryboard();
+            return
+        } else if(inputDNI.text == "1"){
+            saveAuthenticatedUser(inputDNI.text! , "Fer1", "1")
+            goToMainStoryboard();
+            return
+        }
         
-        let apiService = APIService()
-        apiService.login(inputDNI.text!, completion: { result in
-            switch result {
-            case .success(let data):
-                // Handle the success case with the data
-//                print("SuccessAGAGA: \(data)")
-                self.saveAuthenticatedUser(data.dni_doc,String(data.nombres.components(separatedBy: " ").first ?? data.nombres) , String(data.modalidad_id))
-                self.goToMainStoryboard();
-                
-            case .failure(let error):
-                let message: String
-                switch error {
-                case .userError:
-                    message = String(localized: "Credenciales invalidas")
-                case .decodingError, .networkError:
-                    message = String(localized: "Por favor contactese con el administrador: ") + error.localizedDescription
-                }
-                self.showAlert(message: message)
-                
-                //                 Handle the failure case with the error
-                print("Error: \(error)")
-            }
-        })
+//        let apiService = APIService()
+//        apiService.login(inputDNI.text!, completion: { result in
+//            switch result {
+//            case .success(let data):
+//                // Handle the success case with the data
+////                print("SuccessAGAGA: \(data)")
+//                self.saveAuthenticatedUser(data.dni_doc,String(data.nombres.components(separatedBy: " ").first ?? data.nombres) , String(data.modalidad_id))
+//                self.goToMainStoryboard();
+//                
+//            case .failure(let error):
+//                let message: String
+//                switch error {
+//                case .userError:
+//                    message = String(localized: "Credenciales invalidas")
+//                case .decodingError, .networkError:
+//                    message = String(localized: "Por favor contactese con el administrador: ") + error.localizedDescription
+//                }
+//                self.showAlert(message: message)
+//                
+//                //                 Handle the failure case with the error
+//                print("Error: \(error)")
+//            }
+//        })
     }
     
     

@@ -50,7 +50,8 @@ class HomeViewController: UIViewController {
         }
         
         checkForPermission()
-        fetchScheduleData()
+//        fetchScheduleData()
+        offlineData()
         
     }
     
@@ -141,133 +142,135 @@ class HomeViewController: UIViewController {
     
     
     
-    func fetchScheduleData() {
-        let apiService = APIService()
+//    func fetchScheduleData() {
+//        let apiService = APIService()
+//        
+//        apiService.getSchedulePrograms(completion: {sch in
+//            switch sch {
+//            case .success(let schedules):
+//                print(schedules)
+//                apiService.getGeneralPrograms(completion: {sch2 in
+//                    switch sch2 {
+//                    case .success(let schedulesGeneral):
+//                        print(schedulesGeneral)
+//                        
+//                        self.schedulesFromAPI = schedules + schedulesGeneral  /*TODO*/
+//    //                  self.schedulesFromAPI = self.offlineData()
+//                        self.setEventShown(self.schedulesFromAPI)
+//                        self.setNotificationsFromAPI(self.schedulesFromAPI)
+//                        //            self.setNotifications(self.schedulesFromAPI)
+//                        
+//                    case .failure(let error):
+//                        self.schedulesFromAPI = schedules /*TODO*/
+//    //                  self.schedulesFromAPI = self.offlineData()
+//                        self.setEventShown(self.schedulesFromAPI)
+//                        self.setNotificationsFromAPI(self.schedulesFromAPI)
+//                        print(error)
+//                    }
+//                })
+//                
+//            case .failure(let error):
+//                print(error)
+//            }
+//        })
+//        
+//    }
+    
+    func offlineData() {
+        let data = [
+            [
+                "titulo": "PANEL 1:",
+                "subtitulo": "A casi una década de su revelación: ¿estamos ante el final del caso “Lava Jato” y sus redes en América Latina?",
+                "lugar": "Sala De las Naciones 1 – 8vo piso",
+                "fecha_desde": "2023-10-24 00:00:00",
+                "hora_inicio": "11:12",
+                "hora_final": "11:15",
+                "id": 609,
+                "confirmado": "S",
+                "enlace": nil
+            ],
+            [
+                "titulo": "FORO 1:",
+                "subtitulo": "Control gubernamental y control político. El trabajo conjunto de las Entidades Fiscalizadoras Superiores y los Parlamentos",
+                "lugar": "Sala Puruchuco – 4to piso",
+                "fecha_desde": "2023-10-24 00:00:00",
+                "hora_inicio": "11:20",
+                "hora_final": "11:22",
+                "id": 611,
+                "confirmado": "S",
+                "enlace": nil
+            ],
+            [
+                "titulo": "PRESENTACIÓN DE INVESTIGACIÓN",
+                "subtitulo": "De película de terror a las instituciones públicas de la región: El escándalo de los trabajadores y empresas fantasmas",
+                "lugar": "Sala Huallamarca – 4to piso",
+                "fecha_desde": "2023-10-25 00:00:00",
+                "hora_inicio": "11:25",
+                "hora_final": "11:30",
+                "id": 614,
+                "confirmado": "S",
+                "enlace": nil
+            ],
+            [
+                "titulo": "PANEL 4:",
+                "subtitulo": "¿Se puede elegir al mejor postor? Avances y retos de las contrataciones públicas en el Perú",
+                "lugar": "Sala de las Naciones 1 – 8vo piso",
+                "fecha_desde": "2023-10-25 00:00:00",
+                "hora_inicio": "11:33",
+                "hora_final": "11:36",
+                "id": 615,
+                "confirmado": "S",
+                "enlace": nil
+            ],
+            [
+                "titulo": "EXPOSICIÓN DE CORTOMETRAJES POR LA INTEGRIDAD",
+                "subtitulo": "Proyecto “Haz corto con la corrupción”",
+                "lugar": "Sala De las Naciones 3 – 8vo piso",
+                "fecha_desde": "2023-10-25 00:00:00",
+                "hora_inicio": "11:40",
+                "hora_final": "11:43",
+                "id": 620,
+                "confirmado": "S",
+                "enlace": nil
+            ],
+            [
+                "titulo": "EXPOSICIÓN DE CORTOMETRAJES POR LA INTEGRIDAD",
+                "subtitulo": "“La colaboración transnacional para investigar casos de corrupción”",
+                "lugar": "Sala de las Naciones 1 – 8vo piso",
+                "fecha_desde": "2023-10-25 00:00:00",
+                "hora_inicio": "11:45",
+                "hora_final": "11:50",
+                "id": 622,
+                "confirmado": "S",
+                "enlace": nil
+            ]
+        ]
         
-        apiService.getSchedulePrograms(completion: {sch in
-            switch sch {
-            case .success(let schedules):
-                print(schedules)
-                apiService.getGeneralPrograms(completion: {sch2 in
-                    switch sch2 {
-                    case .success(let schedulesGeneral):
-                        print(schedulesGeneral)
-                        
-                        self.schedulesFromAPI = schedules + schedulesGeneral  /*TODO*/
-    //                  self.schedulesFromAPI = self.offlineData()
-                        self.setEventShown(self.schedulesFromAPI)
-                        self.setNotificationsFromAPI(self.schedulesFromAPI)
-                        //            self.setNotifications(self.schedulesFromAPI)
-                        
-                    case .failure(let error):
-                        self.schedulesFromAPI = schedules /*TODO*/
-    //                  self.schedulesFromAPI = self.offlineData()
-                        self.setEventShown(self.schedulesFromAPI)
-                        self.setNotificationsFromAPI(self.schedulesFromAPI)
-                        print(error)
-                    }
-                })
+        var eventDArray = [EventD]()
+        
+        for event in data {
+            if let titulo = event["titulo"] as? String,
+               let subtitulo = event["subtitulo"] as? String,
+               let lugar = event["lugar"] as? String,
+               let fecha_desde = event["fecha_desde"] as? String,
+               let hora_inicio = event["hora_inicio"] as? String,
+               let hora_final = event["hora_final"] as? String,
+               let id = event["id"] as? Int,
+               let confirmado = event["confirmado"] as? String {
                 
-            case .failure(let error):
-                print(error)
+                let enlace = event["enlace"] as? String
+                
+                let eventD = EventD(titulo: titulo, subtitulo: subtitulo, lugar: lugar, fecha_desde: fecha_desde, hora_inicio: hora_inicio, hora_final: hora_final, id: id, confirmado: confirmado, enlace: enlace)
+                
+                eventDArray.append(eventD)
             }
-        })
+        }
+        
+        self.schedulesFromAPI = eventDArray
+//        return eventDArray
         
     }
     
-//    func offlineData() -> [EventD] {
-//        let data = [
-//            [
-//                "titulo": "PANEL 1:",
-//                "subtitulo": "A casi una década de su revelación: ¿estamos ante el final del caso “Lava Jato” y sus redes en América Latina?",
-//                "lugar": "Sala De las Naciones 1 – 8vo piso",
-//                "fecha_desde": "2023-10-25 00:00:00",
-//                "hora_inicio": "11:12",
-//                "hora_final": "11:15",
-//                "id": 609,
-//                "confirmado": "S",
-//                "enlace": nil
-//            ],
-//            [
-//                "titulo": "FORO 1:",
-//                "subtitulo": "Control gubernamental y control político. El trabajo conjunto de las Entidades Fiscalizadoras Superiores y los Parlamentos",
-//                "lugar": "Sala Puruchuco – 4to piso",
-//                "fecha_desde": "2023-10-25 00:00:00",
-//                "hora_inicio": "11:20",
-//                "hora_final": "11:22",
-//                "id": 611,
-//                "confirmado": "S",
-//                "enlace": nil
-//            ],
-//            [
-//                "titulo": "PRESENTACIÓN DE INVESTIGACIÓN",
-//                "subtitulo": "De película de terror a las instituciones públicas de la región: El escándalo de los trabajadores y empresas fantasmas",
-//                "lugar": "Sala Huallamarca – 4to piso",
-//                "fecha_desde": "2023-10-25 00:00:00",
-//                "hora_inicio": "11:25",
-//                "hora_final": "11:30",
-//                "id": 614,
-//                "confirmado": "S",
-//                "enlace": nil
-//            ],
-//            [
-//                "titulo": "PANEL 4:",
-//                "subtitulo": "¿Se puede elegir al mejor postor? Avances y retos de las contrataciones públicas en el Perú",
-//                "lugar": "Sala de las Naciones 1 – 8vo piso",
-//                "fecha_desde": "2023-10-25 00:00:00",
-//                "hora_inicio": "11:33",
-//                "hora_final": "11:36",
-//                "id": 615,
-//                "confirmado": "S",
-//                "enlace": nil
-//            ],
-//            [
-//                "titulo": "EXPOSICIÓN DE CORTOMETRAJES POR LA INTEGRIDAD",
-//                "subtitulo": "Proyecto “Haz corto con la corrupción”",
-//                "lugar": "Sala De las Naciones 3 – 8vo piso",
-//                "fecha_desde": "2023-10-25 00:00:00",
-//                "hora_inicio": "11:40",
-//                "hora_final": "11:43",
-//                "id": 620,
-//                "confirmado": "S",
-//                "enlace": nil
-//            ],
-//            [
-//                "titulo": "EXPOSICIÓN DE CORTOMETRAJES POR LA INTEGRIDAD",
-//                "subtitulo": "“La colaboración transnacional para investigar casos de corrupción”",
-//                "lugar": "Sala de las Naciones 1 – 8vo piso",
-//                "fecha_desde": "2023-10-25 00:00:00",
-//                "hora_inicio": "11:45",
-//                "hora_final": "11:50",
-//                "id": 622,
-//                "confirmado": "S",
-//                "enlace": nil
-//            ]
-//        ]
-//        
-//        var eventDArray = [EventD]()
-//        
-//        for event in data {
-//            if let titulo = event["titulo"] as? String,
-//               let subtitulo = event["subtitulo"] as? String,
-//               let lugar = event["lugar"] as? String,
-//               let fecha_desde = event["fecha_desde"] as? String,
-//               let hora_inicio = event["hora_inicio"] as? String,
-//               let hora_final = event["hora_final"] as? String,
-//               let id = event["id"] as? Int,
-//               let confirmado = event["confirmado"] as? String {
-//                
-//                let enlace = event["enlace"] as? String
-//                
-//                let eventD = EventD(titulo: titulo, subtitulo: subtitulo, lugar: lugar, fecha_desde: fecha_desde, hora_inicio: hora_inicio, hora_final: hora_final, id: id, confirmado: confirmado, enlace: enlace)
-//                
-//                eventDArray.append(eventD)
-//            }
-//        }
-//        
-//        return eventDArray
-//    }
-//    
     
     func setEventShown(_ schedules: [EventD]){
         

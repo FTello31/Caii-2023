@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eBG-7h-bF0">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eBG-7h-bF0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,11 +23,11 @@
             <objects>
                 <viewController id="eBG-7h-bF0" customClass="LoginAnimationViewController" customModule="Caii_2023" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cL7-ci-BKo">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image" translatesAutoresizingMaskIntoConstraints="NO" id="Sjy-mx-vOa">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L46-e6-8dW"/>
@@ -49,7 +49,7 @@
             <objects>
                 <viewController storyboardIdentifier="OrganizadoPorViewController" id="eup-aL-1hF" customClass="OrganizadoPorViewController" customModule="Caii_2023" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rw8-nw-T0M">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_image" translatesAutoresizingMaskIntoConstraints="NO" id="4Lv-PC-OqC">
@@ -57,7 +57,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="organizedByContraloria" translatesAutoresizingMaskIntoConstraints="NO" id="xy8-2L-96b">
-                                <rect key="frame" x="25.666666666666657" y="402" width="379" height="128"/>
+                                <rect key="frame" x="7" y="362" width="379" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="1jy-bp-f03"/>
                                     <constraint firstAttribute="width" constant="379" id="iGa-dh-Lys"/>
@@ -90,14 +90,14 @@
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="Pd7-mA-ZSF" customClass="LoginViewController" customModule="Caii_2023" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mtj-0x-OIg">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukt-al-HMS">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="445.33333333333331"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="331.33333333333331"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAII logo  blanco" translatesAutoresizingMaskIntoConstraints="NO" id="8J8-ZE-wIQ">
-                                        <rect key="frame" x="-910.66666666666663" y="162.66666666666666" width="2251.3333333333335" height="179.99999999999997"/>
+                                        <rect key="frame" x="-929" y="105.66666666666669" width="2251" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="PnO-z4-Q3o"/>
                                         </constraints>
@@ -109,17 +109,17 @@
                                     <constraint firstItem="8J8-ZE-wIQ" firstAttribute="centerX" secondItem="Ukt-al-HMS" secondAttribute="centerX" id="k1p-f9-dHf"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si estás inscrito, accede aquí:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Uj-Wx-RKd">
-                                <rect key="frame" x="50" y="477.33333333333331" width="330" height="20.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si estás inscrito, accede aquí: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Uj-Wx-RKd">
+                                <rect key="frame" x="50" y="363.33333333333331" width="293" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Franie-Regular" family="Franie" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dug-ls-CIr">
-                                <rect key="frame" x="50" y="523" width="330" height="65"/>
+                                <rect key="frame" x="50" y="409" width="293" height="65"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6PZ-Ke-9dY">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="66"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="66"/>
                                         <segments>
                                             <segment title="Peruano"/>
                                             <segment title="Extranjero"/>
@@ -136,8 +136,8 @@
                                     <constraint firstAttribute="bottom" secondItem="6PZ-Ke-9dY" secondAttribute="bottom" id="nmV-Ko-4iN"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresar DNI" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-1R-aej">
-                                <rect key="frame" x="70" y="618" width="290" height="60"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="Ingresar 1 o 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oxm-1R-aej">
+                                <rect key="frame" x="70" y="504" width="253" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="A0a-L7-NDa"/>
                                 </constraints>
@@ -145,7 +145,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmA-Xz-NT3">
-                                <rect key="frame" x="50" y="748" width="330" height="60"/>
+                                <rect key="frame" x="50" y="634" width="293" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="hlC-ZA-bqO"/>
                                 </constraints>
